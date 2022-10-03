@@ -1,0 +1,660 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Sintaxe: 
+	Identificadores: sintaxeIdentificadores; 
+	Classes: SintaxeClasses; 
+	ícones: ICONES;
+Paleta de cores: 
+    Cinza Esverdeado: #F7FDF3
+    Verde: #8EDE65
+    Azul: #1D1D29
+    Azul escuro texto: #1D1D29
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* IMPORTAÇÕES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;750;800;900&display=swap');
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* FORMATAÇÃO GERAL / SEM CLASSE / SEM IDENTIFICADOR */
+
+* {
+	padding: 0;
+	margin: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+html, body { /*Desabilitando o scroll no eixo X na TAG HTML, para facilitar a compatibilidade com os navegadores*/
+    overflow-x: hidden;
+}
+
+#header { /*Especificações para o cabeçalho da página*/
+    padding-top: 6vh;
+}
+
+body { /*Especificações para o corpo da página*/
+    /*background-color: #1D1D29;*/
+    background-image: url(img/hd1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+h1 { /*Especificações para títulos H1 */
+    font-size: 2.5vw;
+    font-weight:700;
+ }
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* FORMATAÇÃO POR IDENTIFICADOR */
+
+ /*--> Header */
+
+ #navBar{ /*Barra onde ficam icones sociais e opções de navegação*/
+    /* background-color: black; */
+     display: flex;
+     font-weight: 500;
+     margin-left: 8vw;
+     margin-right: 8vw;
+     z-index: 2;
+     margin-top: 3vw;
+ }
+ 
+ #opcoesNavBar { /*Barra onde ficam as opções de navegação*/
+     /* background-color: grey; */
+     width: 55%;
+     text-align: left;
+     display: flex;
+     justify-content: space-around;
+     z-index: 2;
+ }
+ 
+.OpcaoNavBar { /*Opçoes de navegação*/
+    /* background-color: yellow; */
+    color: #F7FDF3;
+    font-size: 1.3vw;
+    z-index: 2;
+}
+ 
+.OpcaoNavBar:hover{ /*Ações ao passar o mouse em uma opção de navegação*/
+    font-weight:bold;
+    color: #8EDE65;
+    z-index: 2;
+}
+ 
+#iconesNavBar { /*Barra onde ficam os ícones sociais*/
+     /* background-color: green; */
+     width: 45%;
+     text-align: right;
+     z-index: 2;
+ }
+ 
+.IconeNavBar { /* Icones de navegação */
+    /* background-color: yellow; */
+    color: #F7FDF3;
+    font-size: 1.7vw;
+    z-index: 2;
+}
+ 
+.IconeNavBar:hover { /*Ações ao passar o mouse em um ícone da barra de navegação*/
+    color: #8EDE65;
+    font-weight:900;
+    z-index: 2;
+}
+
+#news { /*Área principal do site com informação e botão lateral*/
+    /*background-color: yellow;*/
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 3vw;
+    text-align: left;
+    padding-left: 3vw;
+    width: 35%;
+    margin-bottom: 2vw;
+    z-index: 2;
+}
+
+.LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
+    width: 9vw;
+    height: 0.7vw;
+    margin-top: 0;
+    margin-bottom: 3vw;
+    z-index: 2;
+}
+
+#news .LinhaDeTitulo { /*Linha decorativa na área de news*/
+    background-color: #8EDE65;
+    z-index: 2;
+}
+
+#news p { /*Texto da área news*/
+    font-size: 3.5vw;
+    color: #F7FDF3;
+    font-weight:750;
+    z-index: 2;
+}
+
+#btnPrincipal { /* Botão de solicitar um orçamento */
+    background-color: #8EDE65;
+    height: 4vw;
+    width: 25vw;
+    border: none;
+    border-radius:30px;
+    font-size: 1.6vw;
+    color: #F7FDF3;
+    font-weight: 600;
+    margin-top: 3vw;
+    z-index: 2;
+   
+}
+
+#btnPrincipal:hover { /* Ações ao passar o mouse em cima do botão principal */
+    cursor:pointer;
+    font-weight: 700;
+    height: 4.1vw;
+    width: 25.1vw;
+    z-index: 2;
+    background-color: #F7FDF3;
+    color: #8EDE65;
+}
+
+/*<-- FimHeader*/
+ 
+/*--> Hexágono construído com clip-path para gerar o shape divider do layout */
+
+#pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
+    position: relative;
+    width: 100%;
+    height: 197vw;
+    background-color: #F7FDF3;
+	clip-path: polygon(40% 3%, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 0);
+}
+
+/*<-- FimHexágono*/
+
+/*<-- Primeira sessão de informações do HOME (Imagem ilustrativa e explicação home care) */
+
+#primeiraSessãoDeInfo{ /* Primeira sessão abaixo de news */
+    /*background-color: yellow;*/
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 6%; 
+    height: 20%;
+    position: absolute;
+    display: inline-flex;
+}
+
+#imgPrimeiraSessãoDeInfo{ /* Imagem ilustrativa da primeira sessão */
+   /* background-color: green;*/
+    background-image: url(img/imgilustrativa.png);
+    background-size:50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+#primeiraSessãoImg{ /* Imagem ilustrativa da primeira sessão */
+    /*background-color: green;*/
+    background-image: url(img/imgilustrativa.png);
+    background-repeat: no-repeat;
+    background-size:85%;
+    background-position: 50%;
+    width: 40%;
+}
+
+#txtPrimeiraSessãoDeInfo{ /* Texto da primeira sessão */
+    /*background-color: paleturquoise;*/
+    width: 40%;
+    padding-top: 11%;
+}
+
+.CaixaDeTitulo { /* Div para quardar os títulos*/
+    /*background-color: violet;*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.CaixaDeTitulo, #c1 { /* Div para quardar os títulos*/
+     /*background-color: violet;*/
+     display: flex;
+     justify-content: space-around;
+     padding-left: 14.6%;
+     padding-right: 14.6%;
+ }
+
+ .TVerde { /* Título 1 verde */
+    color: #8EDE65;
+}
+
+.TAzul { /* Título 1 azul */  
+    color: #2c3e50;
+}
+
+#texto1 {
+    margin-top: 2vw;
+    text-align: justify;
+    line-height: 2.3vw;
+    word-spacing: 0.5vw;
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+/*<--FimPrimeiraSessão*/
+
+/*<-- Segunda Sessão De Informações do HOME (vantagens Home Care)*/
+
+#segundaSessãoDeInfo {  /*Segunda sessão abaixo de news */
+    /*background-color: yellow;*/
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 40%; 
+    height: 14.5%;
+    position: absolute;
+    display: inline-flex;
+}
+
+#txtSegundaSessãoDeInfo{ /* Texto da segunda sessão */
+   /* background-color: paleturquoise;*/
+    width: 80%;
+    padding-top: 7%;
+}
+
+.CaixaDeTitulo, #c2 { /* Div para quardar os títulos da primeira linha da segunda sessão*/
+     padding-left: 19.5%;
+     padding-right: 19.5%;
+ }
+
+ .CaixaDeTitulo, #c3 { /* Div para quardar os títulos da segunda linha da segunda sessão*/
+    padding-left: 29.5%;
+    padding-right: 29.5%;
+}
+
+#txtSegundaSessãoDeInfo p { /* Motivações da segunda sessão guardadas pela tag p */
+    margin-top: 2vw;
+    text-align: justify;
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: #1D1D29;
+}
+
+#listaDeItens {
+   /* background-color: chartreuse;*/
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+}
+
+.ItemCheck { /* Item da lista */
+     /*background-color: tomato;*/
+    display: inline-flex;
+    width: 100%;
+    text-align: left;
+    height: 4vw;
+}
+
+.IconCheck { /*ícone dentro do item da lista de itens*/
+     /*background-color: aqua;*/
+    width: 5%;
+    font-size: 3vw;
+    color: #8EDE65;
+    height: 4vw;
+    padding-top: 1.3vw;
+}
+
+.TextCheck { /*Texto dentro do ícone da lista de itens*/
+    /*background-color:darkgoldenrod;*/
+    font-size: 1.5vw;
+    font-weight: 700;
+    width: 95%;   
+    text-align: center; 
+}
+
+/*<--FimSegundaSessão*/
+
+/*<-- TerceiraSessão De Informações do HOME (Areas de atuação Home Care)*/
+
+#terceiraSessãoDeInfo {  /*Terceira sessão abaixo de news */
+    /*background-color: yellow;*/
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 88%; 
+    height: 14.5%;
+    position: absolute;
+    display: inline-flex;
+  }
+
+#txtTerceiraSessãoDeInfo{ /* Texto da terceira sessão */
+    /*background-color: paleturquoise;*/
+    width: 80%;
+    padding-top: 7%;
+}
+
+#c4 { /* Div para quardar os títulos da terceira linha da segunda sessão*/
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    width: 30%;
+    margin-bottom: 5vw;
+ }
+
+.LTitulos { /* Linha para guardar títulos das areas de atuação */
+    /*background-color: orange;*/
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    padding-left: 11% ;
+    padding-right: 11%;
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #1D1D29;
+}
+
+#lt1 { /*TAG espescifica para a segunda linha de títulos de áreas de atuação*/
+    margin-top: 2vw;
+}
+
+/*Tamanho de cada título individual / DEFININDO UMA CLASSE NÃO FUNCIONOU*/
+.LTitulos #st1{ /*background-color: #8EDE65;*/ width: 18%;}
+.LTitulos #st2{ /*background-color: green;*/  width: 18%; }
+.LTitulos #st3{ /*background-color: #8EDE65;*/ width: 18%;}
+.LTitulos #st4{ /*background-color: green;*/ width: 18%; }
+.LTitulos #st5{ /*background-color: #8EDE65;*/width: 18%;}
+.LTitulos #st6{ /*background-color: green;*/  width: 18%;}
+.LTitulos #st7{ /*background-color: #8EDE65;*/ width: 18%;}
+.LTitulos #st8{ /*background-color: green;*/  width: 18%; }
+
+/*Ações ao passar o mouse em cada título individual*/
+.LTitulos #st1:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st2:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st3:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st4:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st5:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st6:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st7:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st8:hover{ color:#8EDE65; cursor: pointer;}
+
+.LAtuacao { /*Linha de espaço para cada foto de área de atuação*/
+    /*background-color: grey;*/
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 10vw;;
+    padding-left: 11% ;
+    padding-right: 11%;
+}
+
+.ImgFormat { /*Formatação para a imagem que fica na linha, feita com clip-path*/
+    clip-path: circle(40% at 50% 50%);
+    background-size: cover;
+    background-position: 50%;
+    width: 18%;
+    height: 100%; 
+}
+
+.ImgFormat:hover { 
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+/*Imagens de fundo para círculo de área de atuação*/
+#imgA1 {background-image: url(img/s1.png);}
+#imgA2 {background-image: url(img/s2.png);}
+#imgA3 {background-image: url(img/s3.png);}
+#imgA4 {background-image: url(img/s4.png);}
+#imgA5 {background-image: url(img/s5.png);}
+#imgA6 {background-image: url(img/s6.png);}
+#imgA7 {background-image: url(img/s7.png);}
+#imgA8 {background-image: url(img/s8.png);}
+
+/*<--FimTerceiraSessão*/
+
+/*<-- QuartaSessão De Informações do HOME (Areas de Serviços Home Care)*/
+
+#quartaSessãoDeInfo { /*Box com imagem de formato para guardar as informações da quarta sessão de informações*/
+    background-image: url(img/serviços.png);
+    background-size:100%;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 32vw;
+    margin-top: 135vw;
+    position: absolute;   
+    padding-left: 0;
+    margin-left: 0; 
+    background-color: #8EDE65;
+}
+
+#c5 { /* Identificador especial para formatações em caixa de título da quarta sessão*/
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    width: 30%;
+    margin-bottom: 3vw;
+    margin-top: 4vw;
+    text-align: justify;
+    line-height: 2.3vw;
+    word-spacing: 0.5vw;
+    font-size: 1.3vw;
+    font-weight: 700;
+    margin-left: 10%;
+    background-color: #8EDE65;
+    width: 100%;
+    height: 4vw;
+    padding-top: 1.3vw;
+ }
+
+
+ .TBranco { /* Título da c5 definido como branco*/
+    color: #F7FDF3;
+ }
+
+ #listaDeServiços { /*Container para a lista de serviços*/
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+ }
+
+ #listaDeServiços p { /*lista de serviços*/
+    margin-top: 2vw;
+    text-align: center;
+    line-height: 1vw;
+    word-spacing: 0.8vw;
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: #F7FDF3;
+ }
+
+/*<--FimQuartaSessão*/
+
+/*<-- QuintaSessão De Informações do HOME (Area de "+", contato e imagem ilustrativa Home Care)*/
+
+#quintaSessãoDeInfo { /* Caixa container para guardar informações da quinta sessão*/
+    /*background-color: yellow;*/
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 168%; 
+    height: 15%;
+    position: absolute;
+    display: inline-flex;
+}
+
+#quintaSessãoImg {  /*imagem ilutrativa da quinta sessão*/
+/* background-color: green;*/
+background-image: url(img/stand.png);
+background-size:100%;
+background-repeat: no-repeat;
+width: 40%;
+margin-top: 1%;
+}
+
+#c6 { /*identificador especial para o título 6 da quinta sessão*/
+    display: flex;
+     justify-content: space-around;
+     padding-left: 3%;
+     padding-right: 3%;
+     font-size: 1vw;
+     text-align: center;
+}
+
+#icones1 { /*Formatação gGERAL para ícones da quinta sessão*/
+    margin-top: 2vw;
+    text-align: center;
+    line-height: 2.3vw;
+    word-spacing: 0.5vw;
+    font-weight: 700;
+}
+
+.IconeQuintaS{ /*Formatação INDIVIDUAL para ícones da quinta sessão*/
+    color: #2c3e50;
+    font-size: 3vw;
+}
+
+.IconeQuintaS:hover{ /*Especificaçãoe ao passar o mouse em um ícone da quinta sessão*/
+color: #8EDE65;
+    font-weight:900;
+    z-index: 3.5;
+}
+
+#txtQuintaSessãoDeInfo{ /*definições do cointainer da quinta sessão*/
+    width: 40%;
+    padding-top: 10%;
+}
+
+/*<--FimQuintaSessão*/
+
+/*Footer para contatdo e copyright*/
+
+#footerInfo {
+    /*background-color: #8EDE65;*/
+    color: #2c3e50;
+    background-color: #F7FDF3;
+    font-weight: 500;
+}
+
+#linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
+    background-color: #1D1D29;
+    width: 50%;
+    margin-left: 25%;
+    height: 0.1vw;
+}
+
+.LFooter {
+    /*background-color: blueviolet;*/
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3vw; 
+}
+
+#footerLeft {
+    /*background-color: aqua;*/
+    width: 50%;
+    text-align: center;
+}
+
+#footerRight{
+    /*background-color: burlywood;*/
+    width: 50%;
+    text-align: center;
+}
+
+#copyright {
+    padding-bottom: 3vw;;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+/*<--*/
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*PÁGINA PROFISSIONAIS */
+
+
+#profissionais { /*Especificações para o corpo da página*/
+    /*background-color: #1D1D29;
+    background-image: url(img/fundo2.png);
+    background-size:10%;
+    background-repeat: no-repeat;*/
+}
+
+span, #textNews{
+    text-align: justify;
+    line-height: 2.3vw;
+    word-spacing: 0.5vw;
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: #F7FDF3;
+}
+
+#news2 { /*Área principal do site com informação e botão lateral*/
+    /*background-color: yellow;*/
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 3vw;
+    text-align: left;
+    padding-left: 3vw;
+    width: 45%;
+    z-index: 2;
+    text-align: justify;
+}
+
+#news2 .LinhaDeTitulo { /*Linha decorativa na área de news*/
+    background-color: #8EDE65;
+    z-index: 2;
+}
+
+#news2 p { /*Texto da área news*/
+    font-size: 3.5vw;
+    color: #F7FDF3;
+    font-weight:750;
+    z-index: 2;
+    margin-bottom: 3vw;
+}
+
+#pathCorpo2 {
+position: absolute;
+width: 100%;
+height: 50%;
+background-color: #F7FDF3;
+clip-path: polygon(75% 0, 100% 14%, 100% 100%, 0 100%, 0 14%, 25% 0, 50% 0);
+margin-top: 7vw;
+justify-content: center;
+
+}
+
+#primeiraSessãoDeInfoProf {
+    background-color: yellow;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 15%; 
+    height: 10%;
+    position: absolute;
+    display: inline-flex;
+}
+
+#txtPrimeiraSessãoDeInfoProf {
+    width: 100%;
+}
+
+.LProfissionais {
+    background-color: aqua;
+}
+
+
+
+
