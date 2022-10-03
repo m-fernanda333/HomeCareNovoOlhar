@@ -585,12 +585,12 @@ color: #8EDE65;
 /*PÁGINA PROFISSIONAIS */
 
 
-#profissionais { /*Especificações para o corpo da página*/
-    /*background-color: #1D1D29;
+/*#profissionais { Especificações para o corpo da página
+    background-color: #1D1D29;
     background-image: url(img/fundo2.png);
     background-size:10%;
-    background-repeat: no-repeat;*/
-}
+    background-repeat: no-repeat;
+*/
 
 span, #textNews{
     text-align: justify;
