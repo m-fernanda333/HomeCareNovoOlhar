@@ -539,7 +539,8 @@ color: #8EDE65;
     /*background-color: #8EDE65;*/
     color: #2c3e50;
     background-color: #F7FDF3;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.1vw;
 }
 
 #linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
