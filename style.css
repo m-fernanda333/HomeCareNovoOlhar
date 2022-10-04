@@ -19,6 +19,8 @@ Paleta de cores:
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
 
+/*colcoar overflow hidden*/
+
 /* FORMATAÇÃO GERAL / SEM CLASSE / SEM IDENTIFICADOR */
 
 * {
@@ -41,8 +43,7 @@ body { /*Especificações para o corpo da página*/
     /*background-color: #1D1D29;*/
     background-image: url(img/hd1.png);
     background-size: 100%;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
 }
 
 h1 { /*Especificações para títulos H1 */
@@ -62,7 +63,6 @@ h1 { /*Especificações para títulos H1 */
      font-weight: 500;
      margin-left: 8vw;
      margin-right: 8vw;
-     z-index: 2;
      margin-top: 3vw;
  }
  
@@ -72,40 +72,35 @@ h1 { /*Especificações para títulos H1 */
      text-align: left;
      display: flex;
      justify-content: space-around;
-     z-index: 2;
  }
  
 .OpcaoNavBar { /*Opçoes de navegação*/
     /* background-color: yellow; */
     color: #F7FDF3;
     font-size: 1.3vw;
-    z-index: 2;
 }
  
 .OpcaoNavBar:hover{ /*Ações ao passar o mouse em uma opção de navegação*/
     font-weight:bold;
     color: #8EDE65;
-    z-index: 2;
 }
  
 #iconesNavBar { /*Barra onde ficam os ícones sociais*/
      /* background-color: green; */
      width: 45%;
      text-align: right;
-     z-index: 2;
+    
  }
  
 .IconeNavBar { /* Icones de navegação */
     /* background-color: yellow; */
     color: #F7FDF3;
     font-size: 1.7vw;
-    z-index: 2;
 }
  
 .IconeNavBar:hover { /*Ações ao passar o mouse em um ícone da barra de navegação*/
     color: #8EDE65;
     font-weight:900;
-    z-index: 2;
 }
 
 #news { /*Área principal do site com informação e botão lateral*/
@@ -117,7 +112,6 @@ h1 { /*Especificações para títulos H1 */
     padding-left: 3vw;
     width: 35%;
     margin-bottom: 2vw;
-    z-index: 2;
 }
 
 .LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
@@ -125,19 +119,17 @@ h1 { /*Especificações para títulos H1 */
     height: 0.7vw;
     margin-top: 0;
     margin-bottom: 3vw;
-    z-index: 2;
 }
 
 #news .LinhaDeTitulo { /*Linha decorativa na área de news*/
     background-color: #8EDE65;
-    z-index: 2;
 }
 
 #news p { /*Texto da área news*/
     font-size: 3.5vw;
     color: #F7FDF3;
     font-weight:750;
-    z-index: 2;
+   
 }
 
 #btnPrincipal { /* Botão de solicitar um orçamento */
@@ -150,7 +142,6 @@ h1 { /*Especificações para títulos H1 */
     color: #F7FDF3;
     font-weight: 600;
     margin-top: 3vw;
-    z-index: 2;
    
 }
 
@@ -159,7 +150,6 @@ h1 { /*Especificações para títulos H1 */
     font-weight: 700;
     height: 4.1vw;
     width: 25.1vw;
-    z-index: 2;
     background-color: #F7FDF3;
     color: #8EDE65;
 }
@@ -256,8 +246,8 @@ h1 { /*Especificações para títulos H1 */
     max-width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 40%; 
-    height: 14.5%;
+    margin-top: 42%; 
+    height: 25%;
     position: absolute;
     display: inline-flex;
 }
@@ -327,8 +317,8 @@ h1 { /*Especificações para títulos H1 */
     max-width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 88%; 
-    height: 14.5%;
+    margin-top: 90%; 
+    height: 21%;
     position: absolute;
     display: inline-flex;
   }
@@ -417,6 +407,53 @@ h1 { /*Especificações para títulos H1 */
 #imgA7 {background-image: url(img/s7.png);}
 #imgA8 {background-image: url(img/s8.png);}
 
+/* :::::::::::::::::::: ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
+
+.CFlutuanteFundo { /*Div criada para ocupar todo o espaço do PathCorpo e darr opacidade a ele quando um menu popup abrir*/
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    display: none;
+}
+
+.CFlutuanteFundo:hover{
+    cursor: pointer;
+}
+
+.CtFlutuante { /*caixas de menu pop up para especificação das área de atuação*/
+    position: absolute;
+    background-color: #F7FDF3;
+    width: 35%;
+    height: 10%;
+    margin-top: 107%;
+    margin-left: 30%;
+    border-radius: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: 5px 5px 5px 1 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.TCtFlutuante, #tC1 { /*título de caixa pop-up áreas de atuação*/
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #1D1D29;
+}
+
+.PCtFlutuante, #pC1 { /*texto de caixa pop-up áreas de atuação*/
+    font-size: 1.2vw;
+    color: #1D1D29;
+    text-align: center;
+}
+
+
+
+/*:::::::::::::::::::: FIM ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
+
 /*<--FimTerceiraSessão*/
 
 /*<-- QuartaSessão De Informações do HOME (Areas de Serviços Home Care)*/
@@ -427,7 +464,7 @@ h1 { /*Especificações para títulos H1 */
     background-repeat: no-repeat; 
     width: 100%;
     height: 32vw;
-    margin-top: 135vw;
+    margin-top: 138.7%;
     position: absolute;   
     padding-left: 0;
     margin-left: 0; 
@@ -483,7 +520,7 @@ h1 { /*Especificações para títulos H1 */
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 168%; 
+    margin-top: 170.1%; 
     height: 15%;
     position: absolute;
     display: inline-flex;
@@ -523,7 +560,6 @@ margin-top: 1%;
 .IconeQuintaS:hover{ /*Especificaçãoe ao passar o mouse em um ícone da quinta sessão*/
 color: #8EDE65;
     font-weight:900;
-    z-index: 3.5;
 }
 
 #txtQuintaSessãoDeInfo{ /*definições do cointainer da quinta sessão*/
@@ -579,6 +615,19 @@ color: #8EDE65;
 
 /*<--*/
 
+#steto {
+   background-image: url(img/steto.png);
+   background-size: cover;
+    width: 37%;
+    height: 25%;
+    margin-left: 63%;
+    margin-top: 55%;
+    position: absolute;
+
+    z-index: 9;
+    
+}
+
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
@@ -609,20 +658,17 @@ span, #textNews{
     text-align: left;
     padding-left: 3vw;
     width: 45%;
-    z-index: 2;
     text-align: justify;
 }
 
 #news2 .LinhaDeTitulo { /*Linha decorativa na área de news*/
     background-color: #8EDE65;
-    z-index: 2;
 }
 
 #news2 p { /*Texto da área news*/
     font-size: 3.5vw;
     color: #F7FDF3;
     font-weight:750;
-    z-index: 2;
     margin-bottom: 3vw;
 }
 
