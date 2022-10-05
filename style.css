@@ -19,7 +19,9 @@ Paleta de cores:
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
 
-/*colcoar overflow hidden*/
+/* INDEX --- HOME ......................................................................................................*/
+
+/*colcoar overflow hidden ? */
 
 /* FORMATAÇÃO GERAL / SEM CLASSE / SEM IDENTIFICADOR */
 
@@ -30,20 +32,8 @@ Paleta de cores:
     font-family: 'Montserrat', sans-serif;
 }
 
-
 html, body { /*Desabilitando o scroll no eixo X na TAG HTML, para facilitar a compatibilidade com os navegadores*/
     overflow-x: hidden;
-}
-
-#header { /*Especificações para o cabeçalho da página*/
-    padding-top: 6vh;
-}
-
-body { /*Especificações para o corpo da página*/
-    /*background-color: #1D1D29;*/
-    background-image: url(img/hd1.png);
-    background-size: 100%;
-    background-repeat: no-repeat;    
 }
 
 h1 { /*Especificações para títulos H1 */
@@ -55,7 +45,20 @@ h1 { /*Especificações para títulos H1 */
 
 /* FORMATAÇÃO POR IDENTIFICADOR */
 
+/*--> Body*/
+body, #hd1 { /*Especificações para o corpo da página*/
+    /*background-color: #1D1D29;*/
+    background-image: url(img/hd1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;    
+}
+/*<--FimBody*/
+
  /*--> Header */
+
+ #header { /*Especificações para o cabeçalho da página*/
+    padding-top: 6vh;
+}
 
  #navBar{ /*Barra onde ficam icones sociais e opções de navegação*/
     /* background-color: black; */
@@ -613,9 +616,11 @@ color: #8EDE65;
     text-align: center;
 }
 
-/*<--*/
+/*<--FimFooter*/
 
-#steto {
+/* Imagem de estetoscópio fixa na lateral */
+
+#steto { /*box com imagem de steto*/
    background-image: url(img/steto.png);
    background-size: cover;
     width: 37%;
@@ -623,23 +628,22 @@ color: #8EDE65;
     margin-left: 63%;
     margin-top: 55%;
     position: absolute;
-
-    z-index: 9;
-    
+    z-index: 9;  
 }
+
+/*FimSteto*/
 
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*PÁGINA PROFISSIONAIS */
+/*PÁGINA PROFISSIONAIS ................................................................................................ */
 
-
-/*#profissionais { Especificações para o corpo da página
-    background-color: #1D1D29;
-    background-image: url(img/fundo2.png);
-    background-size:10%;
+body,  #hd2 { /*Especificações para o corpo da página profissionais */
+    /*background-color: #1D1D29;*/
+    background-image: url(img/hd2.png);
+    background-size:100%;
     background-repeat: no-repeat;
-*/
+}
 
 span, #textNews{
     text-align: justify;
@@ -657,7 +661,7 @@ span, #textNews{
     margin-top: 3vw;
     text-align: left;
     padding-left: 3vw;
-    width: 45%;
+    width: 43%;
     text-align: justify;
 }
 
@@ -672,35 +676,83 @@ span, #textNews{
     margin-bottom: 3vw;
 }
 
+#header2 {
+    height: 37vw;
+}
+
 #pathCorpo2 {
 position: absolute;
 width: 100%;
-height: 50%;
+height: 200vw;
 background-color: #F7FDF3;
-clip-path: polygon(75% 0, 100% 14%, 100% 100%, 0 100%, 0 14%, 25% 0, 50% 0);
-margin-top: 7vw;
+clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 55%, 0 55%, 0 0);
+margin-top: 0vw;
 justify-content: center;
 
 }
 
-#primeiraSessãoDeInfoProf {
+/*<-- Primeira sessão de informações 2 gestores */
+
+#primeiraSessãoDeInfo{ /* Primeira sessão abaixo de news */
     background-color: yellow;
-    width: 100%;
+    width: 80%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 15%; 
-    height: 10%;
+    margin-top: 6%; 
+    height: 20%;
     position: absolute;
     display: inline-flex;
 }
 
-#txtPrimeiraSessãoDeInfoProf {
-    width: 100%;
+.TituloDeProfissionais {
+    background-color: aqua;
+    width: 80%;
+    height: 3vw;
+    margin-top: 5vw;
+    font-size: 2vw;
+    font-weight: 700;
+    color: #1D1D29;
+    position: absolute;
 }
 
-.LProfissionais {
-    background-color: aqua;
+.LinhaDeProfissionais {
+    background-color: pink;
+    width: 80%;
+    height: 20vw;
+    margin-top: 8vw;
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
 }
+
+.ProfissionaisItem {
+    background-color: crimson;
+    height: 20vw;
+    width: 27%;
+    position: relative;
+}
+
+.LinhaDeInformaçõesP {
+    background-color: burlywood;
+    width: 80%;
+    height: 5vw;
+    margin-top: 27vw;
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.ProfissionaisItemP {
+    background-color: crimson;
+    height: 5vw;
+    width: 27%;
+    position: relative;
+}
+
+
+/*<--FimPrimeiraSessão2*/
+
+
 
 
 
