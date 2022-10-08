@@ -1,0 +1,288 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Sintaxe: 
+	Identificadores: sintaxeIdentificadores; 
+	Classes: SintaxeClasses; 
+	ícones: ICONES;
+Paleta de cores: 
+    Cinza Esverdeado: #F7FDF3
+    Verde: #8EDE65
+    Azul: #1D1D29
+    Azul escuro texto: #1D1D29
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* IMPORTAÇÕES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;750;800;900&display=swap');
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* INDEX --- HOME ......................................................................................................*/
+
+/*colcoar overflow hidden ? */
+
+/* FORMATAÇÃO GERAL / SEM CLASSE / SEM IDENTIFICADOR */
+
+* {
+	padding: 0;
+	margin: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body { /*Desabilitando o scroll no eixo X na TAG HTML, para facilitar a compatibilidade com os navegadores*/
+    overflow-x: hidden;
+}
+
+h1 { /*Especificações para títulos H1 */
+    font-size: 2.5vw;
+    font-weight:700;
+ }
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* FORMATAÇÃO POR IDENTIFICADOR */
+
+/*--> Body*/
+body { /*Especificações para o corpo da página*/
+    background-image: url(img/hd2.png);
+    background-size: cover;
+    background-repeat: no-repeat;       
+}
+/*<--FimBody*/
+
+ /*--> Header */
+
+ #header { /*Especificações para o cabeçalho da página*/
+    padding-top: 6vh;
+}
+
+ #navBar{ /*Barra onde ficam icones sociais e opções de navegação*/
+    /* background-color: black; */
+     display: flex;
+     font-weight: 500;
+     margin-left: 8vw;
+     margin-right: 8vw;
+     margin-top: 3vw;
+ }
+ 
+ #opcoesNavBar { /*Barra onde ficam as opções de navegação*/
+     /* background-color: grey; */
+     width: 55%;
+     text-align: left;
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+.OpcaoNavBar { /*Opçoes de navegação*/
+    /* background-color: yellow; */
+    color: #F7FDF3;
+    font-size: 1.3vw;
+}
+ 
+.OpcaoNavBar:hover{ /*Ações ao passar o mouse em uma opção de navegação*/
+    font-weight:bold;
+    color: #8EDE65;
+}
+ 
+#iconesNavBar { /*Barra onde ficam os ícones sociais*/
+     /* background-color: green; */
+     width: 45%;
+     text-align: right;
+    
+ }
+ 
+.IconeNavBar { /* Icones de navegação */
+    /* background-color: yellow; */
+    color: #F7FDF3;
+    font-size: 1.7vw;
+}
+ 
+.IconeNavBar:hover { /*Ações ao passar o mouse em um ícone da barra de navegação*/
+    color: #8EDE65;
+    font-weight:900;
+}
+
+#news { /*Área principal do site com informação e botão lateral*/
+    /*background-color: yellow;*/
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 3vw;
+    text-align: left;
+    padding-left: 3vw;
+    width: 50%;
+    margin-bottom: 2vw;
+}
+
+.LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
+    width: 9vw;
+    height: 0.7vw;
+    margin-top: 0;
+    margin-bottom: 3vw;
+}
+
+#news .LinhaDeTitulo { /*Linha decorativa na área de news*/
+    background-color: #8EDE65;
+}
+
+#news p { /*Titulo da área news*/
+    font-size: 3.5vw;
+    color: #F7FDF3;
+    font-weight:750;
+    margin-bottom: 2vw;  
+}
+
+span {
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: #F7FDF3;
+}
+
+#textNews {
+    /*background-color: green;*/
+    width: 85%;
+    margin-bottom: 3vw;
+    text-align: justify;
+    line-height: 2.4vw;
+    word-spacing: 0.5vw;
+}
+/*<-- FimHeader*/
+
+/*--> Hexágono construído com clip-path para gerar o shape divider do layout */
+
+#pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
+    position: absolute;
+    width: 100%;
+    height: 40vw;
+    background-color: #F7FDF3;
+	clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+/*<-- FimHexágono*/
+
+/*<-- Primeira sessão de informações 2 gestores */
+
+#primeiraSessãoDeInfo{ /* Primeira sessão abaixo de news */
+    /* background-color: yellow; */
+     width: 80%;
+     padding-left: 10%;
+     padding-right: 10%;
+     margin-top: 4%; 
+     height: 20%;
+     position: absolute;
+     display: inline-flex;
+ }
+ 
+ .TituloDeProfissionais {
+     /*background-color: aqua;*/
+     width: 80%;
+     height: 3vw;
+     margin-top: 5vw;
+     font-size: 2vw;
+     font-weight: 700;
+     color: #1D1D29;
+     position: absolute;
+ }
+ 
+ .LinhaDeProfissionais {
+    /* background-color: pink;*/
+     width: 80%;
+     height: 20vw;
+     margin-top: 8vw;
+     position: absolute;
+     display: inline-flex;
+     justify-content: space-between;
+ }
+ 
+ .ProfissionaisItem {
+     /*background-color: brown;*/
+     height: 23.5vw;
+     width: 30%;
+     position: relative;
+ }
+ 
+ #prof1 {
+     background-image: url(img/gestor1.png);
+     background-size: 100%;
+     background-position: 50%;
+     background-repeat: no-repeat;
+ }
+ 
+ #prof2 {
+     background-image: url(img/gestor2.png);
+     background-size: 100%;
+     background-position: 50%;
+     background-repeat: no-repeat;
+ }
+ 
+ .LinhaDeInformaçõesP {
+     /*background-color: burlywood;*/
+     width: 80%;
+     height: 5vw;
+     margin-top: 31vw;
+     position: absolute;
+     display: inline-flex;
+     justify-content: space-between;
+ }
+ 
+ .ProfissionaisItemP {
+    /* background-color: crimson;*/
+     height: 5vw;
+     width: 30%;
+     position: relative;
+     text-align: center;
+     font-weight:700;
+     font-size: 1vw;
+     
+ }
+ 
+ /*<--FimPrimeiraSessão2*/
+
+ /*Footer para contatdo e copyright*/
+
+#footerInfo {
+    /*background-color: #8EDE65;*/
+    color: #2c3e50;
+    background-color: #F7FDF3;
+    font-weight: 600;
+    font-size: 1.1vw;
+    margin-top: 0;
+}
+
+#linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
+    background-color: #1D1D29;
+    width: 50%;
+    margin-left: 25%;
+    height: 0.1vw;
+}
+
+.LFooter {
+    /*background-color: blueviolet;*/
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3vw; 
+}
+
+#footerLeft {
+    /*background-color: aqua;*/
+    width: 50%;
+    text-align: center;
+}
+
+#footerRight{
+    /*background-color: burlywood;*/
+    width: 50%;
+    text-align: center;
+}
+
+#copyright {
+    padding-bottom: 3vw;;
+    margin-top: 3vw;
+    text-align: center;
+}
+ 

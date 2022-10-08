@@ -643,15 +643,21 @@ body,  #hd2 { /*Especificações para o corpo da página profissionais */
     background-image: url(img/hd2.png);
     background-size:100%;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
-span, #textNews{
+span {
     text-align: justify;
     line-height: 2.3vw;
     word-spacing: 0.5vw;
     font-size: 1.3vw;
     font-weight: 700;
     color: #F7FDF3;
+}
+
+#textNews {
+    background-color: green;
+    width: 50%;
 }
 
 #news2 { /*Área principal do site com informação e botão lateral*/
@@ -661,7 +667,8 @@ span, #textNews{
     margin-top: 3vw;
     text-align: left;
     padding-left: 3vw;
-    width: 43%;
+    width: 45%;
+    max-width: 43%;
     text-align: justify;
 }
 
@@ -669,7 +676,7 @@ span, #textNews{
     background-color: #8EDE65;
 }
 
-#news2 p { /*Texto da área news*/
+#news2 p { /*Titulo da área news*/
     font-size: 3.5vw;
     color: #F7FDF3;
     font-weight:750;
@@ -677,24 +684,26 @@ span, #textNews{
 }
 
 #header2 {
-    height: 37vw;
+    height: 35vw;
+    max-height: 35vw;
+    overflow-x: hidden;
 }
 
 #pathCorpo2 {
-position: absolute;
-width: 100%;
-height: 200vw;
-background-color: #F7FDF3;
-clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 55%, 0 55%, 0 0);
-margin-top: 0vw;
-justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100vw;
+    background-color: #F7FDF3;
+    clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 55%, 0 55%, 0 0);
+    margin-top: 0vw;
+    justify-content: center;
 
 }
 
 /*<-- Primeira sessão de informações 2 gestores */
 
-#primeiraSessãoDeInfo{ /* Primeira sessão abaixo de news */
-    background-color: yellow;
+#primeiraSessãoDeInfo2{ /* Primeira sessão abaixo de news */
+   /* background-color: yellow; */
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
@@ -705,7 +714,7 @@ justify-content: center;
 }
 
 .TituloDeProfissionais {
-    background-color: aqua;
+    /*background-color: aqua;*/
     width: 80%;
     height: 3vw;
     margin-top: 5vw;
@@ -716,7 +725,7 @@ justify-content: center;
 }
 
 .LinhaDeProfissionais {
-    background-color: pink;
+   /* background-color: pink;*/
     width: 80%;
     height: 20vw;
     margin-top: 8vw;
@@ -726,29 +735,46 @@ justify-content: center;
 }
 
 .ProfissionaisItem {
-    background-color: crimson;
-    height: 20vw;
-    width: 27%;
+    /*background-color: brown;*/
+    height: 23.5vw;
+    width: 30%;
     position: relative;
 }
 
+#prof1 {
+    background-image: url(img/gestor1.png);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+#prof2 {
+    background-image: url(img/gestor2.png);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
 .LinhaDeInformaçõesP {
-    background-color: burlywood;
+    /*background-color: burlywood;*/
     width: 80%;
     height: 5vw;
-    margin-top: 27vw;
+    margin-top: 31vw;
     position: absolute;
     display: inline-flex;
     justify-content: space-between;
 }
 
 .ProfissionaisItemP {
-    background-color: crimson;
+   /* background-color: crimson;*/
     height: 5vw;
-    width: 27%;
+    width: 30%;
     position: relative;
+    text-align: center;
+    font-weight:700;
+    font-size: 1vw;
+    
 }
-
 
 /*<--FimPrimeiraSessão2*/
 
