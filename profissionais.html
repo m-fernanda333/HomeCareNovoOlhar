@@ -9,106 +9,113 @@
     <script data-search-pseudo-elements src="https://kit.fontawesome.com/f737751420.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="hd1">
 
-    <header>
-        <div id = "navBar"> 
+    <div class="wrap"> 
+        <header>
+            <div id = "navBar"> 
+                    
+                <nav id="opcoesNavBar">  
+                    <a class="OpcaoNavBar" href="index.html">  HOME  </a>
+                    <a class="OpcaoNavBar" href="profissionais.html">  PROFISSIONAIS  </a>
+                    <a class="OpcaoNavBar" href="index.html">  SOBRE NÓS  </a>
+                    <a class="OpcaoNavBar" href="index.html">  CONTATO  </a>
+                </nav> <!--opcoesNavBar-->
+
+                <div id="iconesNavBar"> 
+                    <a class="IconeNavBar" href="https://www.instagram.com/homecare.novoolhar/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+                    <a class="IconeNavBar" href="https://api.whatsapp.com/message/JHSKLU56IB3GD1?autoload=1&app_absent=0" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a class="IconeNavBar" href="https://www.google.com/maps/place/Av.+Pereira+Teixeira,+405+-+Centro,+Barbacena+-+MG,+36200-034/@-21.2212934,-43.7785975,17z/data=!3m1!4b1!4m5!3m4!1s0xa2206c0270ea2d:0x539918e52a6d757a!8m2!3d-21.2212984!4d-43.7764088?hl=en" target="_blank"> <i class="fa-solid fa-location-dot"></i> </a>
+                </div> <!--iconesNavBar-->
                 
-            <nav id="opcoesNavBar">  
-                <a class="OpcaoNavBar" href="index.html">  HOME  </a>
-                <a class="OpcaoNavBar" href="profissionais.html">  PROFISSIONAIS  </a>
-                <a class="OpcaoNavBar" href="index.html">  SOBRE NÓS  </a>
-                <a class="OpcaoNavBar" href="index.html">  CONTATO  </a>
-            </nav> <!--opcoesNavBar-->
+            </div> <!--navBar-->
 
-            <div id="iconesNavBar"> 
-                <a class="IconeNavBar" href="https://www.instagram.com/homecare.novoolhar/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
-                <a class="IconeNavBar" href="https://api.whatsapp.com/message/JHSKLU56IB3GD1?autoload=1&app_absent=0" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
-                <a class="IconeNavBar" href="https://www.google.com/maps/place/Av.+Pereira+Teixeira,+405+-+Centro,+Barbacena+-+MG,+36200-034/@-21.2212934,-43.7785975,17z/data=!3m1!4b1!4m5!3m4!1s0xa2206c0270ea2d:0x539918e52a6d757a!8m2!3d-21.2212984!4d-43.7764088?hl=en" target="_blank"> <i class="fa-solid fa-location-dot"></i> </a>
-            </div> <!--iconesNavBar-->
-            
-        </div> <!--navBar-->
+            <div id = "news">
 
-        <div id = "news">
+                <div class="LinhaDeTitulo"></div> <!--linhaNews-->
+                <p class="fadeIn1"> Conheça nossa equipe </p> 
+                <div id="textNews" class="fadeIn1"> <span> Nossos profissionais são capacitados e 
+                habilitados para atender as famílias que 
+                    precisam de auxílio para executar procedimentos residenciais ou hospitalares. Temos profissionais 
+                    disponíveis em todos os horários para atendimento, de acordo com a necessidade do assistido.
+                    <br> <br>  Nosso objetivo é cuidar de vidas! </span>
+                </div> 
 
-            <div class="LinhaDeTitulo"></div> <!--linhaNews-->
-            <p class="fadeIn"> Conheça nossa equipe </p> 
-            <div id="textNews" class="fadeIn"> <span> Nossos profissionais são capacitados e 
-             habilitados para atender as famílias que 
-                precisam de auxílio para executar procedimentos residenciais ou hospitalares. Temos profissionais 
-                disponíveis em todos os horários para atendimento, de acordo com a necessidade do assistido.
-                <br> <br>  Nosso objetivo é cuidar de vidas! </span>
-            </div> 
+            </div> <!--news-->
 
-        </div> <!--news-->
+            <a class="IconeRoll"  class="fadeIn1" href="#primeiraSessãoDeInfo"> <i class="fa fa-angle-double-down icone"></i> </a>
 
-        <a class="IconeRoll"  class="fadeIn" href="#primeiraSessãoDeInfo"> <i class="fa fa-angle-double-down icone"></i> </a>
+        </header>
 
-    </header>
+        <div id="pathCorpo">              
 
-    <div id="pathCorpo">
+            <div id="primeiraSessãoDeInfo" class="fadeIn2">
 
-        <div id="primeiraSessãoDeInfo" class="fadeIn">
+                <div class="TituloDeProfissionais"> * Gestores </div> <!--TituloDeProfissionais-->
 
-            <div class="TituloDeProfissionais"> * Gestores </div> <!--TituloDeProfissionais-->
+                <div class="LinhaDeProfissionais"> 
+                    <div class="ProfissionaisItem" id="prof1"> </div>
+                    <div class="ProfissionaisItem" id="prof2"> </div>
+                    <div class="ProfissionaisItem" id="prof3"> </div>
+                </div> <!--LinhaDeProfissionais-->
 
-            <div class="LinhaDeProfissionais"> 
-                <div class="ProfissionaisItem" id="prof1"> </div>
-                <div class="ProfissionaisItem" id="prof2"> </div>
-                <div class="ProfissionaisItem" id="prof3"> </div>
-            </div> <!--LinhaDeProfissionais-->
+                <div class="LinhaDeInformaçõesP"> 
 
-            <div class="LinhaDeInformaçõesP"> 
-
-                <div class="ProfissionaisItemP" id="prof1Text"> 
-                    Wanderley de Oliveira Nascimento Júnior <br> 
-                    <div class="LineEspecialidadeCdProf">
-                        <div onClick="openPopUp5()"class="ImgFormat" id="imgA5"> </div> <!--Enfermagemm-->
-                        <div onClick="openPopUp4()" class="ImgFormat" id="imgA4">  </div> <!--Psicologia-->
-                        <div onClick="openPopUp8()"class="ImgFormat" id="imgA8">  </div> <!--Des. Profissional-->
+                    <div class="ProfissionaisItemP" id="prof1Text"> 
+                        Wanderley de Oliveira Nascimento Júnior <br> 
+                        <div class="LineEspecialidadeCdProf">
+                            <div class="ImgFormat" id="imgA5" title="Enfermagem" > </div> <!--Enfermagemm-->
+                            <div class="ImgFormat" id="imgA4" title="Psicologia">  </div> <!--Psicologia-->
+                            <div class="ImgFormat" id="imgA8" title="Desenvolvimento Profissional">  </div> <!--Des. Profissional-->
+                        </div>
                     </div>
-                </div>
 
-                <div class="ProfissionaisItemP" id="prof2Text"> 
-                    Juan Fernandes de Oliveira Schultz <br>
-                    <div class="LineEspecialidadeCdProf">
-                        <div onClick="openPopUp5()"class="ImgFormat" id="imgA5"> </div> <!--Enfermagemm-->
+                    <div class="ProfissionaisItemP" id="prof2Text"> 
+                        Juan Fernandes de Oliveira Schultz <br>
+                        <div class="LineEspecialidadeCdProf">
+                            <div class="ImgFormat" id="imgA5" title="Enfermagem"> </div> <!--Enfermagemm-->
+                            <div class="ImgFormat" id="imgA8" title="Desenvolvimento Profissional">  </div> <!--Des. Profissional-->
+                        </div>
                     </div>
-                </div>
 
-                <div class="ProfissionaisItemP" id="prof3Text"> </div>
-            </div> <!--LinhaDeInformaçõesP-->
+                    <div class="ProfissionaisItemP" id="prof3Text"> </div>
+                </div> <!--LinhaDeInformaçõesP-->
 
-        </div> <!--primeiraSessãoDeInfo-->
+            </div> <!--primeiraSessãoDeInfo-->
 
-        <div id="segundaSessãoDeInfo" class="fadeIn">
+            <div id="segundaSessãoDeInfo" class="fadeIn3">
 
-            <div id="linhaFinalPag"> </div>
-            <p id="controleDePag"> Página 1 de 1 </p>
+                <div id="linhaFinalPag"> </div>
+                <p id="controleDePag"> Página 1 de 1 </p>
 
-        </div> <!--primeiraSessãoDeInfo-->
-       
-        <footer id="footerInfo">
-    
-            <div id="linhaFooter"></div> <!--linhaFooter-->
+            </div> <!--primeiraSessãoDeInfo-->
         
-            <div class="LFooter">
+            <footer id="footerInfo" class="fadeIn4">
         
-                <div id="footerLeft">
-                    <p> (32) 9 9140-7408  <br> homecarenovoolhar@gmail.com</p>
-                </div> <!--footerLeft-->
-        
-                <div id="footerRight">
-                    <p> Av. Pereira Teixeira, 375, <br> Sala nº405 - Centro | Barbacena - MG</p>
-                </div> <!--footerRight-->
-        
-            </div> <!--LFooter-->
-        
-            <p id="copyright"> © Copyright Home Care Novo Olhar 2022</p>
+                <div id="linhaFooter"></div> <!--linhaFooter-->
             
-        </footer>
+                <div class="LFooter">
+            
+                    <div id="footerLeft">
+                        <p> (32) 9 9140-7408  <br> homecarenovoolhar@gmail.com</p>
+                    </div> <!--footerLeft-->
+            
+                    <div id="footerRight">
+                        <p> Av. Pereira Teixeira, 375, <br> Sala nº405 - Centro | Barbacena - MG</p>
+                    </div> <!--footerRight-->
+            
+                </div> <!--LFooter-->
+            
+                <p id="copyright"> © Copyright Home Care Novo Olhar 2022</p>
+                
+            </footer>
 
-    </div> <!--pathCorpo-->
+
+
+        </div> <!--pathCorpo-->
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
     
 </body>
 
