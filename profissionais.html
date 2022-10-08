@@ -32,8 +32,8 @@
         <div id = "news">
 
             <div class="LinhaDeTitulo"></div> <!--linhaNews-->
-            <p> Conheça nossa equipe </p> 
-            <div id="textNews"> <span> Nossos profissionais são capacitados e 
+            <p class="fadeIn"> Conheça nossa equipe </p> 
+            <div id="textNews" class="fadeIn"> <span> Nossos profissionais são capacitados e 
              habilitados para atender as famílias que 
                 precisam de auxílio para executar procedimentos residenciais ou hospitalares. Temos profissionais 
                 disponíveis em todos os horários para atendimento, de acordo com a necessidade do assistido.
@@ -42,13 +42,13 @@
 
         </div> <!--news-->
 
-        <a class="IconeRoll"> <i class="fa fa-angle-double-down icone"></i> </a>
+        <a class="IconeRoll"  class="fadeIn" href="#primeiraSessãoDeInfo"> <i class="fa fa-angle-double-down icone"></i> </a>
 
     </header>
 
     <div id="pathCorpo">
 
-        <div id="primeiraSessãoDeInfo">
+        <div id="primeiraSessãoDeInfo" class="fadeIn">
 
             <div class="TituloDeProfissionais"> * Gestores </div> <!--TituloDeProfissionais-->
 
@@ -59,15 +59,56 @@
             </div> <!--LinhaDeProfissionais-->
 
             <div class="LinhaDeInformaçõesP"> 
-                <div class="ProfissionaisItemP" id="prof1Text"> Wanderley de Oliveira Nascimento Júnior </div>
-                <div class="ProfissionaisItemP" id="prof2Text"> Juan Fernandes de Oliveira Schultz</div>
+
+                <div class="ProfissionaisItemP" id="prof1Text"> 
+                    Wanderley de Oliveira Nascimento Júnior <br> 
+                    <div class="LineEspecialidadeCdProf">
+                        <div onClick="openPopUp5()"class="ImgFormat" id="imgA5"> </div> <!--Enfermagemm-->
+                        <div onClick="openPopUp4()" class="ImgFormat" id="imgA4">  </div> <!--Psicologia-->
+                        <div onClick="openPopUp8()"class="ImgFormat" id="imgA8">  </div> <!--Des. Profissional-->
+                    </div>
+                </div>
+
+                <div class="ProfissionaisItemP" id="prof2Text"> 
+                    Juan Fernandes de Oliveira Schultz <br>
+                    <div class="LineEspecialidadeCdProf">
+                        <div onClick="openPopUp5()"class="ImgFormat" id="imgA5"> </div> <!--Enfermagemm-->
+                    </div>
+                </div>
+
                 <div class="ProfissionaisItemP" id="prof3Text"> </div>
             </div> <!--LinhaDeInformaçõesP-->
 
-        </div> <!--primeiraSessãoDeInfo2-->
-       
-    </div> <!--pathCorpo-->
+        </div> <!--primeiraSessãoDeInfo-->
 
+        <div id="segundaSessãoDeInfo" class="fadeIn">
+
+            <div id="linhaFinalPag"> </div>
+            <p id="controleDePag"> Página 1 de 1 </p>
+
+        </div> <!--primeiraSessãoDeInfo-->
+       
+        <footer id="footerInfo">
+    
+            <div id="linhaFooter"></div> <!--linhaFooter-->
+        
+            <div class="LFooter">
+        
+                <div id="footerLeft">
+                    <p> (32) 9 9140-7408  <br> homecarenovoolhar@gmail.com</p>
+                </div> <!--footerLeft-->
+        
+                <div id="footerRight">
+                    <p> Av. Pereira Teixeira, 375, <br> Sala nº405 - Centro | Barbacena - MG</p>
+                </div> <!--footerRight-->
+        
+            </div> <!--LFooter-->
+        
+            <p id="copyright"> © Copyright Home Care Novo Olhar 2022</p>
+            
+        </footer>
+
+    </div> <!--pathCorpo-->
     
 </body>
 

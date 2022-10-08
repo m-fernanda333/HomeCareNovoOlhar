@@ -156,7 +156,7 @@ span {
 #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
     position: absolute;
     width: 100%;
-    height: 40vw;
+    height: 62vw;
     background-color: #F7FDF3;
 	clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -170,7 +170,7 @@ span {
      width: 80%;
      padding-left: 10%;
      padding-right: 10%;
-     margin-top: 4%; 
+     margin-top: 3%; 
      height: 20%;
      position: absolute;
      display: inline-flex;
@@ -229,7 +229,7 @@ span {
  }
  
  .ProfissionaisItemP {
-    /* background-color: crimson;*/
+     /*background-color: crimson;*/
      height: 5vw;
      width: 30%;
      position: relative;
@@ -238,6 +238,39 @@ span {
      font-size: 1vw;
      
  }
+
+ .ImgFormat { /*Formatação para a imagem que fica na linha, feita com clip-path*/
+    clip-path: circle(40% at 50% 50%);
+    background-size: 100%;
+    background-position: 50%;
+    width: 10%;
+    height: 100%; 
+    background-repeat: no-repeat;
+}
+
+.LineEspecialidadeCdProf {
+    /*background-color: aqua;*/
+    display: inline-flex;
+    justify-content: center;
+    height: 3vw;
+    width: 100%;
+}
+
+.ImgFormat:hover { 
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+/*Imagens de fundo para círculo de área de atuação*/
+#imgA1 {background-image: url(img/s1.png);}
+#imgA2 {background-image: url(img/s2.png);}
+#imgA3 {background-image: url(img/s3.png);}
+#imgA4 {background-image: url(img/s4.png);}
+#imgA5 {background-image: url(img/s5.png);}
+#imgA6 {background-image: url(img/s6.png);}
+#imgA7 {background-image: url(img/s7.png);}
+#imgA8 {background-image: url(img/s8.png);}
+
  
  /*<--FimPrimeiraSessão2*/
 
@@ -249,14 +282,14 @@ span {
     background-color: #F7FDF3;
     font-weight: 600;
     font-size: 1.1vw;
-    margin-top: 0;
+    margin-top: 49vw;
 }
 
 #linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
-    background-color: #1D1D29;
+    background-color: grey;
     width: 50%;
     margin-left: 25%;
-    height: 0.1vw;
+    height: 0.06vw;
 }
 
 .LFooter {
@@ -281,7 +314,7 @@ span {
 }
 
 #copyright {
-    padding-bottom: 3vw;;
+    padding-bottom: 3vw;
     margin-top: 3vw;
     text-align: center;
 }
@@ -294,9 +327,71 @@ span {
     animation: anima 1500ms ease infinite;
 }
 
+.IconeRoll:hover{
+    cursor: pointer;
+}
+
 @keyframes anima {
     to {
         opacity: 0.1;
         transform: scale(0.85) translateY(20px);
     }
 }
+
+/*<<Fim sessão 1*/
+
+/** <-- Segunda Sessão */
+
+#segundaSessãoDeInfo{ /* Primeira sessão abaixo de news */
+    /*background-color: yellow; */
+     width: 80%;
+     padding-left: 10%;
+     padding-right: 10%;
+     margin-top: 45%; 
+     height: 5%;
+     position: absolute;
+ }
+
+#linhaFinalPag {
+    background-color: grey;
+    width: 50%;
+    margin-left: 25%;
+    height: 0.1vw;
+    margin-bottom: 2vw;
+}
+
+ #controleDePag{
+    /*background-color: aqua;*/
+    width: 100%;
+    text-align: center;
+    font-size: 0.9vw;
+    font-weight: 700;
+ }
+
+/*Sessão de definição de Fade In (Animação para surgir os textos da página)*/
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    .fadeIn {
+        -webkit-animation: fadeIn 3s ease-in-out;
+        -moz-animation: fadeIn 3s ease-in-out;
+        -o-animation: fadeIn 3s ease-in-out;
+        animation: fadeIn 3s ease-in-out;
+        }
+
+/* <-- Fim FadeIn*/

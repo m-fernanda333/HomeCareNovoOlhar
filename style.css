@@ -1,4 +1,5 @@
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 Sintaxe: 
 	Identificadores: sintaxeIdentificadores; 
 	Classes: SintaxeClasses; 
@@ -19,9 +20,59 @@ Paleta de cores:
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
 
-/* INDEX --- HOME ......................................................................................................*/
+/* ANIMAÇÕES */
 
-/*colcoar overflow hidden ? */
+/*Sessão de definição de Fade In (Animação para surgir os textos da página)*/
+
+@-webkit-keyframes fadeIn { /*Função de animação fade In*/
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    .fadeIn1 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 3s ease-in-out;
+        -moz-animation: fadeIn 3s ease-in-out;
+        -o-animation: fadeIn 3s ease-in-out;
+        animation: fadeIn 3s ease-in-out;
+    }
+
+    .fadeIn2 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+            -webkit-animation: fadeIn 5s ease-in-out;
+            -moz-animation: fadeIn 5s ease-in-out;
+            -o-animation: fadeIn 5s ease-in-out;
+            animation: fadeIn 5s ease-in-out;
+    }
+
+    .fadeIn3 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 6s ease-in-out;
+        -moz-animation: fadeIn 6s ease-in-out;
+        -o-animation: fadeIn 6s ease-in-out;
+        animation: fadeIn 6s ease-in-out;
+    }
+
+    .fadeIn4 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 7s ease-in-out;
+        -moz-animation: fadeIn 7s ease-in-out;
+        -o-animation: fadeIn 7s ease-in-out;
+        animation: fadeIn 7s ease-in-out;
+    }
+
+/* <-- Fim FadeIn*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
 
 /* FORMATAÇÃO GERAL / SEM CLASSE / SEM IDENTIFICADOR */
 
@@ -41,16 +92,35 @@ h1 { /*Especificações para títulos H1 */
     font-weight:700;
  }
 
+ /*NOVA DEFINIÇÃO NECESSÁRIA PARA ABERTURA DE MENUS POP-UP / TRAVAMENTO DO OVERFLOW */
+
+body, html {
+    height: 100%;
+}
+#wrap {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#hd1 {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*FIM TRAVAMENTO DO OVERFLOW*/
+
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
 
 /* FORMATAÇÃO POR IDENTIFICADOR */
 
 /*--> Body*/
+
 body, #hd1 { /*Especificações para o corpo da página*/
     /*background-color: #1D1D29;*/
     background-image: url(img/hd1.png);
     background-size: 100%;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat; 
+    background-position: fixed;
 }
 /*<--FimBody*/
 
@@ -230,7 +300,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     color: #2c3e50;
 }
 
-#texto1 {
+#texto1 { /*Texto 1 desta sessão (O que é home care...)*/
     margin-top: 2vw;
     text-align: justify;
     line-height: 2.3vw;
@@ -395,7 +465,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     height: 100%; 
 }
 
-.ImgFormat:hover { 
+.ImgFormat:hover {  /*Ações ao passar o mouse na imagem que fica na linha de atuação*/
     border: 5px solid transparent;
     cursor: pointer;
 }
@@ -410,52 +480,6 @@ body, #hd1 { /*Especificações para o corpo da página*/
 #imgA7 {background-image: url(img/s7.png);}
 #imgA8 {background-image: url(img/s8.png);}
 
-/* :::::::::::::::::::: ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
-
-.CFlutuanteFundo { /*Div criada para ocupar todo o espaço do PathCorpo e darr opacidade a ele quando um menu popup abrir*/
-    background-color: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 9;
-    display: none;
-}
-
-.CFlutuanteFundo:hover{
-    cursor: pointer;
-}
-
-.CtFlutuante { /*caixas de menu pop up para especificação das área de atuação*/
-    position: absolute;
-    background-color: #F7FDF3;
-    width: 35%;
-    height: 10%;
-    margin-top: 107%;
-    margin-left: 30%;
-    border-radius: 10%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    box-shadow: 5px 5px 5px 1 rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.TCtFlutuante, #tC1 { /*título de caixa pop-up áreas de atuação*/
-    font-size: 1.5vw;
-    font-weight: 700;
-    color: #1D1D29;
-}
-
-.PCtFlutuante, #pC1 { /*texto de caixa pop-up áreas de atuação*/
-    font-size: 1.2vw;
-    color: #1D1D29;
-    text-align: center;
-}
-
-
-
-/*:::::::::::::::::::: FIM ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
 
 /*<--FimTerceiraSessão*/
 
@@ -583,13 +607,13 @@ color: #8EDE65;
 }
 
 #linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
-    background-color: #1D1D29;
+    background-color: grey;
     width: 50%;
     margin-left: 25%;
-    height: 0.1vw;
+    height: 0.06vw;
 }
 
-.LFooter {
+.LFooter { /*Linha principal do footer*/
     /*background-color: blueviolet;*/
     justify-content: space-between;
     display: flex;
@@ -598,19 +622,19 @@ color: #8EDE65;
     margin-top: 3vw; 
 }
 
-#footerLeft {
+#footerLeft { /*Div de informações alinhada a esquerda no footer*/
     /*background-color: aqua;*/
     width: 50%;
     text-align: center;
 }
 
-#footerRight{
+#footerRight{ /*Div de informações alinhada a direita no footer*/
     /*background-color: burlywood;*/
     width: 50%;
     text-align: center;
 }
 
-#copyright {
+#copyright { /*Linha final do footer (informações do copyright)*/
     padding-bottom: 3vw;;
     margin-top: 3vw;
     text-align: center;
@@ -620,7 +644,7 @@ color: #8EDE65;
 
 /* Imagem de estetoscópio fixa na lateral */
 
-#steto { /*box com imagem de steto*/
+#steto { /*box com imagem de steto que fica fixa na página*/
    background-image: url(img/steto.png);
    background-size: cover;
     width: 37%;
@@ -633,153 +657,52 @@ color: #8EDE65;
 
 /*FimSteto*/
 
+/* :::::::::::::::::::: ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
 
-/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-/*PÁGINA PROFISSIONAIS ................................................................................................ */
-
-body,  #hd2 { /*Especificações para o corpo da página profissionais */
-    /*background-color: #1D1D29;*/
-    background-image: url(img/hd2.png);
-    background-size:100%;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-}
-
-span {
-    text-align: justify;
-    line-height: 2.3vw;
-    word-spacing: 0.5vw;
-    font-size: 1.3vw;
-    font-weight: 700;
-    color: #F7FDF3;
-}
-
-#textNews {
-    background-color: green;
-    width: 50%;
-}
-
-#news2 { /*Área principal do site com informação e botão lateral*/
-    /*background-color: yellow;*/
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-top: 3vw;
-    text-align: left;
-    padding-left: 3vw;
-    width: 45%;
-    max-width: 43%;
-    text-align: justify;
-}
-
-#news2 .LinhaDeTitulo { /*Linha decorativa na área de news*/
-    background-color: #8EDE65;
-}
-
-#news2 p { /*Titulo da área news*/
-    font-size: 3.5vw;
-    color: #F7FDF3;
-    font-weight:750;
-    margin-bottom: 3vw;
-}
-
-#header2 {
-    height: 35vw;
-    max-height: 35vw;
-    overflow-x: hidden;
-}
-
-#pathCorpo2 {
-    position: absolute;
+.CFlutuanteFundo { /*Div criada para ocupar todo o espaço do PathCorpo e darr opacidade a ele quando um menu popup abrir*/
+    background-color: rgba(0,0,0,0.5);
     width: 100%;
-    height: 100vw;
-    background-color: #F7FDF3;
-    clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 55%, 0 55%, 0 0);
-    margin-top: 0vw;
-    justify-content: center;
-
-}
-
-/*<-- Primeira sessão de informações 2 gestores */
-
-#primeiraSessãoDeInfo2{ /* Primeira sessão abaixo de news */
-   /* background-color: yellow; */
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 6%; 
-    height: 20%;
+    height: 100%;
     position: absolute;
-    display: inline-flex;
+    z-index: 9;
+    display: none;
 }
 
-.TituloDeProfissionais {
-    /*background-color: aqua;*/
-    width: 80%;
-    height: 3vw;
-    margin-top: 5vw;
-    font-size: 2vw;
+.CFlutuanteFundo:hover{
+    cursor: pointer;
+}
+
+.CtFlutuante { /*caixas de menu pop up para especificação das área de atuação*/
+    position: absolute;
+    background-color: #F7FDF3;
+    width: 35%;
+    height: 10%;
+    margin-top: 107%;
+    margin-left: 30%;
+    border-radius: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: 5px 5px 5px 1 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.TCtFlutuante, #tC1 { /*título de caixa pop-up áreas de atuação*/
+    font-size: 1.5vw;
     font-weight: 700;
     color: #1D1D29;
-    position: absolute;
 }
 
-.LinhaDeProfissionais {
-   /* background-color: pink;*/
-    width: 80%;
-    height: 20vw;
-    margin-top: 8vw;
-    position: absolute;
-    display: inline-flex;
-    justify-content: space-between;
-}
-
-.ProfissionaisItem {
-    /*background-color: brown;*/
-    height: 23.5vw;
-    width: 30%;
-    position: relative;
-}
-
-#prof1 {
-    background-image: url(img/gestor1.png);
-    background-size: 100%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-#prof2 {
-    background-image: url(img/gestor2.png);
-    background-size: 100%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-.LinhaDeInformaçõesP {
-    /*background-color: burlywood;*/
-    width: 80%;
-    height: 5vw;
-    margin-top: 31vw;
-    position: absolute;
-    display: inline-flex;
-    justify-content: space-between;
-}
-
-.ProfissionaisItemP {
-   /* background-color: crimson;*/
-    height: 5vw;
-    width: 30%;
-    position: relative;
+.PCtFlutuante, #pC1 { /*texto de caixa pop-up áreas de atuação*/
+    font-size: 1.2vw;
+    color: #1D1D29;
     text-align: center;
-    font-weight:700;
-    font-size: 1vw;
-    
 }
 
-/*<--FimPrimeiraSessão2*/
+/*:::::::::::::::::::: FIM ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
 
 
 
-
-
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
