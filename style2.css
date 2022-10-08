@@ -285,4 +285,18 @@ span {
     margin-top: 3vw;
     text-align: center;
 }
- 
+
+.IconeRoll {
+    font-size: 3vw;
+    margin-left: calc(50% - 2vw);
+    color: #8EDE65;
+    opacity: 1;
+    animation: anima 1500ms ease infinite;
+}
+
+@keyframes anima {
+    to {
+        opacity: 0.1;
+        transform: scale(0.85) translateY(20px);
+    }
+}
