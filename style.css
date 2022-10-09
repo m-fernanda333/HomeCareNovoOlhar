@@ -152,6 +152,10 @@ body, #hd1 { /*Especificações para o corpo da página*/
     color: #F7FDF3;
     font-size: 1.3vw;
 }
+
+#corrente {
+    font-weight: 700;
+}
  
 .OpcaoNavBar:hover{ /*Ações ao passar o mouse em uma opção de navegação*/
     font-weight:bold;

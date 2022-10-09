@@ -116,7 +116,7 @@ body, html {
 /*--> Body*/
 
 body { /*Especificações para o corpo da página*/
-    background-image: url(img/hd2.png);
+    background-image: url(img/hd3.png);
     background-size: cover;
     background-repeat: no-repeat;       
 }
@@ -183,9 +183,9 @@ body { /*Especificações para o corpo da página*/
     margin-left: 8vw;
     margin-right: 8vw;
     margin-top: 3vw;
-    text-align: left;
+    text-align: center;
     padding-left: 3vw;
-    width: 50%;
+    width: 80%;
     margin-bottom: 2vw;
 }
 
@@ -194,6 +194,7 @@ body { /*Especificações para o corpo da página*/
     height: 0.7vw;
     margin-top: 0;
     margin-bottom: 3vw;
+    margin-left: 44%;
 }
 
 #news .LinhaDeTitulo { /*Linha decorativa na área de news*/
@@ -215,11 +216,12 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 
 #textNews { /*Linha do texto abaixo do t. news*/
     /*background-color: green;*/
-    width: 85%;
+    width: 77%;
+    margin-left: 9%;
     margin-bottom: 3vw;
-    text-align: justify;
     line-height: 2.4vw;
     word-spacing: 0.5vw;
+    text-align: center;
 }
 
 .IconeRoll { /*Setas para baixo "roll"*/
@@ -247,7 +249,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
     position: absolute;
     width: 100%;
-    height: 62vw;
+    height: 90vw;
     background-color: #F7FDF3;
 	clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -257,156 +259,120 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 /*<-- Primeira sessão de informações (gestores) */
 
 #primeiraSessãoDeInfo{ /* Primeira sessão abaixo de news */
-    /* background-color: yellow; */
+     background-image: url(img/cora.png);
+     background-size: 50%;
+     background-repeat: no-repeat;
+     background-position: 50%;
      width: 80%;
      padding-left: 10%;
      padding-right: 10%;
      margin-top: 3%; 
-     height: 20%;
-     position: absolute;
-     display: inline-flex;
+     height: 27vw;
  }
- 
- .TituloDeProfissionais { /*Títlo para categoria (Gestor, enfermeiro...)*/
-     /*background-color: aqua;*/
-     width: 80%;
-     height: 3vw;
-     margin-top: 5vw;
-     font-size: 2vw;
-     font-weight: 700;
-     color: #1D1D29;
-     position: absolute;
- }
- 
- .LinhaDeProfissionais { /*Linha para alocar e dividir as posições do profissionais*/
-    /* background-color: pink;*/
-     width: 80%;
-     height: 20vw;
-     margin-top: 8vw;
-     position: absolute;
-     display: inline-flex;
-     justify-content: space-between;
- }
- 
- .ProfissionaisItem { /*Conteiner para cada item (foto) de profsisonais*/
-     /*background-color: brown;*/
-     height: 23.5vw;
-     width: 30%;
-     position: relative;
- }
- 
- #prof1 {  /*Imagem para profissonal 1 */
-     background-image: url(img/gestor1.png);
-     background-size: 100%;
-     background-position: 50%;
-     background-repeat: no-repeat;
- }
- 
- #prof2 { /*Imagem para profissonal 2 */
-     background-image: url(img/gestor2.png);
-     background-size: 100%;
-     background-position: 50%;
-     background-repeat: no-repeat;
- }
- 
- .LinhaDeInformaçõesP { /*Linha de informações abaixo da foto*/
-     /*background-color: burlywood;*/
-     width: 80%;
-     height: 5vw;
-     margin-top: 31vw;
-     position: absolute;
-     display: inline-flex;
-     justify-content: space-between;
- }
- 
- .ProfissionaisItemP { /*Tetxo com informações abaixo da foto*/
-     /*background-color: crimson;*/
-     height: 5vw;
-     width: 30%;
-     position: relative;
-     text-align: center;
-     font-weight:700;
-     font-size: 1vw;
-     
- }
-
-.LineEspecialidadeCdProf { /*Foto com especialidade abaixo da foto principal e texto de info.*/
-    /*background-color: aqua;*/
-    display: inline-flex;
-    justify-content: center;
-    height: 3vw;
-    width: 100%;
-}
-
-.ImgFormat { /*Formatação para a imagem que fica na linha (especialidade), feita com clip-path*/
-    clip-path: circle(40% at 50% 50%);
-    background-size: 100%;
-    background-position: 50%;
-    width: 10%;
-    height: 100%; 
-    background-repeat: no-repeat;
-}
-
-.ImgFormat:hover { /*Acçoes ao passar o mouse na imagem de especialidade*/
-    border: 5px solid transparent;
-    cursor: pointer;
-}
-
-/*Imagens de fundo para círculo de área de atuação*/
-#imgA1 {background-image: url(img/s1.png);}
-#imgA2 {background-image: url(img/s2.png);}
-#imgA3 {background-image: url(img/s3.png);}
-#imgA4 {background-image: url(img/s4.png);}
-#imgA5 {background-image: url(img/s5.png);}
-#imgA6 {background-image: url(img/s6.png);}
-#imgA7 {background-image: url(img/s7.png);}
-#imgA8 {background-image: url(img/s8.png);}
-
  
  /*<--FimPrimeiraSessão*/
-
- 
-/*<<Fim sessão 1*/
 
 /** <-- Segunda Sessão (contador de página) */
 
 #segundaSessãoDeInfo{ /* Primeira sessão abaixo de news */
-    /*background-color: yellow; */
+    /* background-color: blue; */
      width: 80%;
      padding-left: 10%;
      padding-right: 10%;
-     margin-top: 45%; 
-     height: 5%;
-     position: absolute;
+     margin-top: 2vw; 
+     height: 34vw; 
  }
 
-#linhaFinalPag { /*Linha entre o corpo e a infirmação de numeração de página*/
-    background-color: grey;
-    width: 50%;
-    margin-left: 25%;
-    height: 0.06vw;
+ .TSobreNos { /*Título da sessão */
+    font-size: 2.7vw;
+    font-weight: 700;
+    color: #1D1D29;
+    text-align: center;
     margin-bottom: 2vw;
+ }
+
+ #colecaoDeContato { /*conteiner das informações e mapa*/
+    /*background-color: blueviolet;*/
+    display: inline-flex;
+     justify-content: space-between;
+     width: 100%;
+     height: 27.66vw;
+     margin-top: 1vw;
+     background-color: rgb(238, 238, 238);
+ }
+
+.ItemContato { /*Item individual para guardar um tipo de contato */
+    width: 50%;
+    /*background-color: darkgreen;*/
+    display:inline-table;
+    font-size: 1.2vw;   
 }
 
- #controleDePag{ /*Linha com informação de controle de página (pg 1 de 1)*/
-    /*background-color: aqua;*/
+.ListContatos { /*formatação para itens de contato individuais*/
+    display:inline-flex;
     width: 100%;
-    text-align: center;
-    font-size: 0.9vw;
-    font-weight: 700;
- }
+    height: 9vw;
+}
 
+#icon1 { /*ícone de contato (atendimento)*/
+    background-image: url(img/icon1.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+#icon2 { /*ícone de contato (whats)*/
+    background-image: url(img/icon2.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+#icon3 { /*ícone de contato (email)*/
+    background-image: url(img/icon3.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.TextoContato { /*texto com infromações de contato (numero / email...)*/
+    padding-top: 3vw;
+    color: #1D1D29;
+}
+
+.IconeContato { /*ícone de contato*/
+    /*background-color: black;*/
+    width: 20%;
+}
+
+#map { /*sessão com o mapa*/
+    width: 50%;
+}
+ 
  /*<--Fim segunda sessão*/
 
- /*Footer para contatdo e copyright*/
+ /* --> Terceira sessão */
 
+ #terceiraSessãoDeInfo{ /* terceira sessão abaixo de news */
+    /* background-color: blue; */
+     width: 80%;
+     padding-left: 10%;
+     padding-right: 10%;
+     margin-top: 2vw; 
+     height: 34vw; 
+ }
+
+ #infoFinal { /*diminuir a fonte de do tpitulo final que estava em outra classe*/
+    font-size: 2vw;
+ }
+  /*<--Fim terceira sessão*/
+
+
+ /*Footer para contatdo e copyright*/
 #footerInfo {
     /*background-color: #8EDE65;*/
     color: #2c3e50;
     background-color: #F7FDF3;
     font-weight: 600;
     font-size: 1.1vw;
-    margin-top: 49vw;
+    margin-top: 1vw;
 }
 
 #linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
@@ -414,27 +380,6 @@ span { /*texto abaixo do título news (apresetando equipe)*/
     width: 50%;
     margin-left: 25%;
     height: 0.06vw;
-}
-
-.LFooter { /*Linha principal do footer*/
-    /*background-color: blueviolet;*/
-    justify-content: space-between;
-    display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 3vw; 
-}
-
-#footerLeft { /*Div de informações alinhada a esquerda no footer*/
-    /*background-color: aqua;*/
-    width: 50%;
-    text-align: center;
-}
-
-#footerRight{ /*Div de informações alinhada a direita no footer*/
-    /*background-color: burlywood;*/
-    width: 50%;
-    text-align: center;
 }
 
 #copyright { /*Linha final do footer (informações do copyright)*/
