@@ -250,7 +250,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
     position: absolute;
     width: 100%;
     height: 90vw;
-    background-color: #F7FDF3;
+     background-color: #F7FDF3; 
 	clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
@@ -351,17 +351,28 @@ span { /*texto abaixo do título news (apresetando equipe)*/
  /* --> Terceira sessão */
 
  #terceiraSessãoDeInfo{ /* terceira sessão abaixo de news */
-    /* background-color: blue; */
+    /*background-color: blue; */
      width: 80%;
      padding-left: 10%;
      padding-right: 10%;
      margin-top: 2vw; 
-     height: 34vw; 
+     height: 15vw; 
  }
 
  #infoFinal { /*diminuir a fonte de do tpitulo final que estava em outra classe*/
     font-size: 2vw;
  }
+
+#bandeiras { /*div com bandeiras br e home care*/
+    width: 100%;
+    /*background-color: black;*/
+    background-image: url(img/bandeiras.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50%;
+    height: 10vw;
+}
+
   /*<--Fim terceira sessão*/
 
 
