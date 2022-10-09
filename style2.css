@@ -118,7 +118,8 @@ body, html {
 body { /*Especificações para o corpo da página*/
     background-image: url(img/hd2.png);
     background-size: 100%;
-    background-repeat: no-repeat;       
+    background-repeat: no-repeat; 
+    background-color: #F7FDF3;      
 }
 /*<--FimBody*/
 
