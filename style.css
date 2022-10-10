@@ -83,6 +83,10 @@ Paleta de cores:
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 html, body { /*Desabilitando o scroll no eixo X na TAG HTML, para facilitar a compatibilidade com os navegadores*/
     overflow-x: hidden;
 }
@@ -716,12 +720,57 @@ color: #8EDE65;
 
 @media (max-width: 640px) {
 
+    *{
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
     #navBar{  /*barra de navegação */
         /* background-color: black; */
          display: none;
      }
 
-    #menuHambMobile {
+     #navBarMobile {
+        width: 65%;
+        background-color: #F7FDF3;
+        height: 40vw;
+        position: absolute;
+        z-index: 9;
+        margin-left: 10%;
+        display: flex;
+        border-radius: 10%;
+        padding: 8%;
+        text-decoration: none;
+        text-decoration: none;
+        display: none;
+     }
+
+     #opcoesNavBarMobile {
+        background-color: coral;
+        width: 100%;
+        display:inline-table;
+        text-decoration: none;
+     }
+
+     .OpcaoNavBarMobile{
+        background-color: aqua;
+        height: max-content;
+        width: 100%;
+        margin-bottom: 3vw;
+        font-size: 3vw;
+        text-decoration: none;
+     }
+
+     .IconeNavBarMobile {
+        font-size: 4vw;
+        color: #1D1D29;
+        justify-content: center;
+     }
+
+    .MenuHambMobile {
         /*background-color: black;*/
         width: 92%;
         height: 5vw;
@@ -729,6 +778,14 @@ color: #8EDE65;
         text-align: right;
         color: #F7FDF3;
         font-size: 4.5vw;
+    }
+
+    #openHamb {
+        display: block;
+    }
+
+    #closeHamb {
+        display: none;
     }
 
     #menuHambMobile:hover {

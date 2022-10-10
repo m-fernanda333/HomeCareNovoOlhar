@@ -1,3 +1,21 @@
+/* FUNÇÕES PARA O MENU MOBILE NAVBAR */
+
+function openHamb() { //Abrir menu mobile
+    document.querySelector("#navBarMobile").style.display = "block"; 
+    document.querySelector("#openHamb").style.display = "none"; 
+    document.querySelector("#closeHamb").style.display = "block"; 
+    document.querySelector(".wrap").style.overflowY = "hidden";
+    document.querySelector("body").style.overflowY = "hidden";
+}
+
+function closeHamb() { //Fechar menu mobile
+    document.querySelector("#navBarMobile").style.display = "none"; 
+    document.querySelector("#openHamb").style.display = "block"; 
+    document.querySelector("#closeHamb").style.display = "none"; 
+    document.querySelector(".wrap").style.overflowY = "initial";
+    document.querySelector("body").style.overflowY = "initial";
+}
+
 /* FUNÇÕES PARA OS MENUS POP-UP */
 
 function openPopUp1() { //mostrar menu popup "HOME CARE" no display
