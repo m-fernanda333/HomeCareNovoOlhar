@@ -735,12 +735,17 @@ color: #8EDE65;
         cursor: pointer;
     }
 
+    .LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
+        margin-left: 43%;
+    }
+
     #news p { /*Texto da área news*/ 
         font-size: 8vw;       
     }
 
     #news { /*Área principal do site com informação e botão lateral*/
-        width: 65%;
+        width: 80%;
+        text-align: center;
     }
 
     #btnPrincipal { /****************************************** */
@@ -748,6 +753,11 @@ color: #8EDE65;
         width: 43vw;
         font-size: 2.5vw;
         margin-bottom: 5vw;
+    }
+
+    #btnPrincipal:hover { /* Ações ao passar o mouse em cima do botão principal */
+        height: 6.1vw;
+        width: 43.1vw;  
     }
 
     #pathCorpo { 
@@ -830,19 +840,63 @@ color: #8EDE65;
      }
 
      .LTitulos { /* Linha para guardar títulos das areas de atuação */
-        font-size: 1.3vw;
-        padding-left: 13% ;
-        padding-right: 13%;
-        font-size: 1.7vw;
-        margin-bottom: 1vw;
+        display: none;
     }
 
     .ImgFormat { /*Formatação para a imagem que fica na linha, feita com clip-path*/
-        width: 22%;
+        width: 35%;
+    }
+
+    .LAtuacao { /*Linha de espaço para cada foto de área de atuação*/
+        height: 20vw;;
+        padding-left: 10% ;
+        padding-right: 10%;
     }
 
     #quartaSessãoDeInfo { /*Box com imagem de formato para guardar as informações da quarta sessão de informações*/
        display: none;
     }
+
+    #quintaSessãoDeInfo { /* Caixa container para guardar informações da quinta sessão*/
+        /*background-color: yellow;*/
+        margin-top: 155%; 
+        height: 20%;
+        padding-left: 29%;
+    }
+
+    #quintaSessãoImg {  /*imagem ilutrativa da quinta sessão*/
+        display: none;
+    }
+
+    #footerInfo {
+        font-size: 1.8vw;
+    }
+
+    /* :::::::::::::::::::: ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS VERSÃO MOBILE :::::::::::::::::::: */
+
+
+.CtFlutuante { /*caixas de menu pop up para especificação das área de atuação*/
+    width: 70%;
+    height: 30%;
+    margin-top: 107%;
+    margin-left: 10%;
+}
+
+.TCtFlutuante, #tC1 { /*título de caixa pop-up áreas de atuação*/
+    font-size: 4vw;
+    font-weight: 700;
+    color: #1D1D29;
+}
+
+.PCtFlutuante, #pC1 { /*texto de caixa pop-up áreas de atuação*/
+    font-size: 2.7vw;
+    color: #1D1D29;
+    text-align: center;
+}
+
+/*:::::::::::::::::::: FIM ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
+
+
+
 
 } /* fim RESPONSIVIDADE HOME ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
