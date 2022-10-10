@@ -311,6 +311,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     word-spacing: 0.5vw;
     font-size: 1.3vw;
     font-weight: 700;
+    color: #1D1D29;
 }
 
 /*<--FimPrimeiraSessão*/
@@ -710,3 +711,138 @@ color: #8EDE65;
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+
+/* RESPONSIVIDADE HOME ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@media (max-width: 640px) {
+
+    #navBar{  /*barra de navegação */
+        /* background-color: black; */
+         display: none;
+     }
+
+    #menuHambMobile {
+        /*background-color: black;*/
+        width: 92%;
+        height: 5vw;
+        margin-top: 3vw;
+        text-align: right;
+        color: #F7FDF3;
+        font-size: 4.5vw;
+    }
+
+    #menuHambMobile:hover {
+        cursor: pointer;
+    }
+
+    #news p { /*Texto da área news*/ 
+        font-size: 8vw;       
+    }
+
+    #news { /*Área principal do site com informação e botão lateral*/
+        width: 65%;
+    }
+
+    #btnPrincipal { /****************************************** */
+        height: 6vw;
+        width: 43vw;
+        font-size: 2.5vw;
+        margin-bottom: 5vw;
+    }
+
+    #pathCorpo { 
+        position: relative;
+        width: 100%;
+        background-color: #F7FDF3;
+    }
+
+    body, #hd1 { /*Especificações para o corpo da página*/
+        /*background-color: #1D1D29;*/
+        background-image: url(img/fundomobile.png);
+    }
+
+    #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
+        position: relative;
+        width: 100%;
+        height: 197vw;
+        background-color: #F7FDF3;
+        clip-path: polygon(100% 0%, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 0);
+    }
+
+    #primeiraSessãoImg{ /* Imagem ilustrativa da primeira sessão */
+        display: none;
+     }
+
+     #txtPrimeiraSessãoDeInfo{ /* Texto da primeira sessão */
+        width: 80%;
+        padding-top: 4%;
+    }
+
+    .CaixaDeTitulo, #c1 { /* Div para quardar os títulos*/
+        padding-left: 22.5%;
+        padding-right: 22.5%;
+    }
+
+    h1 { /*Especificações para títulos H1 */
+        font-size: 4vw;
+    }
+
+    #texto1 { /*Texto 1 desta sessão (O que é home care...)*/
+        margin-top: 4vw;
+        line-height: 4vw;
+        word-spacing: 0.5vw;
+        font-size: 2.3vw;
+        color:#1D1D29;
+    }
+
+    .CaixaDeTitulo, #c2 { /* Div para quardar os títulos da primeira linha da segunda sessão*/
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .CaixaDeTitulo, #c3 { /* Div para quardar os títulos da primeira linha da terceira sessão*/
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+
+    #steto { /*box com imagem de steto que fica fixa na página*/
+      display: none;
+    }
+     
+    #txtSegundaSessãoDeInfo p { /* Motivações da segunda sessão guardadas pela tag p */
+        font-size: 2.3vw;
+    }
+
+    
+    #txtTerceiraSessãoDeInfo{ /* Texto da terceira sessão */
+        /*background-color: paleturquoise;*/
+        width: 80%;
+        padding-top: 12%;
+    }
+
+    #c4 { /* Div para quardar os títulos da terceira linha da segunda sessão*/
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+        width: 47%;
+        margin-bottom: 5vw;
+        /*background-color: aqua;*/
+     }
+
+     .LTitulos { /* Linha para guardar títulos das areas de atuação */
+        font-size: 1.3vw;
+        padding-left: 13% ;
+        padding-right: 13%;
+        font-size: 1.7vw;
+        margin-bottom: 1vw;
+    }
+
+    .ImgFormat { /*Formatação para a imagem que fica na linha, feita com clip-path*/
+        width: 22%;
+    }
+
+    #quartaSessãoDeInfo { /*Box com imagem de formato para guardar as informações da quarta sessão de informações*/
+       display: none;
+    }
+
+} /* fim RESPONSIVIDADE HOME ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
