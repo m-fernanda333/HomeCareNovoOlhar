@@ -749,14 +749,14 @@ color: #8EDE65;
      }
 
      #opcoesNavBarMobile {
-        background-color: coral;
+        /* background-color: coral; */
         width: 100%;
         display:inline-table;
         text-decoration: none;
      }
 
      .OpcaoNavBarMobile{
-        background-color: aqua;
+        /* background-color: aqua; */
         height: max-content;
         width: 100%;
         margin-bottom: 3vw;
