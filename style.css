@@ -134,6 +134,10 @@ body, #hd1 { /*Especificações para o corpo da página*/
     padding-top: 6vh;
 }
 
+#navBarMobile{ /*Ocultando a opção de menu navBar mobile na versão desktop*/
+    display: none;
+}
+
  #navBar{ /*Barra onde ficam icones sociais e opções de navegação*/
     /* background-color: black; */
      display: flex;
