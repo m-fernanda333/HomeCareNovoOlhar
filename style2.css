@@ -248,8 +248,8 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
     position: absolute;
     width: 100%;
-    height: 62vw;
-    max-height: 62vw;
+    height: 100vw;
+    max-height: 100vw;
     background-color: #F7FDF3;
 	clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -269,6 +269,17 @@ span { /*texto abaixo do título news (apresetando equipe)*/
      display: inline-flex;
  }
  
+ #primeiraSessãoDeInfo2{ /* Primeira sessão abaixo de news */
+    /* background-color: yellow; */
+     width: 80%;
+     padding-left: 10%;
+     padding-right: 10%;
+     margin-top: 40%; 
+     height: 20%;
+     position: absolute;
+     display: inline-flex;
+ }
+
  .TituloDeProfissionais { /*Títlo para categoria (Gestor, enfermeiro...)*/
      /*background-color: aqua;*/
      width: 80%;
@@ -310,6 +321,13 @@ span { /*texto abaixo do título news (apresetando equipe)*/
      background-position: 50%;
      background-repeat: no-repeat;
  }
+
+ #prof4 { /*Imagem para profissonal 2 */
+    background-image: url(img/equipe1.png);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
  
  .LinhaDeInformaçõesP { /*Linha de informações abaixo da foto*/
      /*background-color: burlywood;*/
@@ -377,7 +395,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
      width: 80%;
      padding-left: 10%;
      padding-right: 10%;
-     margin-top: 45%; 
+     margin-top: 82vw; 
      height: 5%;
      position: absolute;
  }
@@ -408,7 +426,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
     background-color: #F7FDF3;
     font-weight: 600;
     font-size: 1.1vw;
-    margin-top: 49vw;
+    margin-top: 87vw;
 }
 
 #linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
