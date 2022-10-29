@@ -249,7 +249,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
     position: absolute;
     width: 100%;
-    height: 90vw;
+    height: 150vw;
      background-color: #F7FDF3; 
 	clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -258,18 +258,91 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 
 /*<-- Primeira sessão de informações (gestores) */
 
-#primeiraSessãoDeInfo{ /* Primeira sessão abaixo de news */
-     background-image: url(img/cora.png);
+#primeiraSessãoDeInfo{ /* Primeira sessão de informaçãos dos gestores */
+    /* background-color: grey; */
      background-size: 50%;
      background-repeat: no-repeat;
      background-position: 50%;
      width: 80%;
      padding-left: 10%;
      padding-right: 10%;
-     margin-top: 3%; 
+     margin-top: 6vw; 
      height: 27vw;
+     padding-top: 4vw;
+ }
+
+ .TitulosPath { /* Linha de título da sessão*/
+    /* background-color: aqua;  */
+    width: 100%;
+    font-size: 2.5vw;
+    font-weight:700;
+    display: inline-flex;
+ }
+
+.TitulosPath p { /*texto do título*/
+    /* background-color: brown; */
+    width: 45%;
+}
+
+ .LinhaG{ /*linha delimitadora do titulo*/
+    background-color: rgb(189, 189, 189);
+    height: 0.1vw;
+    width: 55%;
+    margin-top: 1.5vw;
+ }
+
+ .LinhaG2{ /*linha final de encerramento da sessão*/
+    margin-top: 3vw;
+    width: 100%;
+    background-color:  rgb(189, 189, 189);
+    height: 0.1vw;
  }
  
+ .Gestores { /*DIV que contem todas as informações sobre um gestor*/
+    /*background-color: pink;*/
+    margin-top: 3vw;
+    display: inline-flex;
+    width: 100%;
+    height: 20vw;
+ }
+
+ .FotoGestor { /*formtação para a div que recebe a foto de um gestor*/
+    /* background-color: yellow; */
+    width: 30%;
+    background-size: 90%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+ }
+
+ .SobreGestor { /*div ao lado da foto que comtem as informações sobre o gestor*/
+    width: 70%;
+ }
+
+ .NomeGestor { /*contem o nome de um gestor*/
+     /* background-color: azure;  */
+    font-size: 1.4vw;
+    margin-left: 2vw;
+    width: 92%;
+    margin-left: 2vw;
+    margin-top: 5vw;
+    font-weight: 700;
+ }
+
+ .TextoSobreGestor{ /*texto abaixo do nome do gestor*/
+    margin-left: 2vw;
+    font-size: 1.1vw;
+    margin-right: 2vw;
+    margin-top: 1vw;
+ }
+
+ #gestorMeio { /*alinhando texto do gestor do meio a direita*/
+    text-align: right;
+ }
+
+ #g1 { background-image: url(img/gestor1.png);}
+ #g2 { background-image: url(img/gestor2.png);}
+ #g3 { background-image: url(img/gestor3.png);}
+
  /*<--FimPrimeiraSessão*/
 
 /** <-- Segunda Sessão (contador de página) */
@@ -279,72 +352,10 @@ span { /*texto abaixo do título news (apresetando equipe)*/
      width: 80%;
      padding-left: 10%;
      padding-right: 10%;
-     margin-top: 2vw; 
+     margin-top: 53vw; 
      height: 34vw; 
  }
 
- .TSobreNos { /*Título da sessão */
-    font-size: 2.7vw;
-    font-weight: 700;
-    color: #1D1D29;
-    text-align: center;
-    margin-bottom: 2vw;
- }
-
- #colecaoDeContato { /*conteiner das informações e mapa*/
-    /*background-color: blueviolet;*/
-    display: inline-flex;
-     justify-content: space-between;
-     width: 100%;
-     height: 27.66vw;
-     margin-top: 1vw;
-     background-color: rgb(238, 238, 238);
- }
-
-.ItemContato { /*Item individual para guardar um tipo de contato */
-    width: 50%;
-    /*background-color: darkgreen;*/
-    display:inline-table;
-    font-size: 1.2vw;   
-}
-
-.ListContatos { /*formatação para itens de contato individuais*/
-    display:inline-flex;
-    width: 100%;
-    height: 9vw;
-}
-
-#icon1 { /*ícone de contato (atendimento)*/
-    background-image: url(img/icon1.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-}
-
-#icon2 { /*ícone de contato (whats)*/
-    background-image: url(img/icon2.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-}
-
-#icon3 { /*ícone de contato (email)*/
-    background-image: url(img/icon3.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-}
-
-.TextoContato { /*texto com infromações de contato (numero / email...)*/
-    padding-top: 3vw;
-    color: #1D1D29;
-}
-
-.IconeContato { /*ícone de contato*/
-    /*background-color: black;*/
-    width: 20%;
-}
-
-#map { /*sessão com o mapa*/
-    width: 50%;
-}
  
  /*<--Fim segunda sessão*/
 
@@ -358,20 +369,6 @@ span { /*texto abaixo do título news (apresetando equipe)*/
      margin-top: 2vw; 
      height: 15vw; 
  }
-
- #infoFinal { /*diminuir a fonte de do tpitulo final que estava em outra classe*/
-    font-size: 2vw;
- }
-
-#bandeiras { /*div com bandeiras br e home care*/
-    width: 100%;
-    /*background-color: black;*/
-    background-image: url(img/bandeiras.png);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: 50%;
-    height: 10vw;
-}
 
   /*<--Fim terceira sessão*/
 

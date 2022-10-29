@@ -333,7 +333,8 @@ body, #hd1 { /*Especificações para o corpo da página*/
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 42%; 
-    height: 25%;
+    height: 52vw;
+    margin-bottom: 3vw;
     position: absolute;
     display: inline-flex;
 }
@@ -403,7 +404,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     max-width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 90%; 
+    margin-top: 93%; 
     height: 21%;
     position: absolute;
     display: inline-flex;
@@ -785,11 +786,11 @@ color: #8EDE65;
     }
 
     #openHamb {
-        display: block;
+        display: none;
     }
 
     #closeHamb {
-        display: none;
+        display: block;
     }
 
     #menuHambMobile:hover {

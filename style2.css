@@ -391,7 +391,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 /** <-- Segunda Sessão (contador de página) */
 
 #segundaSessãoDeInfo{ /* Primeira sessão abaixo de news */
-    /*background-color: yellow; */
+    background-color: yellow; 
      width: 80%;
      padding-left: 10%;
      padding-right: 10%;
