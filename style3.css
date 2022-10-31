@@ -249,7 +249,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
     position: absolute;
     width: 100%;
-    height: 100vw;
+    height: 150vw;
      background-color: #F7FDF3; 
 	clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -259,13 +259,13 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 /*<-- Primeira sessão de informações (gestores) */
 
 #primeiraSessãoDeInfo{ /* Primeira sessão de informaçãos dos gestores */
-    /* background-color: grey; */
+    /* background-color: green;  */
      background-size: 50%;
      background-repeat: no-repeat;
      background-position: 50%;
      width: 100%;    
      margin-top: 6vw; 
-     height: 27vw;
+     height: 85vw;
      padding-top: 4vw;
  }
 
@@ -338,3 +338,13 @@ span { /*texto abaixo do título news (apresetando equipe)*/
     font-size: 1.4vw;
  }
 
+/*<-- Segunda sessão de informações (sobre a equipe) */
+
+#txtEquipe {
+    color: #1D1D29;
+    font-size: 1.2vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5vw;
+    text-align: justify;
+}
