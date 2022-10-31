@@ -249,7 +249,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
     position: absolute;
     width: 100%;
-    height: 150vw;
+    height: 100vw;
      background-color: #F7FDF3; 
 	clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -263,139 +263,78 @@ span { /*texto abaixo do título news (apresetando equipe)*/
      background-size: 50%;
      background-repeat: no-repeat;
      background-position: 50%;
-     width: 80%;
-     padding-left: 10%;
-     padding-right: 10%;
+     width: 100%;    
      margin-top: 6vw; 
      height: 27vw;
      padding-top: 4vw;
  }
 
  .TitulosPath { /* Linha de título da sessão*/
-    /* background-color: aqua;  */
-    width: 100%;
+    /* background-color: aqua;   */
+    width: 80%;
     font-size: 2.5vw;
     font-weight:700;
     display: inline-flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.1vw;
+    color: #1D1D29;
  }
 
-.TitulosPath p { /*texto do título*/
-    /* background-color: brown; */
-    width: 45%;
-}
-
- .LinhaG{ /*linha delimitadora do titulo*/
-    background-color: rgb(189, 189, 189);
-    height: 0.1vw;
-    width: 55%;
-    margin-top: 1.5vw;
- }
-
- .LinhaG2{ /*linha final de encerramento da sessão*/
-    margin-top: 3vw;
-    width: 100%;
-    background-color:  rgb(189, 189, 189);
-    height: 0.1vw;
- }
- 
- .Gestores { /*DIV que contem todas as informações sobre um gestor*/
-    /*background-color: pink;*/
-    margin-top: 3vw;
-    display: inline-flex;
-    width: 100%;
-    height: 20vw;
- }
-
- .FotoGestor { /*formtação para a div que recebe a foto de um gestor*/
+.FotoGestor { /*DIV para guardar as fotos dos gestores*/
     /* background-color: yellow; */
-    width: 30%;
-    background-size: 90%;
-    background-position: 50%;
-    background-repeat: no-repeat;
- }
-
- .SobreGestor { /*div ao lado da foto que comtem as informações sobre o gestor*/
-    width: 70%;
- }
-
- .NomeGestor { /*contem o nome de um gestor*/
-     /* background-color: azure;  */
-    font-size: 1.4vw;
-    margin-left: 2vw;
-    width: 92%;
-    margin-left: 2vw;
+    height: 20vw;
+    width: 25%;
+    position: absolute;
+    margin-left: 10%;
     margin-top: 5vw;
-    font-weight: 700;
- }
-
- .TextoSobreGestor{ /*texto abaixo do nome do gestor*/
-    margin-left: 2vw;
-    font-size: 1.1vw;
-    margin-right: 2vw;
-    margin-top: 1vw;
- }
-
- #gestorMeio { /*alinhando texto do gestor do meio a direita*/
-    text-align: right;
- }
-
- #g1 { background-image: url(img/gestor1.png);}
- #g2 { background-image: url(img/gestor2.png);}
- #g3 { background-image: url(img/gestor3.png);}
-
- /*<--FimPrimeiraSessão*/
-
-/** <-- Segunda Sessão (contador de página) */
-
-#segundaSessãoDeInfo{ /* Primeira sessão abaixo de news */
-    /* background-color: blue; */
-     width: 80%;
-     padding-left: 10%;
-     padding-right: 10%;
-     margin-top: 53vw; 
-     height: 34vw; 
- }
-
- 
- /*<--Fim segunda sessão*/
-
- /* --> Terceira sessão */
-
- #terceiraSessãoDeInfo{ /* terceira sessão abaixo de news */
-    /*background-color: blue; */
-     width: 80%;
-     padding-left: 10%;
-     padding-right: 10%;
-     margin-top: 2vw; 
-     height: 15vw; 
- }
-
-  /*<--Fim terceira sessão*/
-
-
- /*Footer para contatdo e copyright*/
-#footerInfo {
-    /*background-color: #8EDE65;*/
-    color: #2c3e50;
-    background-color: #F7FDF3;
-    font-weight: 600;
-    font-size: 1.1vw;
-    margin-top: 1vw;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    clip-path: circle(50% at 50% 50%);
 }
 
-#linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
-    background-color: grey;
-    width: 50%;
+/*fotos dos gestores*/
+#g1{ background-image: url(img/gestor11.png); }
+#g2{ background-image: url(img/gestor22.png); margin-left: 67%;} /*margin para colocar a foto em outra posição*/
+#g3{ background-image: url(img/gestor33.png); }
+
+.Gestor { /*div funo gestor*/
+    background-color: rgb(238, 238, 238); 
+    height: 20vw;
     margin-left: 25%;
-    height: 0.06vw;
+    margin-top: 5vw;
+ }
+
+ #gestorMeio { /*div funo gestor do meio*/
+    background-color: rgb(238, 238, 238); 
+    height: 20vw;
+    margin-right: 25%;
+    margin-top: 5vw;
 }
 
-#copyright { /*Linha final do footer (informações do copyright)*/
-    padding-bottom: 3vw;
-    margin-top: 3vw;
-    text-align: center;
+#gestorMeio .NomeGestor { /*alinhando nome do gestor do meio a direita*/
+    text-align: right;
 }
 
-/*<--FimFooter*/
+#gestorMeio p { /*alinhando texto do gestor do meio a direita*/
+    text-align: right;
+}
 
+ .SobreGestor { /*contem todas as informações textuais ao lado da foto do gestor*/
+    /* background-color: brown; */
+    margin-left: 15%;
+    margin-right: 13%;
+    padding-top: 8.5%;
+ }
+
+ .SobreGestor p { /*texto sobre gestor*/
+    color: #1D1D29;
+    font-size: 1.2vw;
+ }
+
+ .NomeGestor { /*nome gestor*/
+    color:#1D1D29;
+    font-weight: 700;
+    font-size: 1.4vw;
+ }
 
