@@ -77,11 +77,21 @@
                     <h1> Formulário De Solicitação </h1>
 
                     <form action="https://formsubmit.co/mfpinheiro02@gmail.com" method="POST">
-                        <input type="text" name="name" obrigatório>
-                        <input type="text" name="telefones" obrigatório>
-                        <input type="email" name="email" obrigatório>
+                        
+                        <label for="name"> <h2> Nome </h2> </label>
+                        <input class="InputForm" type="text" placeholder="Nome Completo" name="name" required>
+                       
+                        <label for="email"> <h2> Email </h2> </label>
+                        <input class="InputForm" type="email" placeholder="Email (Ex. seuemail@email.com)" name="email" required>
+
+                        <label for="texto"> <h2> Mensagem </h2> </label>
+                        <textarea name="message" id="message" type="hidden"required> </textarea>
+                    
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
                         <button type="submit">Enviar</button>
-                   </formulário>
+                   </form> <!--form-->
 
                 </div>  <!--caixaForm-->
             </div> <!--formOrçamentos-->
