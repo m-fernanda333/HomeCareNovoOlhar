@@ -248,8 +248,8 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
     position: absolute;
     width: 100%;
-    height: 100vw;
-    max-height: 100vw;
+    height: 123vw;
+    /* max-height: 100vw; */
     background-color: #F7FDF3;
 	clip-path: polygon(24% 3%, 75% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -370,38 +370,51 @@ input {
 }
 /**/
 
-
-/** <-- Segunda Sessão (contador de página) */
-
-#segundaSessãoDeInfo{ /* Primeira sessão abaixo de news */
-    /* background-color: yellow;  */
-     width: 80%;
-     padding-left: 10%;
-     padding-right: 10%;
-     margin-top: 82vw; 
-     height: 5%;
-     position: absolute;
- }
-
-#linhaFinalPag { /*Linha entre o corpo e a infirmação de numeração de página*/
-    background-color: grey;
-    width: 50%;
-    margin-left: 25%;
-    height: 0.06vw;
-    margin-bottom: 2vw;
+/** <-- Segunda Sessão (endereço) */
+#segundaSessãoDeInfo {
+    /* background-color: yellow; */
+    height: 28vw;
+    margin-top: 4vw;
 }
 
- #controleDePag{ /*Linha com informação de controle de página (pg 1 de 1)*/
-    /*background-color: aqua;*/
+#text .LinhaDeTitulo { /*Linha decorativa para titulos de texto*/
+    background-color: #8EDE65;
+    margin-bottom: 0.6vw;
+    margin-left: 10%;
+}
+
+#segundaSessãoDeInfo span {
+    margin-left: 10%;
+    margin-right: 10%;
     width: 100%;
+    color: #1D1D29;
     text-align: center;
-    font-size: 0.9vw;
-    font-weight: 700;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+.TitulosPath { /* Linha de título da sessão*/
+    /* background-color: aqua;   */
+    width: 80%;
+    font-size: 2.5vw;
+    font-weight:700;
+    display: inline-flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1.5vw;
+    color: #1D1D29;
  }
 
- /*<--Fim segunda sessão*/
+ #frameMap {
+    width: 70%;
+    margin-left: 15%;
+    margin-right:15%;
+    margin-top: 3vw;
+}
 
- /*Footer para contatdo e copyright*/
+/**/
+
+/*Footer para contatdo e copyright*/
 
 #footerInfo {
     /*background-color: #8EDE65;*/
@@ -409,7 +422,7 @@ input {
     background-color: #F7FDF3;
     font-weight: 600;
     font-size: 1.1vw;
-    margin-top: 87vw;
+    margin-top: 7vw;
 }
 
 #linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
@@ -441,13 +454,12 @@ input {
 }
 
 #copyright { /*Linha final do footer (informações do copyright)*/
-    padding-bottom: 3vw;
+    padding-bottom: 3vw;;
     margin-top: 3vw;
     text-align: center;
 }
 
 /*<--FimFooter*/
-
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 
