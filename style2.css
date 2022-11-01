@@ -256,6 +256,75 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 
 /*<-- FimHexágono*/
 
+/** <-- Primeira sessão (icones e formulário) */
+
+#primeiraSessãoDeInfo { /*primeira sessão para guardar icones e formulários*/
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#areaDeIcones { /*div para conter icones e informacoes sobre contato*/
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 7vw;
+    margin-top: 12vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.IconeArea { /*div do icone*/
+    /* background-color: blueviolet; */
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+
+.IconeArea div {
+    font-size: 2vw;
+    color: #2c3e50;
+    height: 2.8vw;
+    /* background-color: blueviolet; */
+}
+
+#zap {
+    font-size: 2.5vw;
+    color: #2c3e50;
+}
+
+#meio {
+    border-left: solid 1px #2c3e50;
+    border-right: solid 1px #2c3e50;
+}
+
+.IconeArea p {
+    font-size: 1.1vw;
+    color: #2c3e50;
+}
+
+#formOrcamentos{ /*div geral para conter o formulário, sua localização e imagem de fundo*/
+    background-image: url(img/fotoform.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    height: 40vw;
+    margin-top: 7vw;
+}
+
+#caixaForm {
+    background-color: green;
+    width: 37%;
+    height: 92%;
+    margin-left: 10%;  
+    padding-top: 3%;  
+}
+
+#caixaForm h1 {
+    color: #F7FDF3;
+    font-size: 2.3vw;
+    text-align: center;
+}
+
+/**/
 
 
 /** <-- Segunda Sessão (contador de página) */
