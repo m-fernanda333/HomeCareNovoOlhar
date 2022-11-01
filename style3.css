@@ -369,3 +369,49 @@ span { /*texto abaixo do título news (apresetando equipe)*/
     height: 30vw;
     margin-top: 4vw;
 }
+
+/*Footer para contatdo e copyright*/
+
+#footerInfo {
+    /*background-color: #8EDE65;*/
+    color: #2c3e50;
+    background-color: #F7FDF3;
+    font-weight: 600;
+    font-size: 1.1vw;
+}
+
+#linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
+    background-color: grey;
+    width: 50%;
+    margin-left: 25%;
+    height: 0.06vw;
+}
+
+.LFooter { /*Linha principal do footer*/
+    /*background-color: blueviolet;*/
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3vw; 
+}
+
+#footerLeft { /*Div de informações alinhada a esquerda no footer*/
+    /*background-color: aqua;*/
+    width: 50%;
+    text-align: center;
+}
+
+#footerRight{ /*Div de informações alinhada a direita no footer*/
+    /*background-color: burlywood;*/
+    width: 50%;
+    text-align: center;
+}
+
+#copyright { /*Linha final do footer (informações do copyright)*/
+    padding-bottom: 3vw;;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+/*<--FimFooter*/
