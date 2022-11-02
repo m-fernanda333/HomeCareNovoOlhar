@@ -95,3 +95,40 @@ h1 { /*Especificações para títulos H1 */
     font-size: 2.5vw;
     font-weight:700;
  }
+
+ /*---------------------------------------------------------*/
+
+ body{
+    background-color: #F7FDF3;
+    display: flex;
+ }
+
+ #iconecheck{
+    background-color:  rgb(238, 238, 238);
+    height: 25vw;
+    width: 50%;
+    font-size: 20vw;
+    justify-content: center;
+    text-align: center;
+    color: #8EDE65;
+}
+
+ #area {
+    background-color:  rgb(206, 206, 206);
+    height: 25vw;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 9vw;
+    display: flex;
+ }
+
+ #antp {
+    width: 50%;
+    color: #1D1D29;
+    background-color:  rgb(206, 206, 206);
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-top: 10%;
+ }
