@@ -1,0 +1,97 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Sintaxe: 
+	Identificadores: sintaxeIdentificadores; 
+	Classes: SintaxeClasses; 
+	ícones: ICONES;
+Paleta de cores: 
+    Cinza Esverdeado: #F7FDF3
+    Verde: #8EDE65
+    Azul: #1D1D29
+    Azul escuro texto: #1D1D29
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* IMPORTAÇÕES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;750;800;900&display=swap');
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* ANIMAÇÕES */
+
+/*Sessão de definição de Fade In (Animação para surgir os textos da página)*/
+
+@-webkit-keyframes fadeIn { /*Função de animação fade In*/
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    .fadeIn1 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 3s ease-in-out;
+        -moz-animation: fadeIn 3s ease-in-out;
+        -o-animation: fadeIn 3s ease-in-out;
+        animation: fadeIn 3s ease-in-out;
+    }
+
+    .fadeIn2 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+            -webkit-animation: fadeIn 5s ease-in-out;
+            -moz-animation: fadeIn 5s ease-in-out;
+            -o-animation: fadeIn 5s ease-in-out;
+            animation: fadeIn 5s ease-in-out;
+    }
+
+    .fadeIn3 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 6s ease-in-out;
+        -moz-animation: fadeIn 6s ease-in-out;
+        -o-animation: fadeIn 6s ease-in-out;
+        animation: fadeIn 6s ease-in-out;
+    }
+
+    .fadeIn4 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 7s ease-in-out;
+        -moz-animation: fadeIn 7s ease-in-out;
+        -o-animation: fadeIn 7s ease-in-out;
+        animation: fadeIn 7s ease-in-out;
+    }
+
+/* <-- Fim FadeIn*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+
+/* FORMATAÇÃO GERAL / SEM CLASSE / SEM IDENTIFICADOR */
+
+* {
+	padding: 0;
+	margin: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body { /*Desabilitando o scroll no eixo X na TAG HTML, para facilitar a compatibilidade com os navegadores*/
+    overflow-x: hidden;
+}
+
+h1 { /*Especificações para títulos H1 */
+    font-size: 2.5vw;
+    font-weight:700;
+ }
