@@ -126,12 +126,14 @@ body, #hd1 { /*Especificações para o corpo da página*/
     background-repeat: no-repeat; 
     background-position: fixed;
 }
+
 /*<--FimBody*/
 
  /*--> Header */
 
  #header { /*Especificações para o cabeçalho da página*/
     padding-top: 6vh;
+    margin-bottom: 0;
 }
 
 #navBarMobile{ /*Ocultando a opção de menu navBar mobile na versão desktop*/
@@ -189,14 +191,15 @@ body, #hd1 { /*Especificações para o corpo da página*/
 }
 
 #news { /*Área principal do site com informação e botão lateral*/
-    /*background-color: yellow;*/
+    /* background-color: yellow; */
     margin-left: 8vw;
     margin-right: 8vw;
     margin-top: 3vw;
     text-align: left;
     padding-left: 3vw;
     width: 35%;
-    margin-bottom: 2vw;
+     margin-bottom: 2vw; 
+     height: 100%;
 }
 
 .LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
@@ -239,6 +242,20 @@ body, #hd1 { /*Especificações para o corpo da página*/
     color: #8EDE65;
 }
 
+.BtnRadiusContent {
+    height: 1.3vw;
+    width: 15%;
+    /* background-color: aqua; */
+    position: absolute;
+    margin-left: 35% ;
+    margin-top: 4vw;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+
 /*<-- FimHeader*/
  
 /*--> Hexágono construído com clip-path para gerar o shape divider do layout */
@@ -246,7 +263,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
     position: relative;
     width: 100%;
-    height: 197vw;
+    height: 213vw;
     background-color: #F7FDF3;
 	clip-path: polygon(40% 3%, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 0);
 }
@@ -540,11 +557,12 @@ body, #hd1 { /*Especificações para o corpo da página*/
     margin-left: 15%;
     margin-right: 15%;
     width: 70%;
+    /* background-color: aquamarine; */
  }
 
  #listaDeServiços p { /*lista de serviços*/
     margin-top: 2vw;
-    text-align: center;
+    text-align: justify;
     line-height: 1vw;
     word-spacing: 0.8vw;
     font-size: 1.3vw;
@@ -613,11 +631,14 @@ color: #8EDE65;
 /*Footer para contatdo e copyright*/
 
 #footerInfo {
-    /*background-color: #8EDE65;*/
     color: #2c3e50;
     background-color: #F7FDF3;
     font-weight: 600;
     font-size: 1.1vw;
+    position: absolute;
+    width: 100%;
+    height: 15vw;
+    margin-top: 197vw;
 }
 
 #linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/

@@ -77,6 +77,64 @@ function closePopUp() {//ocultar menu popup no display
     document.querySelector("#ctf7").style.display = "none";
     document.querySelector("#ctf8").style.display = "none";
     document.querySelector(".wrap").style.overflowY = "initial";
-        document.querySelector("body").style.overflowY = "initial";
+    document.querySelector("body").style.overflowY = "initial";
            
+}
+
+//Função para trocar de fundo (simulando um slider) e setar o btn radius junto
+
+let count = 1;
+
+setInterval ( function(){ //definindo o intervalo de tempo em que irá chamar a proxima imagem (atraves da função nexImg)
+    nextImage();
+}, 3000)
+
+function nextImage () { //função que define  a proxima imagem e a sutuacao do btn radius
+    
+    count++;
+
+    if (count > 3) {
+        count = 1
+    }
+
+
+    if (count == 1) {
+       slider1();
+    }
+
+    if (count == 2) {
+       slider2();
+    }
+
+    if (count == 3) {
+        slider3();
+    }
+
+}
+
+function slider1 () {
+        
+        document.getElementById("radio1").checked = true;
+        document.getElementById("radio2").checked = false;
+        document.getElementById("radio3").checked = false;
+        document.querySelector("body").style.backgroundImage = "url(img/hd1.png)";
+        count = 1;
+}
+
+function slider2 () {
+   
+    document.getElementById("radio1").checked = false;
+    document.getElementById("radio2").checked = true;
+    document.getElementById("radio3").checked = false;
+    document.querySelector("body").style.backgroundImage = "url(img/hd2.png)";
+    count = 2;
+}
+
+function slider3 () {
+        document.querySelector("body").style.backgroundImage = "url(img/hd3.png)";
+        document.getElementById("radio1").checked = false;
+        document.getElementById("radio2").checked = false;
+        document.getElementById("radio3").checked = "true";
+        count = 3;
+
 }
