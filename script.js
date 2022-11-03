@@ -113,22 +113,22 @@ function nextImage () { //função que define  a proxima imagem e a sutuacao do 
 }
 
 function slider1 () {
-        
+    document.querySelector("body").style.backgroundImage = "url(img/hd1.png)";
         document.getElementById("radio1").checked = true;
         document.getElementById("radio2").checked = false;
         document.getElementById("radio3").checked = false;
-        document.querySelector("body").style.backgroundImage = "url(img/hd1.png)";
+       
         document.getElementById("text2News").style.display = "none";
         document.getElementById("text1News").style.display = "block";
         count = 1;
 }
 
 function slider2 () {
-   
+    document.querySelector("body").style.backgroundImage = "url(img/hdd2.png)";
     document.getElementById("radio1").checked = false;
     document.getElementById("radio2").checked = true;
     document.getElementById("radio3").checked = false;
-    document.querySelector("body").style.backgroundImage = "url(img/hdd2.png)";
+   
     document.getElementById("text1News").style.display = "none";
     document.getElementById("text2News").style.display = "block";
     count = 2;
