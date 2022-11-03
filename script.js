@@ -87,7 +87,7 @@ let count = 1;
 
 setInterval ( function(){ //definindo o intervalo de tempo em que irá chamar a proxima imagem (atraves da função nexImg)
     nextImage();
-}, 3000)
+}, 4000)
 
 function nextImage () { //função que define  a proxima imagem e a sutuacao do btn radius
     
@@ -118,6 +118,8 @@ function slider1 () {
         document.getElementById("radio2").checked = false;
         document.getElementById("radio3").checked = false;
         document.querySelector("body").style.backgroundImage = "url(img/hd1.png)";
+        document.getElementById("text2News").style.display = "none";
+        document.getElementById("text1News").style.display = "block";
         count = 1;
 }
 
@@ -126,15 +128,19 @@ function slider2 () {
     document.getElementById("radio1").checked = false;
     document.getElementById("radio2").checked = true;
     document.getElementById("radio3").checked = false;
-    document.querySelector("body").style.backgroundImage = "url(img/hd2.png)";
+    document.querySelector("body").style.backgroundImage = "url(img/hdd2.png)";
+    document.getElementById("text1News").style.display = "none";
+    document.getElementById("text2News").style.display = "block";
     count = 2;
 }
 
 function slider3 () {
-        document.querySelector("body").style.backgroundImage = "url(img/hd3.png)";
+        document.querySelector("body").style.backgroundImage = "url(img/hdd3.png)";
         document.getElementById("radio1").checked = false;
         document.getElementById("radio2").checked = false;
         document.getElementById("radio3").checked = "true";
+        document.getElementById("text2News").style.display = "none";
+        document.getElementById("text1News").style.display = "block";
         count = 3;
 
 }

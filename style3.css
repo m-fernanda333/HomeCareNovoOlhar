@@ -116,7 +116,7 @@ body, html {
 /*--> Body*/
 
 body { /*Especificações para o corpo da página*/
-    background-image: url(img/hd3.png);
+    background-image: url(img/liso.png);
     background-size: 100%;
     background-repeat: no-repeat;       
 }
@@ -179,7 +179,7 @@ body { /*Especificações para o corpo da página*/
 }
 
 #news { /*Área principal do site com informação e botão lateral*/
-    /*background-color: yellow;*/
+    /* background-color: yellow; */
     margin-left: 8vw;
     margin-right: 8vw;
     margin-top: 3vw;
@@ -216,12 +216,12 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 
 #textNews { /*Linha do texto abaixo do t. news*/
     /*background-color: green;*/
-    width: 77%;
-    margin-left: 9%;
+    width: 100%;
+    margin-left: 0%;
     margin-bottom: 3vw;
     line-height: 2.4vw;
     word-spacing: 0.5vw;
-    text-align: center;
+    text-align: justify;
 }
 
 .IconeRoll { /*Setas para baixo "roll"*/

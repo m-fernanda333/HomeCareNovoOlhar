@@ -831,6 +831,10 @@ color: #8EDE65;
         text-align: center;
     }
 
+  #text2News {
+    display: none;
+  }
+
     #btnPrincipal { /****************************************** */
         height: 6vw;
         width: 43vw;
