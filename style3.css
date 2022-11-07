@@ -330,6 +330,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
  .SobreGestor p { /*texto sobre gestor*/
     color: #1D1D29;
     font-size: 1.2vw;
+    text-align: justify;
  }
 
  .NomeGestor { /*nome gestor*/

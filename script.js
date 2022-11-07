@@ -144,3 +144,6 @@ function slider3 () {
         count = 3;
 
 }
+
+  ScrollReveal().reveal('.delayMediumReveal', { delay: 500, origin: "top",distance: "50px", duration: 2000 });
+  ScrollReveal().reveal('.delayFastReveal', { delay: 200, origin: "top",distance: "50px", duration: 500 });

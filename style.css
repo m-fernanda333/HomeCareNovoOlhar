@@ -22,55 +22,6 @@ Paleta de cores:
 
 /* ANIMAÇÕES */
 
-/*Sessão de definição de Fade In (Animação para surgir os textos da página)*/
-
-@-webkit-keyframes fadeIn { /*Função de animação fade In*/
-    0% { opacity: 0; }
-    100% { opacity: 1; } 
-    }
-    @-moz-keyframes fadeIn {
-    0% { opacity: 0;}
-    100% { opacity: 1; }
-    }
-    @-o-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-    }
-    @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-    }
-
-    .fadeIn1 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
-        -webkit-animation: fadeIn 3s ease-in-out;
-        -moz-animation: fadeIn 3s ease-in-out;
-        -o-animation: fadeIn 3s ease-in-out;
-        animation: fadeIn 3s ease-in-out;
-    }
-
-    .fadeIn2 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
-            -webkit-animation: fadeIn 5s ease-in-out;
-            -moz-animation: fadeIn 5s ease-in-out;
-            -o-animation: fadeIn 5s ease-in-out;
-            animation: fadeIn 5s ease-in-out;
-    }
-
-    .fadeIn3 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
-        -webkit-animation: fadeIn 6s ease-in-out;
-        -moz-animation: fadeIn 6s ease-in-out;
-        -o-animation: fadeIn 6s ease-in-out;
-        animation: fadeIn 6s ease-in-out;
-    }
-
-    .fadeIn4 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
-        -webkit-animation: fadeIn 7s ease-in-out;
-        -moz-animation: fadeIn 7s ease-in-out;
-        -o-animation: fadeIn 7s ease-in-out;
-        animation: fadeIn 7s ease-in-out;
-    }
-
-/* <-- Fim FadeIn*/
-
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
 
 
@@ -252,6 +203,10 @@ body, #hd1 { /*Especificações para o corpo da página*/
     justify-content: center;
     text-align: center;
     margin-bottom: 0;
+}
+
+#radio1, #radio2, #radio3 {
+    cursor: pointer;
 }
 
 
