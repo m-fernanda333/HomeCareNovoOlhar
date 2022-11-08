@@ -354,6 +354,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 #caixaForm button:hover {
     border: solid 0.01px #8EDE65;
     color: #2c3e50;
+    background-color: #F7FDF3;
 }
 
 #message {
