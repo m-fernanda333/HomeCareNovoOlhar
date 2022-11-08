@@ -120,6 +120,10 @@ function slider1 () {
        
         document.getElementById("text2News").style.display = "none";
         document.getElementById("text1News").style.display = "block";
+        document.getElementById("text3News").style.display = "none";
+
+        document.getElementById("btnP1").style.display = "block";
+        document.getElementById("btnP2").style.display = "none";
         count = 1;
 }
 
@@ -131,6 +135,10 @@ function slider2 () {
    
     document.getElementById("text1News").style.display = "none";
     document.getElementById("text2News").style.display = "block";
+    document.getElementById("text3News").style.display = "none";
+
+    document.getElementById("btnP1").style.display = "block";
+    document.getElementById("btnP2").style.display = "none";
     count = 2;
 }
 
@@ -140,10 +148,16 @@ function slider3 () {
         document.getElementById("radio2").checked = false;
         document.getElementById("radio3").checked = "true";
         document.getElementById("text2News").style.display = "none";
-        document.getElementById("text1News").style.display = "block";
+        document.getElementById("text1News").style.display = "none";
+        document.getElementById("text3News").style.display = "block";
+
+        document.getElementById("btnP1").style.display = "none";
+        document.getElementById("btnP2").style.display = "block";
         count = 3;
 
 }
 
-  ScrollReveal().reveal('.delayMediumReveal', { delay: 500, origin: "top",distance: "50px", duration: 2000 });
-  ScrollReveal().reveal('.delayFastReveal', { delay: 200, origin: "top",distance: "50px", duration: 500 });
+Window.sr = ScrollReveal({ reset: true });
+ScrollReveal().reveal('.delayHardReveal', { delay: 800, origin: "top",distance: "50px", duration: 3000 });
+ScrollReveal().reveal('.delayMediumReveal', { delay: 500, origin: "top",distance: "50px", duration: 2000 });
+ScrollReveal().reveal('.delayFastReveal', { delay: 200, origin: "top",distance: "50px", duration: 500 });
