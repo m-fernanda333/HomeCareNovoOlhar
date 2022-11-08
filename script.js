@@ -87,7 +87,7 @@ let count = 1;
 
 setInterval ( function(){ //definindo o intervalo de tempo em que irá chamar a proxima imagem (atraves da função nexImg)
     nextImage();
-}, 6500)
+}, 7500)
 
 function nextImage () { //função que define  a proxima imagem e a sutuacao do btn radius
     
