@@ -129,7 +129,7 @@ body, html {
 
 body, #hd1 { /*Especificações para o corpo da página*/
     /*background-color: #1D1D29;*/
-    background-image: url(img/hd1.png);
+    background-image: url(img/hd1.webp);
     background-size: 100%;
     background-repeat: no-repeat; 
     background-position: fixed;
@@ -306,7 +306,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 
 #primeiraSessãoImg{ /* Imagem ilustrativa da primeira sessão */
     /*background-color: green;*/
-    background-image: url(img/imgilustrativa.png);
+    background-image: url(img/imgilustrativa.webp);
     background-repeat: no-repeat;
     background-size:85%;
     background-position: 50%;
@@ -514,14 +514,14 @@ body, #hd1 { /*Especificações para o corpo da página*/
 }
 
 /*Imagens de fundo para círculo de área de atuação*/
-#imgA1 {background-image: url(img/s1.png);}
-#imgA2 {background-image: url(img/s2.png);}
-#imgA3 {background-image: url(img/s3.png);}
-#imgA4 {background-image: url(img/s4.png);}
-#imgA5 {background-image: url(img/s5.png);}
-#imgA6 {background-image: url(img/s6.png);}
-#imgA7 {background-image: url(img/s7.png);}
-#imgA8 {background-image: url(img/s8.png);}
+#imgA1 {background-image: url(img/s1.webp);}
+#imgA2 {background-image: url(img/s2.webp);}
+#imgA3 {background-image: url(img/s3.webp);}
+#imgA4 {background-image: url(img/s4.webp);}
+#imgA5 {background-image: url(img/s5.webp);}
+#imgA6 {background-image: url(img/s6.webp);}
+#imgA7 {background-image: url(img/s7.webp);}
+#imgA8 {background-image: url(img/s8.webp);}
 
 
 /*<--FimTerceiraSessão*/
@@ -529,7 +529,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 /*<-- QuartaSessão De Informações do HOME (Areas de Serviços Home Care)*/
 
 #quartaSessãoDeInfo { /*Box com imagem de formato para guardar as informações da quarta sessão de informações*/
-    background-image: url(img/serviços.png);
+    background-image: url(img/serviços.webp);
     background-size:100%;
     background-repeat: no-repeat; 
     width: 100%;
@@ -599,7 +599,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 
 #quintaSessãoImg {  /*imagem ilutrativa da quinta sessão*/
 /* background-color: green;*/
-background-image: url(img/stand.png);
+background-image: url(img/stand.webp);
 background-size:100%;
 background-repeat: no-repeat;
 width: 40%;
@@ -692,7 +692,7 @@ color: #8EDE65;
 /* Imagem de estetoscópio fixa na lateral */
 
 #steto { /*box com imagem de steto que fica fixa na página*/
-   background-image: url(img/steto.png);
+   background-image: url(img/steto.webp);
    background-size: cover;
     width: 37%;
     height: 25%;
