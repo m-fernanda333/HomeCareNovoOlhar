@@ -297,7 +297,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 
 #imgPrimeiraSessãoDeInfo{ /* Imagem ilustrativa da primeira sessão */
    /* background-color: green;*/
-    background-image: url(img/imgilustrativa.png);
+    background-image: url(img/imgilustrativa.webp);
     background-size:50%;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -516,14 +516,14 @@ body, #hd1 { /*Especificações para o corpo da página*/
 }
 
 /*Imagens de fundo para círculo de área de atuação*/
-#imgA1 {background-image: url(img/s1.png);}
-#imgA2 {background-image: url(img/s2.png);}
-#imgA3 {background-image: url(img/s3.png);}
-#imgA4 {background-image: url(img/s4.png);}
-#imgA5 {background-image: url(img/s5.png);}
-#imgA6 {background-image: url(img/s6.png);}
-#imgA7 {background-image: url(img/s7.png);}
-#imgA8 {background-image: url(img/s8.png);}
+#imgA1 {background-image: url(img/s1.webp);}
+#imgA2 {background-image: url(img/s2.webp);}
+#imgA3 {background-image: url(img/s3.webp);}
+#imgA4 {background-image: url(img/s4.webp);}
+#imgA5 {background-image: url(img/s5.webp);}
+#imgA6 {background-image: url(img/s6.webp);}
+#imgA7 {background-image: url(img/s7.webp);}
+#imgA8 {background-image: url(img/s8.webp);}
 
 
 /*<--FimTerceiraSessão*/
