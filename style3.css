@@ -116,7 +116,7 @@ body, html {
 /*--> Body*/
 
 body { /*Especificações para o corpo da página*/
-    background-image: url(img/liso.png);
+    background-image: url(img/liso.webp);
     background-size: 100%;
     background-repeat: no-repeat;       
 }
@@ -294,9 +294,9 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 }
 
 /*fotos dos gestores*/
-#g1{ background-image: url(img/gestor11.png); }
-#g2{ background-image: url(img/gestor22.png); margin-left: 67%;} /*margin para colocar a foto em outra posição*/
-#g3{ background-image: url(img/gestor33.png); }
+#g1{ background-image: url(img/gestor11.webp); }
+#g2{ background-image: url(img/gestor22.webp); margin-left: 67%;} /*margin para colocar a foto em outra posição*/
+#g3{ background-image: url(img/gestor33.webp); }
 
 .Gestor { /*div funo gestor*/
     background-color: rgb(238, 238, 238); 
@@ -364,7 +364,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 #fotoCartao { /*imagem ilustrativa de cartao*/
     margin-left: 25%;
     margin-right: 20%;
-    background-image: url(img/mm.png);
+    background-image: url(img/mm.webp);
     background-repeat: no-repeat;
     background-size: 90%;
     height: 30vw;

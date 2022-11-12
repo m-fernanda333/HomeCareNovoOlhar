@@ -128,7 +128,7 @@ function slider1 () {
 }
 
 function slider2 () {
-    document.querySelector("body").style.backgroundImage = "url(img/hdd2.png)";
+    document.querySelector("body").style.backgroundImage = "url(img/hdd2.webp)";
     document.getElementById("radio1").checked = false;
     document.getElementById("radio2").checked = true;
     document.getElementById("radio3").checked = false;
@@ -143,7 +143,7 @@ function slider2 () {
 }
 
 function slider3 () {
-        document.querySelector("body").style.backgroundImage = "url(img/hdd3.png)";
+        document.querySelector("body").style.backgroundImage = "url(img/hdd3.webp)";
         document.getElementById("radio1").checked = false;
         document.getElementById("radio2").checked = false;
         document.getElementById("radio3").checked = "true";
@@ -158,6 +158,6 @@ function slider3 () {
 }
 
 Window.sr = ScrollReveal({ reset: true });
-ScrollReveal().reveal('.delayHardReveal', { delay: 800, origin: "top",distance: "50px", duration: 3000 });
-ScrollReveal().reveal('.delayMediumReveal', { delay: 500, origin: "top",distance: "50px", duration: 2000 });
+ScrollReveal().reveal('.delayHardReveal', { delay: 600, origin: "top",distance: "50px", duration: 3000 });
+ScrollReveal().reveal('.delayMediumReveal', { delay: 400, origin: "top",distance: "50px", duration: 2000 });
 ScrollReveal().reveal('.delayFastReveal', { delay: 200, origin: "top",distance: "50px", duration: 500 });
