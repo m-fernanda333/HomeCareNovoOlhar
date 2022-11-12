@@ -36,32 +36,38 @@ function openPopUp3() { //mostrar menu popup "NUTRIÇÃO" no display
     document.querySelector("body").style.overflowY = "hidden";  
 }
 
-function openPopUp4() { //mostrar menu popup "FISOTERAPIA" no display
+function openPopUp4() { //mostrar menu popup "PSICOLOGIA" no display
     document.querySelector("#ctf4").style.display = "block";
     document.querySelector(".wrap").style.overflowY = "hidden";
     document.querySelector("body").style.overflowY = "hidden";   
 }
 
-function openPopUp5() { //mostrar menu popup "FISOTERAPIA" no display
+function openPopUp5() { //mostrar menu popup "ENFERMAGEM" no display
     document.querySelector("#ctf5").style.display = "block";  
     document.querySelector(".wrap").style.overflowY = "hidden";
     document.querySelector("body").style.overflowY = "hidden"; 
 }
 
-function openPopUp6() { //mostrar menu popup "FISOTERAPIA" no display
+function openPopUp6() { //mostrar menu popup "FONOAUDIOLOGIA" no display
     document.querySelector("#ctf6").style.display = "block";  
     document.querySelector(".wrap").style.overflowY = "hidden";
     document.querySelector("body").style.overflowY = "hidden"; 
 }
 
-function openPopUp7() { //mostrar menu popup "FISOTERAPIA" no display
+function openPopUp7() { //mostrar menu popup "TRANSPORTE AMBULATORIAL" no display
     document.querySelector("#ctf7").style.display = "block";   
     document.querySelector(".wrap").style.overflowY = "hidden";
     document.querySelector("body").style.overflowY = "hidden";
 }
 
-function openPopUp8() { //mostrar menu popup "FISOTERAPIA" no display
+function openPopUp8() { //mostrar menu popup "ATENDIMENTO MÉDICO" no display
     document.querySelector("#ctf8").style.display = "block";   
+    document.querySelector(".wrap").style.overflowY = "hidden";
+    document.querySelector("body").style.overflowY = "hidden";
+}
+
+function openPopUp9() { //mostrar menu popup "DESENVOLVIMENTO PROFISSIONAL" no display
+    document.querySelector("#ctf9").style.display = "block";   
     document.querySelector(".wrap").style.overflowY = "hidden";
     document.querySelector("body").style.overflowY = "hidden";
 }
@@ -76,6 +82,7 @@ function closePopUp() {//ocultar menu popup no display
     document.querySelector("#ctf6").style.display = "none";
     document.querySelector("#ctf7").style.display = "none";
     document.querySelector("#ctf8").style.display = "none";
+    document.querySelector("#ctf9").style.display = "none";
     document.querySelector(".wrap").style.overflowY = "initial";
     document.querySelector("body").style.overflowY = "initial";
            

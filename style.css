@@ -747,7 +747,24 @@ color: #8EDE65;
 .PCtFlutuante, #pC1 { /*texto de caixa pop-up áreas de atuação*/
     font-size: 1.2vw;
     color: #1D1D29;
+    text-align: justify;
+}
+
+#iconesFlutuante { /*Formatação gGERAL para ícones da quinta sessão*/
     text-align: center;
+    line-height: 2.3vw;
+    word-spacing: 0.5vw;
+    font-weight: 700;
+}
+
+.IconeFlutuanteS{ /*Formatação INDIVIDUAL para ícones da quinta sessão*/
+    color: #2c3e50;
+    font-size: 2vw;
+}
+
+.IconeFlutuanteS:hover{ /*Especificaçãoe ao passar o mouse em um ícone da quinta sessão*/
+color: #8EDE65;
+    font-weight:900;
 }
 
 /*:::::::::::::::::::: FIM ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
