@@ -275,7 +275,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
     position: relative;
     width: 100%;
-    height: 213vw;
+    height: 240vw;
     background-color: #F7FDF3;
 	clip-path: polygon(40% 3%, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 0);
 }
@@ -428,13 +428,13 @@ body, #hd1 { /*Especificações para o corpo da página*/
 /*<-- TerceiraSessão De Informações do HOME (Areas de atuação Home Care)*/
 
 #terceiraSessãoDeInfo {  /*Terceira sessão abaixo de news */
-    /*background-color: yellow;*/
+    /* background-color: yellow; */
     width: 100%;
     max-width: 100%;
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 93%; 
-    height: 21%;
+    height: 58vw;
     position: absolute;
     display: inline-flex;
   }
@@ -479,6 +479,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 .LTitulos #st6{ /*background-color: green;*/  width: 18%;}
 .LTitulos #st7{ /*background-color: #8EDE65;*/ width: 18%;}
 .LTitulos #st8{ /*background-color: green;*/  width: 18%; }
+.LTitulos #st9{ /*background-color: green;*/  width: 18%; }
 
 /*Ações ao passar o mouse em cada título individual*/
 .LTitulos #st1:hover{ color:#8EDE65; cursor: pointer;}
@@ -489,6 +490,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 .LTitulos #st6:hover{ color:#8EDE65; cursor: pointer;}
 .LTitulos #st7:hover{ color:#8EDE65; cursor: pointer;}
 .LTitulos #st8:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st9:hover{ color:#8EDE65; cursor: pointer;}
 
 .LAtuacao { /*Linha de espaço para cada foto de área de atuação*/
     /*background-color: grey;*/
@@ -522,6 +524,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 #imgA6 {background-image: url(img/s6.png);}
 #imgA7 {background-image: url(img/s7.png);}
 #imgA8 {background-image: url(img/s8.png);}
+#imgA9 {background-image: url(img/s9.png);}
 
 
 /*<--FimTerceiraSessão*/
@@ -534,7 +537,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     background-repeat: no-repeat; 
     width: 100%;
     height: 32vw;
-    margin-top: 138.7%;
+    margin-top: 152%;
     position: absolute;   
     padding-left: 0;
     margin-left: 0; 
@@ -591,7 +594,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 170.1%; 
+    margin-top: 183.4%; 
     height: 15%;
     position: absolute;
     display: inline-flex;
@@ -650,7 +653,7 @@ color: #8EDE65;
     position: absolute;
     width: 100%;
     height: 15vw;
-    margin-top: 197vw;
+    margin-top: 215vw;
 }
 
 #linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
