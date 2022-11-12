@@ -356,14 +356,14 @@ body, #hd1 { /*Especificações para o corpo da página*/
 /*<-- Segunda Sessão De Informações do HOME (vantagens Home Care)*/
 
 #segundaSessãoDeInfo {  /*Segunda sessão abaixo de news */
-    /*background-color: yellow;*/
+    /* background-color: yellow; */
     width: 100%;
     max-width: 100%;
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 42%; 
-    height: 52vw;
-    margin-bottom: 3vw;
+    height: 56vw;
+    padding-bottom: 3vw;
     position: absolute;
     display: inline-flex;
 }
@@ -433,7 +433,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     max-width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 93%; 
+    margin-top: 96%; 
     height: 58vw;
     position: absolute;
     display: inline-flex;
@@ -537,7 +537,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     background-repeat: no-repeat; 
     width: 100%;
     height: 32vw;
-    margin-top: 152%;
+    margin-top: 157%;
     position: absolute;   
     padding-left: 0;
     margin-left: 0; 
@@ -594,7 +594,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 183.4%; 
+    margin-top: 188.4%; 
     height: 15%;
     position: absolute;
     display: inline-flex;
@@ -653,7 +653,7 @@ color: #8EDE65;
     position: absolute;
     width: 100%;
     height: 15vw;
-    margin-top: 215vw;
+    margin-top: 220vw;
 }
 
 #linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
@@ -702,7 +702,11 @@ color: #8EDE65;
     margin-left: 63%;
     margin-top: 55%;
     position: absolute;
-    z-index: 9;  
+    z-index: 8;  
+}
+
+#st3 {
+    z-index: 9;
 }
 
 /*FimSteto*/
