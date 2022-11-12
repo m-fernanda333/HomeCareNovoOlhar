@@ -165,6 +165,6 @@ function slider3 () {
 }
 
 Window.sr = ScrollReveal({ reset: true });
-ScrollReveal().reveal('.delayHardReveal', { delay: 600, origin: "top",distance: "50px", duration: 3000 });
-ScrollReveal().reveal('.delayMediumReveal', { delay: 400, origin: "top",distance: "50px", duration: 2000 });
-ScrollReveal().reveal('.delayFastReveal', { delay: 200, origin: "top",distance: "50px", duration: 500 });
+ScrollReveal().reveal('.delayHardReveal', { delay: 300, origin: "top",distance: "50px", duration: 1000 });
+ScrollReveal().reveal('.delayMediumReveal', { delay: 200, origin: "top",distance: "50px", duration: 500 });
+ScrollReveal().reveal('.delayFastReveal', { delay: 100, origin: "top",distance: "50px", duration: 200 });

@@ -275,7 +275,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
     position: relative;
     width: 100%;
-    height: 240vw;
+    height: 235vw;
     background-color: #F7FDF3;
 	clip-path: polygon(40% 3%, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 0);
 }
@@ -780,3 +780,8 @@ color: #8EDE65;
 
 /* RESPONSIVIDADE HOME ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+@media (max-width:723px){
+    .BtnRadiusContent { /*tirando o radio button para versões mobile*/
+        display: none;
+    }
+}
