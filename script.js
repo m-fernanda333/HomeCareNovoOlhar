@@ -94,33 +94,30 @@ let count = 1;
 
 setInterval ( function(){ //definindo o intervalo de tempo em que irá chamar a proxima imagem (atraves da função nexImg)
     nextImage();
-}, 7500)
+}, 6500)
 
 function nextImage () { //função que define  a proxima imagem e a sutuacao do btn radius
     
     count++;
 
-    if (count > 3) {
-        count = 1
-    }
-
-
-    if (count == 1) {
-       slider1();
-    }
-
-    if (count == 2) {
-       slider2();
-    }
-
-    if (count == 3) {
-        slider3();
+    switch (count) {
+        case 1:
+            slider1();
+            break;
+                case 2:
+                slider2();
+                break;
+                    case 3:
+                        slider3();
+                        break;
+                    default:
+                        slider1(); 
     }
 
 }
 
 function slider1 () {
-    document.querySelector("body").style.backgroundImage = "url(img/hd1.png)";
+    document.querySelector("body").style.backgroundImage = "url(img/hd1.webp)";
         document.getElementById("radio1").checked = true;
         document.getElementById("radio2").checked = false;
         document.getElementById("radio3").checked = false;

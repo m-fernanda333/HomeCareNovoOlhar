@@ -129,7 +129,6 @@ body, html {
 
 body, #hd1 { /*Especificações para o corpo da página*/
     /*background-color: #1D1D29;*/
-    background-image: url(img/hd1.webp);
     background-size: 100%;
     background-repeat: no-repeat; 
     background-position: fixed;
