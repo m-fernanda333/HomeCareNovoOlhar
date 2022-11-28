@@ -89,6 +89,7 @@ Paleta de cores:
 	margin: 0;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -96,7 +97,7 @@ a {
 }
 
 html, body { /*Desabilitando o scroll no eixo X na TAG HTML, para facilitar a compatibilidade com os navegadores*/
-    overflow-x: hidden;
+   /* overflow-x: hidden;*/
 }
 
 h1 { /*Especificações para títulos H1 */
@@ -147,15 +148,35 @@ body, #hd1 { /*Especificações para o corpo da página*/
     display: none;
 }
 
- #navBar{ /*Barra onde ficam icones sociais e opções de navegação*/
-    /* background-color: black; */
+ .navBar{ /*Barra onde ficam icones sociais e opções de navegação*/
+ 
      display: flex;
      font-weight: 500;
-     margin-left: 8vw;
-     margin-right: 8vw;
-     margin-top: 3vw;
+     padding-left: 10%;
+     padding-right: 10%;
+     padding-top: 3vw;
+     padding-bottom: 3vw;
+     position: fixed;
+     top:0;
+     left:0;
+     z-index:8;
+     display:flex;
+     width:80%;
+     color: #000;
+     background: transparent;
+     transition: 0.5s;
+     
  }
- 
+
+ /*QUANDO DER O SCROLL ADICIONA A CLASSE*/
+.sticky{
+    background: #1d1d29fd;
+    transition: 0.5s;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+  }
+
  #opcoesNavBar { /*Barra onde ficam as opções de navegação*/
      /* background-color: grey; */
      width: 55%;
@@ -201,7 +222,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     /* background-color: yellow; */
     margin-left: 8vw;
     margin-right: 8vw;
-    margin-top: 3vw;
+    margin-top: 7vw;
     text-align: left;
     padding-left: 3vw;
     width: 35%;
