@@ -170,7 +170,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
 
  /*QUANDO DER O SCROLL ADICIONA A CLASSE*/
 .sticky{
-    background: #1d1d29fd;
+    background: #e6e9e4;
     transition: 0.5s;
     padding-top: 2vw;
     padding-bottom: 2vw;
