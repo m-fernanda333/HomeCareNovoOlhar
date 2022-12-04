@@ -156,7 +156,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
      padding-right: 10%;
      padding-top: 3vw;
      padding-bottom: 3vw;
-     position: fixed;
+     /* position: fixed; */
      top:0;
      left:0;
      z-index:8;
@@ -168,14 +168,16 @@ body, #hd1 { /*Especificações para o corpo da página*/
      
  }
 
- /*QUANDO DER O SCROLL ADICIONA A CLASSE*/
+ /*
+ /*QUANDO DER O SCROLL ADICIONA A CLASSE
 .sticky{
     background: #e6e9e4;
     transition: 0.5s;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    color: #1D1D29;
 
-  }
+  }*/
 
  #opcoesNavBar { /*Barra onde ficam as opções de navegação*/
      /* background-color: grey; */
@@ -222,7 +224,7 @@ body, #hd1 { /*Especificações para o corpo da página*/
     /* background-color: yellow; */
     margin-left: 8vw;
     margin-right: 8vw;
-    margin-top: 7vw;
+    /* margin-top: 1vw; */
     text-align: left;
     padding-left: 3vw;
     width: 35%;
