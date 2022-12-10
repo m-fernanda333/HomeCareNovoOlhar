@@ -873,6 +873,7 @@ color: #8EDE65;
         padding-right: 10vw;
         padding-top: 6vw;
         padding-bottom: 2.5vw;  
+        
     }
 
     #logoMobile {
@@ -892,6 +893,48 @@ color: #8EDE65;
         color: #F7FDF3;
         text-align:right;
         font-size: 7vw;
+    }
+
+    #navBarMobileOp{
+        background-color: #F7FDF3;
+        width: 90%;
+        height: 100vw;
+        margin-left: 10%;
+        display: flex;
+        position: absolute;
+        z-index: 99;
+        display: none;
+    }
+
+    #navBarMobileOpInterno {
+        height: 50vw;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 25vw;
+        /* background-color: #8EDE65; */
+        text-align: center;
+    }
+
+    .OpcaoNavBarMob {
+        color: #1D1D29;
+        font-size: 4vw;
+        width: 100%;
+        /* background-color: burlywood; */
+        margin-bottom: 4vw;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #iconeX {
+        font-size: 10vw;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 4vw;
+        color: #2c3e50;
+    }
+
+    * {
+        text-decoration: none;
     }
 
     #news { /*Área principal do site com informação e botão lateral*/
@@ -1061,7 +1104,7 @@ color: #8EDE65;
     max-width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 168%; 
+    margin-top: 165%; 
     height: 58vw;
     position: absolute;
     display: inline-flex;
@@ -1253,4 +1296,13 @@ color: #8EDE65;
 }
 
 
+
+
+
+
+
+
+
 } /*fim (max-width)*/
+
+

@@ -20,19 +20,11 @@ window.addEventListener('scroll', function(){
 /* FUNÇÕES PARA O MENU MOBILE NAVBAR */
 
 function openHamb() { //Abrir menu mobile
-    document.querySelector("#navBarMobile").style.display = "block"; 
-    document.querySelector("#openHamb").style.display = "none"; 
-    document.querySelector("#closeHamb").style.display = "block"; 
-    document.querySelector(".wrap").style.overflowY = "hidden";
-    document.querySelector("body").style.overflowY = "hidden";
+    document.querySelector("#navBarMobileOp").style.display = "block"; 
 }
 
 function closeHamb() { //Fechar menu mobile
-    document.querySelector("#navBarMobile").style.display = "none"; 
-    document.querySelector("#openHamb").style.display = "block"; 
-    document.querySelector("#closeHamb").style.display = "none"; 
-    document.querySelector(".wrap").style.overflowY = "initial";
-    document.querySelector("body").style.overflowY = "initial";
+    document.querySelector("#navBarMobileOp").style.display = "none"; 
     
 }
 
