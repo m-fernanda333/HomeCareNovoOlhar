@@ -106,6 +106,7 @@ function openPopUp9() { //mostrar menu popup "DESENVOLVIMENTO PROFISSIONAL" no d
 
 function closePopUp() {//ocultar menu popup no display
    
+
     document.querySelector("#ctf1").style.display = "none";
     document.querySelector("#ctf2").style.display = "none";
     document.querySelector("#ctf3").style.display = "none";
@@ -115,9 +116,17 @@ function closePopUp() {//ocultar menu popup no display
     document.querySelector("#ctf7").style.display = "none";
     document.querySelector("#ctf8").style.display = "none";
     document.querySelector("#ctf9").style.display = "none";
-    document.querySelector(".wrap").style.overflowY = "initial";
-    document.querySelector("body").style.overflowY = "initial";
-    document.querySelector(".navBar").style.display = "flex";
+
+    if (window.matchMedia("(min-width:723px)").matches) { 
+        document.querySelector(".wrap").style.overflowY = "initial";
+        document.querySelector("body").style.overflowY = "initial";
+        document.querySelector(".navBar").style.display = "flex";
+    }
+    else {
+        document.querySelector(".wrap").style.overflowY = "initial";
+        document.querySelector("body").style.overflowY = "initial";
+        document.querySelector(".navBar").style.display = "none";
+    }
            
 }
 
