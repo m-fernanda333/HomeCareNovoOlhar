@@ -1,0 +1,803 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Sintaxe: 
+	Identificadores: sintaxeIdentificadores; 
+	Classes: SintaxeClasses; 
+	ícones: ICONES;
+Paleta de cores: 
+    Cinza Esverdeado: #F7FDF3
+    Verde: #8EDE65
+    Azul: #1D1D29
+    Azul escuro texto: #1D1D29
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* IMPORTAÇÕES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;750;800;900&display=swap');
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* ANIMAÇÕES */
+
+/*Sessão de definição de Fade In (Animação para surgir os textos da página)*/
+
+@-webkit-keyframes fadeIn { /*Função de animação fade In*/
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    .fadeIn0 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 1s ease-in-out;
+        -moz-animation: fadeIn 1s ease-in-out;
+        -o-animation: fadeIn 1s ease-in-out;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .fadeIn1 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 3s ease-in-out;
+        -moz-animation: fadeIn 3s ease-in-out;
+        -o-animation: fadeIn 3s ease-in-out;
+        animation: fadeIn 3s ease-in-out;
+    }
+
+    .fadeIn2 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+            -webkit-animation: fadeIn 5s ease-in-out;
+            -moz-animation: fadeIn 5s ease-in-out;
+            -o-animation: fadeIn 5s ease-in-out;
+            animation: fadeIn 5s ease-in-out;
+    }
+
+    .fadeIn3 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 6s ease-in-out;
+        -moz-animation: fadeIn 6s ease-in-out;
+        -o-animation: fadeIn 6s ease-in-out;
+        animation: fadeIn 6s ease-in-out;
+    }
+
+    .fadeIn4 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 7s ease-in-out;
+        -moz-animation: fadeIn 7s ease-in-out;
+        -o-animation: fadeIn 7s ease-in-out;
+        animation: fadeIn 7s ease-in-out;
+    }
+
+/* <-- Fim FadeIn*/
+
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+
+/* FORMATAÇÃO GERAL / SEM CLASSE / SEM IDENTIFICADOR */
+
+* {
+	padding: 0;
+	margin: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body { /*Desabilitando o scroll no eixo X na TAG HTML, para facilitar a compatibilidade com os navegadores*/
+    overflow-x: hidden;
+}
+
+h1 { /*Especificações para títulos H1 */
+    font-size: 4vw;
+    font-weight:700;
+ }
+
+ /*NOVA DEFINIÇÃO NECESSÁRIA PARA ABERTURA DE MENUS POP-UP / TRAVAMENTO DO OVERFLOW */
+
+body, html {
+    height: 100%;
+}
+#wrap {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#hd1 {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*FIM TRAVAMENTO DO OVERFLOW*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* FORMATAÇÃO POR IDENTIFICADOR */
+
+/*--> Body*/
+
+body, #hd1 { /*Especificações para o corpo da página*/
+    /*background-color: #1D1D29;*/
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    background-position: fixed;
+    background-image: url(img/liso.webp);
+}
+
+/*<--FimBody*/
+
+ /*--> Header */
+
+ #header { /*Especificações para o cabeçalho da página*/
+    padding-top: 6vh;
+    margin-bottom: 0;
+}
+
+#navBarMobile{ /*Ocultando a opção de menu navBar mobile na versão desktop*/
+    height: 3vw;
+    width: 5vw;
+    background-color: black;
+    margin-left: 8vw;
+    margin-top: 3vw;
+}
+
+ #navBar{ /*Barra onde ficam icones sociais e opções de navegação*/
+    /* background-color: black; */
+     display: flex;
+     font-weight: 500;
+     margin-left: 8vw;
+     margin-right: 8vw;
+     margin-top: 3vw;
+     display: none;
+ }
+ 
+ .OpcoesNavBar { /*Barra onde ficam as opções de navegação*/
+     /* background-color: grey; */
+     width: 55%;
+     text-align: left;
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+.OpcaoNavBar { /*Opçoes de navegação*/
+    /* background-color: yellow; */
+    color: #F7FDF3;
+    font-size: 1.3vw;
+}
+
+#corrente {
+    font-weight: 700;
+}
+ 
+.OpcaoNavBar:hover{ /*Ações ao passar o mouse em uma opção de navegação*/
+    font-weight:bold;
+    color: #8EDE65;
+}
+ 
+#iconesNavBar { /*Barra onde ficam os ícones sociais*/
+     /* background-color: green; */
+     width: 45%;
+     text-align: right;
+    
+ }
+ 
+.IconeNavBar { /* Icones de navegação */
+    /* background-color: yellow; */
+    color: #F7FDF3;
+    font-size: 1.7vw;
+}
+ 
+.IconeNavBar:hover { /*Ações ao passar o mouse em um ícone da barra de navegação*/
+    color: #8EDE65;
+    font-weight:900;
+}
+
+#news { /*Área principal do site com informação e botão lateral*/
+     /* background-color: yellow;  */
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 3vw;
+    text-align: left;
+    padding-left: 3vw;
+    width: 52%;
+     margin-bottom: 2vw; 
+     height: 100%;
+}
+
+.LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
+    width: 15vw;
+    height: 1vw;
+    margin-top: 0;
+    margin-bottom: 3vw;
+}
+
+#news .LinhaDeTitulo { /*Linha decorativa na área de news*/
+    background-color: #8EDE65;
+}
+
+#news p { /*Texto da área news*/
+    font-size: 6vw;
+    color: #F7FDF3;
+    font-weight:750;
+   
+}
+
+.BtnPrincipal { /* Botão de solicitar um orçamento */
+    background-color: #8EDE65;
+    height: 8vw;
+    width: 50vw;
+    border: none;
+    border-radius:30px;
+    font-size: 3.2vw;
+    color: #F7FDF3;
+    font-weight: 600;
+    margin-top: 3vw;
+   
+}
+
+.BtnPrincipal:hover { /* Ações ao passar o mouse em cima do botão principal */
+    cursor:pointer;
+    font-weight: 700;
+    height: 4.1vw;
+    width: 25.1vw;
+    background-color: #F7FDF3;
+    color: #8EDE65;
+}
+
+.BtnRadiusContent {
+    height: 1.3vw;
+    width: 15%;
+    /* background-color: aqua; */
+    position: absolute;
+    margin-left: 35% ;
+    margin-top: 4vw;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    display: none;
+}
+
+#radio1, #radio2, #radio3 {
+    cursor: pointer;
+}
+
+
+
+/*<-- FimHeader*/
+
+/*--> Hexágono construído com clip-path para gerar o shape divider do layout */
+
+#pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
+    position: relative;
+    width: 100%;
+    height: 235vw;
+    background-color: #F7FDF3;
+	clip-path: polygon(40% 3%, 100% 3%, 100% 100%, 50% 100%, 0 100%, 0 0);
+}
+
+/*<-- FimHexágono*/
+
+/*<-- Primeira sessão de informações do HOME (Imagem ilustrativa e explicação home care) */
+
+#primeiraSessãoDeInfo{ /* Primeira sessão abaixo de news */
+    /*background-color: yellow;*/
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 6%; 
+    height: 20%;
+    position: absolute;
+    display: inline-flex;
+}
+
+#imgPrimeiraSessãoDeInfo{ /* Imagem ilustrativa da primeira sessão */
+   /* background-color: green;*/
+    background-image: url(img/imgilustrativa.webp);
+    background-size:50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 40%;
+    display: none;
+}
+
+#primeiraSessãoImg{ /* Imagem ilustrativa da primeira sessão */
+    /*background-color: green;*/
+    background-image: url(img/imgilustrativa.webp);
+    background-repeat: no-repeat;
+    background-size:85%;
+    background-position: 50%;
+    width: 40%;
+    display: none;
+}
+
+#txtPrimeiraSessãoDeInfo{ /* Texto da primeira sessão */
+    /*background-color: paleturquoise;*/
+    width: 80%;
+    padding-top: 11%;
+}
+
+.CaixaDeTitulo { /* Div para quardar os títulos*/
+    /*background-color: violet;*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.CaixaDeTitulo, #c1 { /* Div para quardar os títulos*/
+     /*background-color: violet;*/
+     display: flex;
+     justify-content: space-around;
+     padding-left: 14.6%;
+     padding-right: 14.6%;
+ }
+
+ .TVerde { /* Título 1 verde */
+    color: #8EDE65;
+}
+
+.TAzul { /* Título 1 azul */  
+    color: #2c3e50;
+}
+
+#texto1 { /*Texto 1 desta sessão (O que é home care...)*/
+    margin-top: 3vw;
+    text-align: justify;
+    line-height: 3vw;
+    word-spacing: 0.5vw;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #1D1D29;
+}
+
+/*<--FimPrimeiraSessão*/
+
+/*<-- Segunda Sessão De Informações do HOME (vantagens Home Care)*/
+
+#segundaSessãoDeInfo {  /*Segunda sessão abaixo de news */
+    /* background-color: yellow; */
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 42%; 
+    height: 70vw;
+    padding-bottom: 3vw;
+    position: absolute;
+    display: inline-flex;
+}
+
+#txtSegundaSessãoDeInfo{ /* Titulos da segunda sessão */
+   /* background-color: paleturquoise; */
+    width: 80%;
+    padding-top: 7%;
+}
+
+.CaixaDeTitulo, #c2 { /* Div para quardar os títulos da primeira linha da segunda sessão*/
+     padding-left: 5%;
+     padding-right: 5%;
+ }
+
+ .CaixaDeTitulo, #c3 { /* Div para quardar os títulos da segunda linha da segunda sessão*/
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+}
+
+#txtSegundaSessãoDeInfo p { /* Motivações da segunda sessão guardadas pela tag p */
+    margin-top: 2vw;
+    text-align: justify;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #1D1D29;
+}
+
+#listaDeItens {
+   /* background-color: chartreuse;*/
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+}
+
+.ItemCheck { /* Item da lista */
+     /*background-color: tomato;*/
+    display: inline-flex;
+    width: 100%;
+    text-align: left;
+    height: 4vw;
+}
+
+.IconCheck { /*ícone dentro do item da lista de itens*/
+     /*background-color: aqua;*/
+    width: 5%;
+    font-size: 4vw;
+    color: #8EDE65;
+    height: 4vw;
+    padding-top: 1.3vw;
+}
+
+.TextCheck { /*Texto dentro do ícone da lista de itens*/
+    /*background-color:darkgoldenrod;*/
+    font-size: 1.5vw;
+    font-weight: 700;
+    width: 95%;   
+    text-align: center; 
+}
+
+/*<--FimSegundaSessão*/
+
+/*<-- TerceiraSessão De Informações do HOME (Areas de atuação Home Care)*/
+
+#terceiraSessãoDeInfo {  /*Terceira sessão abaixo de news */
+    /* background-color: yellow; */
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 110%; 
+    height: 58vw;
+    position: absolute;
+    display: inline-flex;
+  }
+
+#txtTerceiraSessãoDeInfo{ /* Texto da terceira sessão */
+    /*background-color: paleturquoise;*/
+    width: 80%;
+    padding-top: 7%;
+}
+
+#c4 { /* Div para quardar os títulos da terceira linha da segunda sessão*/
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    width: 47%;
+    margin-bottom: 5vw;
+ }
+
+.LTitulos { /* Linha para guardar títulos das areas de atuação */
+    /*background-color: orange;*/
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    padding-left: 11% ;
+    padding-right: 11%;
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #1D1D29;
+    display: none;
+}
+
+#lt1 { /*TAG espescifica para a segunda linha de títulos de áreas de atuação*/
+    margin-top: 2vw;
+}
+
+/*Tamanho de cada título individual / DEFININDO UMA CLASSE NÃO FUNCIONOU*/
+.LTitulos #st1{ /*background-color: #8EDE65;*/ width: 18%;}
+.LTitulos #st2{ /*background-color: green;*/  width: 18%; }
+.LTitulos #st3{ /*background-color: #8EDE65;*/ width: 18%;}
+.LTitulos #st4{ /*background-color: green;*/ width: 18%; }
+.LTitulos #st5{ /*background-color: #8EDE65;*/width: 18%;}
+.LTitulos #st6{ /*background-color: green;*/  width: 18%;}
+.LTitulos #st7{ /*background-color: #8EDE65;*/ width: 18%;}
+.LTitulos #st8{ /*background-color: green;*/  width: 18%; }
+.LTitulos #st9{ /*background-color: green;*/  width: 18%; }
+
+/*Ações ao passar o mouse em cada título individual*/
+.LTitulos #st1:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st2:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st3:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st4:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st5:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st6:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st7:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st8:hover{ color:#8EDE65; cursor: pointer;}
+.LTitulos #st9:hover{ color:#8EDE65; cursor: pointer;}
+
+.LAtuacao { /*Linha de espaço para cada foto de área de atuação*/
+    /* background-color: grey; */
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 20vw;;
+    padding-left: 11% ;
+    padding-right: 11%;
+}
+
+.ImgFormat { /*Formatação para a imagem que fica na linha, feita com clip-path*/
+    clip-path: circle(40% at 50% 50%);
+    background-size: cover;
+    background-position: 50%;
+    width: 25%;
+    height: 100%; 
+}
+
+.ImgFormat:hover {  /*Ações ao passar o mouse na imagem que fica na linha de atuação*/
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+/*Imagens de fundo para círculo de área de atuação*/
+#imgA1 {background-image: url(img/s1.webp);}
+#imgA2 {background-image: url(img/s2.webp);}
+#imgA3 {background-image: url(img/s3.webp);}
+#imgA4 {background-image: url(img/s4.webp);}
+#imgA5 {background-image: url(img/s5.webp);}
+#imgA6 {background-image: url(img/s6.webp);}
+#imgA7 {background-image: url(img/s7.webp);}
+#imgA8 {background-image: url(img/s8.webp);}
+#imgA9 {background-image: url(img/s9.webp);}
+
+
+/*<--FimTerceiraSessão*/
+
+/*<-- QuartaSessão De Informações do HOME (Areas de Serviços Home Care)*/
+
+#quartaSessãoDeInfo { /*Box com imagem de formato para guardar as informações da quarta sessão de informações*/
+    background-image: url(img/serviços.webp);
+    background-size:100%;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 32vw;
+    margin-top: 157%;
+    position: absolute;   
+    padding-left: 0;
+    margin-left: 0; 
+    background-color: #8EDE65;
+    display: none;
+}
+
+#c5 { /* Identificador especial para formatações em caixa de título da quarta sessão*/
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    width: 30%;
+    margin-bottom: 3vw;
+    margin-top: 4vw;
+    text-align: justify;
+    line-height: 2.3vw;
+    word-spacing: 0.5vw;
+    font-size: 1.3vw;
+    font-weight: 700;
+    margin-left: 10%;
+    background-color: #8EDE65;
+    width: 100%;
+    height: 4vw;
+    padding-top: 1.3vw;
+ }
+
+
+ .TBranco { /* Título da c5 definido como branco*/
+    color: #F7FDF3;
+ }
+
+ #listaDeServiços { /*Container para a lista de serviços*/
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    /* background-color: aquamarine; */
+ }
+
+ #listaDeServiços p { /*lista de serviços*/
+    margin-top: 2vw;
+    text-align: justify;
+    line-height: 1vw;
+    word-spacing: 0.8vw;
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: #F7FDF3;
+ }
+
+/*<--FimQuartaSessão*/
+
+/*<-- QuintaSessão De Informações do HOME (Area de "+", contato e imagem ilustrativa Home Care)*/
+
+#quintaSessãoDeInfo { /* Caixa container para guardar informações da quinta sessão*/
+    /*background-color: yellow;*/
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 188.4%; 
+    height: 15%;
+    position: absolute;
+    display: inline-flex;
+   
+}
+
+#quintaSessãoImg {  /*imagem ilutrativa da quinta sessão*/
+/* background-color: green;*/
+background-image: url(img/stand.webp);
+background-size:100%;
+background-repeat: no-repeat;
+width: 40%;
+margin-top: 1%;
+display: none;
+}
+
+#c6 { /*identificador especial para o título 6 da quinta sessão*/
+    display: flex;
+     justify-content: space-around;
+     padding-left: 3%;
+     padding-right: 3%;
+     font-size: 1vw;
+     text-align: center;
+     margin-left: 20%;
+     /* background-color: blueviolet; */
+     width: 100%;
+}
+
+#icones1 { /*Formatação gGERAL para ícones da quinta sessão*/
+    margin-top: 2vw;
+    text-align: center;
+    line-height: 2.3vw;
+    word-spacing: 0.5vw;
+    font-weight: 700;
+    margin-left: 35.5%;
+}
+
+.IconeQuintaS{ /*Formatação INDIVIDUAL para ícones da quinta sessão*/
+    color: #2c3e50;
+    font-size: 4vw;
+}
+
+.IconeQuintaS:hover{ /*Especificaçãoe ao passar o mouse em um ícone da quinta sessão*/
+color: #8EDE65;
+    font-weight:900;
+}
+
+#txtQuintaSessãoDeInfo{ /*definições do cointainer da quinta sessão*/
+    padding-top: 10%;
+}
+
+/*<--FimQuintaSessão*/
+
+/*Footer para contatdo e copyright*/
+
+#footerInfo {
+    color: #2c3e50;
+    background-color: #F7FDF3;
+    font-weight: 600;
+    font-size: 2vw;
+    position: absolute;
+    width: 100%;
+    height: 15vw;
+    margin-top: 220vw;
+}
+
+#linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
+    background-color: grey;
+    width: 50%;
+    margin-left: 25%;
+    height: 0.06vw;
+}
+
+.LFooter { /*Linha principal do footer*/
+    /*background-color: blueviolet;*/
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3vw; 
+}
+
+#footerLeft { /*Div de informações alinhada a esquerda no footer*/
+    /*background-color: aqua;*/
+    width: 50%;
+    text-align: center;
+}
+
+#footerRight{ /*Div de informações alinhada a direita no footer*/
+    /*background-color: burlywood;*/
+    width: 50%;
+    text-align: center;
+}
+
+#copyright { /*Linha final do footer (informações do copyright)*/
+    padding-bottom: 3vw;;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+/*<--FimFooter*/
+
+/* Imagem de estetoscópio fixa na lateral */
+
+#steto { /*box com imagem de steto que fica fixa na página*/
+   background-image: url(img/steto.webp);
+   background-size: cover;
+    width: 37%;
+    height: 25%;
+    margin-left: 63%;
+    margin-top: 55%;
+    position: absolute;
+    z-index: 8;  
+    display: none;
+}
+
+#st3 {
+    z-index: 9;
+}
+
+/*FimSteto*/
+
+/* :::::::::::::::::::: ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
+
+.CFlutuanteFundo { /*Div criada para ocupar todo o espaço do PathCorpo e darr opacidade a ele quando um menu popup abrir*/
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    display: none;
+}
+
+.CFlutuanteFundo:hover{
+    cursor: pointer;
+}
+
+.CtFlutuante { /*caixas de menu pop up para especificação das área de atuação*/
+    position: absolute;
+    background-color: #F7FDF3;
+    width: 35%;
+    height: 10%;
+    margin-top: 107%;
+    margin-left: 30%;
+    border-radius: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: 5px 5px 5px 1 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.TCtFlutuante, #tC1 { /*título de caixa pop-up áreas de atuação*/
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #1D1D29;
+}
+
+.PCtFlutuante, #pC1 { /*texto de caixa pop-up áreas de atuação*/
+    font-size: 1.2vw;
+    color: #1D1D29;
+    text-align: justify;
+}
+
+#iconesFlutuante { /*Formatação gGERAL para ícones da quinta sessão*/
+    text-align: center;
+    line-height: 2.3vw;
+    word-spacing: 0.5vw;
+    font-weight: 700;
+}
+
+.IconeFlutuanteS{ /*Formatação INDIVIDUAL para ícones da quinta sessão*/
+    color: #2c3e50;
+    font-size: 2vw;
+}
+
+.IconeFlutuanteS:hover{ /*Especificaçãoe ao passar o mouse em um ícone da quinta sessão*/
+color: #8EDE65;
+    font-weight:900;
+}
+
+/*:::::::::::::::::::: FIM ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
+
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+/* RESPONSIVIDADE HOME ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@media (max-width:723px){
+    .BtnRadiusContent { /*tirando o radio button para versões mobile*/
+        display: none;
+    }
+}

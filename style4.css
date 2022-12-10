@@ -1,0 +1,438 @@
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Sintaxe: 
+	Identificadores: sintaxeIdentificadores; 
+	Classes: SintaxeClasses; 
+	ícones: ICONES;
+Paleta de cores: 
+    Cinza Esverdeado: #F7FDF3
+    Verde: #8EDE65
+    Azul: #1D1D29
+    Azul escuro texto: #1D1D29
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* IMPORTAÇÕES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;750;800;900&display=swap');
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+/* ANIMAÇÕES */
+
+/*Sessão de definição de Fade In (Animação para surgir os textos da página)*/
+
+@-webkit-keyframes fadeIn { /*Função de animação fade In*/
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    .fadeIn1 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 3s ease-in-out;
+        -moz-animation: fadeIn 3s ease-in-out;
+        -o-animation: fadeIn 3s ease-in-out;
+        animation: fadeIn 3s ease-in-out;
+    }
+
+    .fadeIn2 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+            -webkit-animation: fadeIn 5s ease-in-out;
+            -moz-animation: fadeIn 5s ease-in-out;
+            -o-animation: fadeIn 5s ease-in-out;
+            animation: fadeIn 5s ease-in-out;
+    }
+
+    .fadeIn3 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 6s ease-in-out;
+        -moz-animation: fadeIn 6s ease-in-out;
+        -o-animation: fadeIn 6s ease-in-out;
+        animation: fadeIn 6s ease-in-out;
+    }
+
+    .fadeIn4 { /*Nível de fade in (s) de acordo com a posição na página, quanto mais abaixo, mais lento o carregamento*/
+        -webkit-animation: fadeIn 7s ease-in-out;
+        -moz-animation: fadeIn 7s ease-in-out;
+        -o-animation: fadeIn 7s ease-in-out;
+        animation: fadeIn 7s ease-in-out;
+    }
+
+/* <-- Fim FadeIn*/
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+
+
+/* FORMATAÇÃO GERAL / SEM CLASSE / SEM IDENTIFICADOR */
+
+* {
+	padding: 0;
+	margin: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body { /*Desabilitando o scroll no eixo X na TAG HTML, para facilitar a compatibilidade com os navegadores*/
+    overflow-x: hidden;
+}
+
+h1 { /*Especificações para títulos H1 */
+    font-size: 2.5vw;
+    font-weight:700;
+ }
+
+ /*---------------------------------------------------------*/
+
+ body{
+    background-image: url(img/newff.png);
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    background-color: #F7FDF3;  
+    
+ }
+
+
+ /*HEADER*/
+ #header { /*Especificações para o cabeçalho da página*/
+    padding-top: 6vh;
+}
+
+#navBarMobile{ /*Ocultando a opção de menu navBar mobile na versão desktop*/
+    display: none;
+}
+
+ .navBar{ /*Barra onde ficam icones sociais e opções de navegação*/
+ 
+     /* background-color: #000;   */
+     display: flex;
+     font-weight: 600;
+     padding-top: 2.5vw;
+     padding-bottom: 3.5vw;
+     height: 6vw;
+     /* position: fixed; */
+     margin-left: 15%;
+     top:0;
+     left:0;
+     z-index:8;
+     display:flex;
+     width:70%;
+     color: #000;
+     /* background: transparent; */
+     transition: 0.5s;
+     /* padding: 0;
+	margin: 0; */
+     
+ }
+
+ /*
+ /*QUANDO DER O SCROLL ADICIONA A CLASSE
+.sticky{
+    background: #e6e9e4;
+    transition: 0.5s;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    color: #1D1D29;
+
+  }*/
+
+ .OpcoesNavBar { /*Barra onde ficam as opções de navegação*/
+     /* background-color: grey;  */
+     width: 32%;
+     height: 4vw;
+     text-align: left;
+     display: flex;
+     justify-content: space-around;
+     margin-top: 0.5vw;
+     padding-top: 2vw;
+ }
+
+
+#logoNavBar{
+    width: 36%;
+    height: 6vw;
+    background-image: url(img/logoNav.png);
+     /* background-color: #F7FDF3;    */
+    background-repeat: no-repeat;
+    background-position: 50%; 
+    background-size: 82%;
+}
+
+#logoNavBar:hover{
+    background-size: 83%;
+}
+ 
+.OpcaoNavBar { /*Opçoes de navegação*/
+    /* background-color: yellow; */
+    color: #F7FDF3;
+    font-size: 1.3vw;
+}
+
+#corrente {
+    font-weight: 800;
+}
+ 
+.OpcaoNavBar:hover{ /*Ações ao passar o mouse em uma opção de navegação*/
+    font-weight:bold;
+    color: #8EDE65;
+}
+ 
+#iconesNavBar { /*Barra onde ficam os ícones sociais*/
+     /* background-color: green; */
+     width: 45%;
+     text-align: right;
+    
+ }
+ 
+.IconeNavBar { /* Icones de navegação */
+    /* background-color: yellow; */
+    color: #F7FDF3;
+    font-size: 1.7vw;
+}
+ 
+.IconeNavBar:hover { /*Ações ao passar o mouse em um ícone da barra de navegação*/
+    color: #8EDE65;
+    font-weight:900;
+}
+
+#news { /*Área principal do site com informação e botão lateral*/
+    /* background-color: yellow; */
+    margin-left: 8vw;
+    margin-right: 8vw;
+    /* margin-top: 3vw; */
+    text-align: center;
+    padding-left: 3vw;
+    width: 80%;
+    margin-bottom: 2vw;
+}
+
+.LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
+    width: 9vw;
+    height: 0.7vw;
+    margin-top: 0;
+    margin-bottom: 3vw;
+    margin-left: 42.7%;
+}
+
+#news .LinhaDeTitulo { /*Linha decorativa na área de news*/
+    background-color: #8EDE65;
+}
+
+
+#news p { /*Titulo da área news*/
+    font-size: 3.5vw;
+    color: #F7FDF3;
+    font-weight:750;
+    margin-bottom: 2vw;  
+}
+/*FIM HEADER*/
+
+/*Primeira sessão de info (missão)*/
+
+#primeiraSessãoDeInfo{ /* Primeira sessão de informaçãos*/
+      /* background-color: white;    */
+     background-size: 50%;
+     background-repeat: no-repeat;
+     background-position: 50%;
+     width: 80%;    
+     margin-top: 6vw; 
+     height: 17vw;
+     padding-top: 1vw;
+     margin-left: 10%;
+ }
+
+ .TituloFundoVerde {
+    width: 25%;
+    height: 3.5vw;
+    background-color: #8EDE65;
+    color: #F7FDF3;
+    font-size: 2.2vw;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1vw;
+ }
+
+ #primeiraSessãoDeInfo p {
+    margin-top: 2vw;
+    text-align: justify;
+    color: #F7FDF3;
+    line-height: 2.4vw;
+    word-spacing: 0.5vw;
+    font-weight: 500;
+    font-size: 1.2vw;
+ }
+/*Fim primeira sessão de info*/
+
+/*Segundasessão de info (visão)*/
+
+#segundaSessãoDeInfo{ /* Primeira sessão de informaçãos*/
+    background-color: #F7FDF3;    
+   height: 31vw;
+   padding-top: 1vw;
+   margin-left: 10%;
+    width: 80%;
+}
+
+#meio {
+    z-index: 9;
+    margin-left: 10%;
+    width: 20%;
+    margin-top: 6vw;
+}
+
+#segundaSessãoDeInfo p {
+    margin-top: 2vw;
+    text-align: justify;
+    color: #1D1D29;
+    line-height: 2.4vw;
+    word-spacing: 0.5vw;
+    font-weight: 500;
+    font-size: 1.2vw;
+    margin-left: 3vw;
+ }
+
+ #listaDeItens {
+    /* background-color: chartreuse;*/
+     margin-top: 2vw;
+     margin-left: 3vw;
+ }
+ 
+ .ItemCheck { /* Item da lista */
+      /* background-color: tomato; */
+     display: inline-flex;
+     width: 100%;
+     text-align: left;
+     height: 3vw;
+ }
+ 
+ .IconCheck { /*ícone dentro do item da lista de itens*/
+    /* background-color: aqua; */
+     width: 5%;
+     font-size: 3vw;
+     color: #8EDE65;
+     height: 3vw;
+     
+ }
+ 
+ .TextCheck { /*Texto dentro do ícone da lista de itens*/
+    text-align: justify;
+    color: #1D1D29;
+    line-height: 2.4vw;
+    font-size: 1.2vw;
+    word-spacing: 0.5vw;
+    font-weight: 700;
+    margin-top: 0.5vw;
+ }
+
+/*Fim segunda sessão de info*/
+
+/*Terceira sessão de info (missão)*/
+
+#terceiraSessãoDeInfo{ /* Terceira sessão de informaçãos*/
+    /* background-color: white;     */
+   background-size: 50%;
+   background-repeat: no-repeat;
+   background-position: 50%;
+   width: 80%;    
+   margin-top: 6vw; 
+   height: 80vw;
+   padding-top: 1vw;
+   margin-left: 10%;
+}
+
+#terceiraSessãoDeInfo p {
+    width: 75%;
+    height: 100%;
+    margin-top: 3.5vw;
+    text-align: justify;
+    color: #F7FDF3;
+    line-height: 2.4vw;
+    word-spacing: 0.5vw;
+    font-weight: 500;
+    font-size: 1.3vw;
+    margin-left: 3vw;
+}
+
+.Box {
+    width: 100%;
+    height: 15vw;
+    margin-top: 2vw;
+    /* background-color: green; */
+    display: flex;
+}
+
+.IconBox{
+    /* background-color: brown; */
+    height: 100%;
+    width: 25%;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+#ib1 {   background-image: url(img/valor\ \(3\).webp); }
+#ib2 {   background-image: url(img/valor\ \(2\).webp); }
+#ib3 {   background-image: url(img/valor\ \(1\).webp); }
+#ib4 {   background-image: url(img/valor\ \ \(4\).webp); }
+
+/*Fim terceira sessão de info*/
+
+/*Footer para contatdo e copyright*/
+
+#footerInfo {
+    /*background-color: #8EDE65;*/
+    color: #F7FDF3;
+    /* background-color: #F7FDF3; */
+    font-weight: 600;
+    font-size: 1.1vw;
+}
+
+#linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
+    background-color: #F7FDF3;
+    width: 50%;
+    margin-left: 25%;
+    height: 0.06vw;
+}
+
+.LFooter { /*Linha principal do footer*/
+    /*background-color: blueviolet;*/
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3vw; 
+}
+
+#footerLeft { /*Div de informações alinhada a esquerda no footer*/
+    /*background-color: aqua;*/
+    width: 50%;
+    text-align: center;
+}
+
+#footerRight{ /*Div de informações alinhada a direita no footer*/
+    /*background-color: burlywood;*/
+    width: 50%;
+    text-align: center;
+}
+
+#copyright { /*Linha final do footer (informações do copyright)*/
+    padding-bottom: 3vw;;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+/*<--FimFooter*/
