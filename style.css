@@ -844,15 +844,17 @@ color: #8EDE65;
 
     #navBarMobile{ /*Ocultando a opção de menu navBar mobile na versão desktop*/
         display: block;
-        height: 10vw;
+        height: 9vw;
         /* width: 80%; */
         /* margin-left: 10%; */
-         background-color: #F7FDF3; 
+         /* background-color: #F7FDF3;  */
         /* margin-top: 7vw; */
         padding-top: 1vw;
         margin-bottom: 4vw;
         display: flex;
-        justify-content:space-between
+        justify-content:space-between;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     #logoMobile {
@@ -869,8 +871,8 @@ color: #8EDE65;
         /* background-color: red; */
         width: 15%;
         height: 100%;
-        color: #1D1D29;
-        text-align: center;
+        color: #F7FDF3;
+        text-align:right;
         font-size: 7vw;
     }
 
