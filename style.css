@@ -948,7 +948,7 @@ color: #8EDE65;
    #c1 { /* Div para quardar os títulos*/
          padding-left: 22.5%;
          padding-right: 22.5%;
-         background-color: aqua;
+         /* background-color: aqua; */
         
      }
      
@@ -999,7 +999,7 @@ color: #8EDE65;
     }
     
     #listaDeItens {
-       /* background-color: chartreuse;*/
+       /* background-color: chartreuse; */
         margin-top: 6vw;
         margin-bottom: 6vw;
     }
@@ -1018,7 +1018,7 @@ color: #8EDE65;
         font-size: 4vw;
         color: #8EDE65;
         height: 4vw;
-        padding-top: 1.3vw;
+        padding-top: 1vw;
     }
     
     .TextCheck { /*Texto dentro do ícone da lista de itens*/
@@ -1026,7 +1026,8 @@ color: #8EDE65;
         font-size: 1.5vw;
         font-weight: 700;
         width: 95%;   
-        text-align: center; 
+        text-align: center;
+        margin-left: 2vw; 
     }
 /*<--FimSegundaSessão*/
 
@@ -1111,12 +1112,13 @@ color: #8EDE65;
     /*<-- QuintaSessão De Informações do HOME (Area de "+", contato e imagem ilustrativa Home Care)*/
 
 #quintaSessãoDeInfo { /* Caixa container para guardar informações da quinta sessão*/
-    /*background-color: yellow;*/
+    /* background-color: yellow; */
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 235%; 
-    height: 15%;
+    margin-top: 244%; 
+    align-items: top;
+    height: 30vw;
     width: 100%;
     position: absolute;
     display: inline-flex;
@@ -1130,13 +1132,12 @@ display: none;
 #c6 { /*identificador especial para o título 6 da quinta sessão*/
     display: flex;
      justify-content: space-around;
-     padding-left: 3%;
-     padding-right: 3%;
+    
      font-size: 1vw;
      text-align: center;
-     margin-left: 46.5%;
-     background-color: blueviolet;
-     width: 100%;
+     /* margin-left: 46.5%; */
+     /* background-color: blueviolet; */
+     width: 78vw;
 }
 
 #icones1 { /*Formatação gGERAL para ícones da quinta sessão*/
@@ -1145,8 +1146,9 @@ display: none;
     line-height: 2.3vw;
     word-spacing: 0.5vw;
     font-weight: 700;
-    margin-left: 100%;
-    background-color: azure;
+    /* margin-left: 100%; */
+    /* background-color: azure; */
+    width: 78vw;
 }
 
 .IconeQuintaS{ /*Formatação INDIVIDUAL para ícones da quinta sessão*/
