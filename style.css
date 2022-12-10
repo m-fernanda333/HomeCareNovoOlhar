@@ -172,6 +172,14 @@ body, #hd1 { /*Especificações para o corpo da página*/
 	margin: 0; */
  }
 
+ #navBarMobileOp{
+    display: none;
+ }
+
+ #navBarMobile{
+    display: none;
+ }
+
  /*
  /*QUANDO DER O SCROLL ADICIONA A CLASSE
 .sticky{
