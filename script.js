@@ -1,9 +1,14 @@
 /*VAR. GLOBAIS*/
 let count = 1;
+var larguraAtual = window.screen.width;
 
 //Função que recarrega a página toda vez que há uma alteração em seu tamanho ("resize")
 window.addEventListener('resize', function(event){ 
-   this.location.reload(true);
+    var larguraR = window.screen.width;
+    if (larguraR != larguraAtual) {
+        this.location.reload(true);
+        larguraAtual = larguraR;
+    }
 });
 
 Window.sr = ScrollReveal({ reset: true }); //Delay no scrool da página afetando itens e seus carregamentos
