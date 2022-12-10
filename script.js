@@ -1,8 +1,8 @@
 /*VAR. GLOBAIS*/
 let count = 1;
 
-
-window.addEventListener('resize', function(event){ //Função que recarrega a página toda vez que há uma alteração em seu tamanho ("resize")
+//Função que recarrega a página toda vez que há uma alteração em seu tamanho ("resize")
+window.addEventListener('resize', function(event){ 
    this.location.reload(true);
 });
 
