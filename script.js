@@ -26,10 +26,16 @@ window.addEventListener('scroll', function(){
 
 function openHamb() { //Abrir menu mobile
     document.querySelector("#navBarMobileOp").style.display = "block"; 
+    document.querySelector("#terceiraSessãoDeInfo").style.display = "none";
+    document.querySelector("#quintaSessãoDeInfo").style.display = "none"; 
+    document.querySelector("#footerInfo").style.display = "none";
 }
 
 function closeHamb() { //Fechar menu mobile
     document.querySelector("#navBarMobileOp").style.display = "none"; 
+    document.querySelector("#terceiraSessãoDeInfo").style.display = "block";
+    document.querySelector("#quintaSessãoDeInfo").style.display = "block"; 
+    document.querySelector("#footerInfo").style.display = "block";
     
 }
 

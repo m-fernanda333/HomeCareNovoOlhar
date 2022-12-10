@@ -898,11 +898,11 @@ color: #8EDE65;
     #navBarMobileOp{
         background-color: #F7FDF3;
         width: 90%;
-        height: 100vw;
+        height: 300vw;
         margin-left: 10%;
         display: flex;
         position: absolute;
-        z-index: 99;
+        z-index: 999999999999999;
         display: none;
     }
 
