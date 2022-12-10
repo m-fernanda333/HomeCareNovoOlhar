@@ -935,6 +935,12 @@ color: #8EDE65;
         width: 5%;
         display: block;
     }
+    @keyframes anima { /*Animação para setas roll*/
+        to {
+            opacity: 0.1;
+            transform: scale(0.85) translateY(20px);
+        }
+    }
     
 
     /*fim header*/
