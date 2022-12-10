@@ -824,6 +824,9 @@ color: #8EDE65;
     font-weight:900;
 }
 
+.IconeRoll {
+    display: none;
+}
 /*:::::::::::::::::::: FIM ÁREA DE CAIXAS DE TEXTO ATIVADAS COM JS :::::::::::::::::::: */
 
 
@@ -861,14 +864,14 @@ color: #8EDE65;
     #navBarMobile{ /*Ocultando a opção de menu navBar mobile na versão desktop*/
         display: block;
         height: 9vw;
-        background-color: #F7FDF3; 
+        /* background-color: #F7FDF3;  */
         padding-top: 1vw;
         margin-bottom: 4vw;
         display: flex;
         justify-content:space-between;
         padding-left: 10vw;
         padding-right: 10vw;
-        padding-top: 2.5vw;
+        padding-top: 6vw;
         padding-bottom: 2.5vw;  
     }
 
@@ -886,7 +889,7 @@ color: #8EDE65;
         /* background-color: red; */
         width: 15%;
         height: 100%;
-        color: #2c3e50;
+        color: #F7FDF3;
         text-align:right;
         font-size: 7vw;
     }
@@ -913,13 +916,26 @@ color: #8EDE65;
         width: 50vw;
         font-size: 3.2vw;
         margin-top: 5vw;
-        margin-left: 14vw;       
+        margin-left: 14vw;   
+        margin-bottom: 5vw;    
     }
     
     .BtnPrincipal:hover { /* Ações ao passar o mouse em cima do botão principal */
         height: 8.08vw;
         width: 50.1vw;
     }
+
+    .IconeRoll { /*Setas para baixo "roll"*/
+        margin-top: 2vw;
+        font-size: 7vw;
+        color: #8EDE65;
+        opacity: 1;
+        animation: anima 1500ms ease infinite;
+        margin-left: 47%;
+        width: 5%;
+        display: block;
+    }
+    
 
     /*fim header*/
 
