@@ -1307,7 +1307,51 @@ color: #8EDE65;
 
 
 
+.CtFlutuante { /*caixas de menu pop up para especificação das área de atuação*/
+  
+    width: 70%;
+    height: 30%;
+    margin-top: 150%;
+    margin-left: 7.5%;
+    border-radius: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
 
+.CtFlutuante #linhaFooter {
+    display: none;
+}
+
+.TCtFlutuante, #tC1 { /*título de caixa pop-up áreas de atuação*/
+    font-size: 3vw;
+    font-weight: 700;
+    color: #1D1D29;
+}
+
+.PCtFlutuante, #pC1 { /*texto de caixa pop-up áreas de atuação*/
+    font-size: 3vw;
+    color: #1D1D29;
+    text-align: justify;
+}
+
+#iconesFlutuante { /*Formatação gGERAL para ícones da quinta sessão*/
+    text-align: center;
+    line-height: 2.3vw;
+    word-spacing: 0.5vw;
+    font-weight: 700;
+}
+
+.IconeFlutuanteS{ /*Formatação INDIVIDUAL para ícones da quinta sessão*/
+    color: #2c3e50;
+    font-size: 7vw;
+}
+
+.IconeFlutuanteS:hover{ /*Especificaçãoe ao passar o mouse em um ícone da quinta sessão*/
+color: #8EDE65;
+    font-weight:900;
+}
 
 
 
