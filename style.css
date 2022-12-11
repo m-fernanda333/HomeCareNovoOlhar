@@ -925,12 +925,16 @@ color: #8EDE65;
 
     .OpcaoNavBarMob {
         color: #1D1D29;
-        font-size: 4vw;
+        font-size: 6vw;
         width: 100%;
         /* background-color: burlywood; */
         margin-bottom: 4vw;
         text-align: center;
         text-decoration: none;
+    }
+
+   .IconesSociaisMob{
+        font-size: 7vw;
     }
 
     #iconeX {
