@@ -652,8 +652,8 @@ input {
         width: 100%;
         margin-bottom: 4vw;
         text-align: justify;
-        line-height: 4.8vw;
-        word-spacing: 1vw;
+        line-height: 4vw;
+        word-spacing: 0.8vw;
         padding-top: 2vw;
     }
 

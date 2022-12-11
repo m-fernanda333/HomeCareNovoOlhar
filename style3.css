@@ -463,5 +463,156 @@ span { /*texto abaixo do título news (apresetando equipe)*/
     text-align: center;
 }
 
+#navBarMobileOp{
+    display: none;
+}
+
 /*<--FimFooter*/
 
+
+/* RESPONSIVIDADE  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@media (max-width:723px){
+
+    
+    .navBar{  /*barra original ocultada*/
+        display: none;
+        
+    }
+
+    header {
+        height: 100%;
+    }
+
+    #navBarMobile{ /*Ocultando a opção de menu navBar mobile na versão desktop*/
+        display: block;
+        height: 9vw;
+        /* background-color: #F7FDF3;  */
+        padding-top: 1vw;
+        margin-bottom: 4vw;
+        display: flex;
+        justify-content:space-between;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 6vw;
+        padding-bottom: 2.5vw;  
+        
+    }
+
+    #logoMobile {
+        /* background-color: red; */
+        background-image: url(img/logoNavMob.png);
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    #hamMobileIcon{
+        /* background-color: red; */
+        width: 15%;
+        height: 100%;
+        color: #F7FDF3;
+        text-align:right;
+        font-size: 7vw;
+    }
+
+
+    #navBarMobileOp{
+        background-color: #F7FDF3;
+        width: 90%;
+        height: 300vw;
+        margin-left: 10%;
+        display: flex;
+        position: absolute;
+        z-index: 999999999999999;
+        display: none;
+        transition: 1s 0s bottom, 1s 1s left cubic-bezier(0,1,1,1);
+    }
+
+    #navBarMobileOpInterno {
+        height: 50vw;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 25vw;
+        /* background-color: #8EDE65; */
+        text-align: center;
+    }
+
+    .OpcaoNavBarMob {
+        color: #1D1D29;
+        font-size: 6vw;
+        width: 100%;
+        /* background-color: burlywood; */
+        margin-bottom: 4vw;
+        text-align: center;
+        text-decoration: none;
+    }
+
+   .IconesSociaisMob{
+        font-size: 7vw;
+    }
+
+    #iconeX {
+        font-size: 10vw;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 4vw;
+        color: #2c3e50;
+    }
+
+    * {
+        text-decoration: none;
+    }
+
+    #news { /*Área principal do site com informação e botão lateral*/
+        /* background-color: yellow; */
+        text-align: center;
+        width: 80%;   
+        padding-top: 4vw;
+    }
+
+    .LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
+        width: 18vw;
+        height: 1.4vw;
+        margin-left: 30vw;
+    }
+        
+    #news p { /*Texto da área news*/
+        font-size: 8vw;      
+    }
+    span { /*texto abaixo do título news (apresetando equipe)*/
+        font-size: 3vw;
+        font-weight: 700;
+        color: #F7FDF3;
+    }
+
+    #textNews { /*Linha do texto abaixo do t. news*/
+        /* background-color: green; */
+        width: 100%;
+        height: 88vw;
+        /* margin-bottom: 4vw; */
+        text-align: justify;
+        line-height: 4vw;
+        word-spacing: 0.8vw;
+        padding-top: 2vw;
+    }
+
+    .IconeRoll { /*Setas para baixo "roll"*/
+        margin-top: 2vw;
+        font-size: 7vw;
+        color: #8EDE65;
+        opacity: 1;
+        animation: anima 1500ms ease infinite;
+        margin-left: 47%;
+        width: 5%;
+        display: block;
+    }
+    @keyframes anima { /*Animação para setas roll*/
+        to {
+            opacity: 0.1;
+            transform: scale(0.85) translateY(20px);
+        }
+    }
+}
