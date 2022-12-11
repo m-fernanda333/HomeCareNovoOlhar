@@ -436,3 +436,273 @@ h1 { /*Especificações para títulos H1 */
 }
 
 /*<--FimFooter*/
+
+#navBarMobileOp{
+    display: none;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:723px){
+
+    body{
+        background-image: url(img/newff2.png);
+        background-size: cover;
+    }
+
+.navBar{
+        display: none;
+    }
+
+
+    #navBarMobile{ /*Ocultando a opção de menu navBar mobile na versão desktop*/
+        display: block;
+        height: 9vw;
+        /* background-color: #F7FDF3;  */
+        padding-top: 1vw;
+        margin-bottom: 4vw;
+        display: flex;
+        justify-content:space-between;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 6vw;
+        padding-bottom: 2.5vw;  
+        
+    }
+
+    #logoMobile {
+        /* background-color: red; */
+        background-image: url(img/logoNavMob.png);
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    #hamMobileIcon{
+        /* background-color: red; */
+        width: 15%;
+        height: 100%;
+        color: #F7FDF3;
+        text-align:right;
+        font-size: 7vw;
+    }
+
+
+    #navBarMobileOp{
+        background-color: #F7FDF3;
+        width: 90%;
+        height: 300vw;
+        margin-left: 10%;
+        display: flex;
+        position: absolute;
+        z-index: 999999999999999;
+        display: none;
+        transition: 1s 0s bottom, 1s 1s left cubic-bezier(0,1,1,1);
+    }
+
+    #navBarMobileOpInterno {
+        height: 50vw;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 25vw;
+        /* background-color: #8EDE65; */
+        text-align: center;
+    }
+
+    .OpcaoNavBarMob {
+        color: #1D1D29;
+        font-size: 6vw;
+        width: 100%;
+        /* background-color: burlywood; */
+        margin-bottom: 4vw;
+        text-align: center;
+        text-decoration: none;
+    }
+
+   .IconesSociaisMob{
+        font-size: 7vw;
+    }
+
+    #iconeX {
+        font-size: 10vw;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 4vw;
+        color: #2c3e50;
+    }
+
+    /**/
+    #news { /*Área principal do site com informação e botão lateral*/
+        /* background-color: yellow; */
+        margin-left: 8vw;
+        margin-right: 8vw;
+        /* margin-top: 3vw; */
+        text-align: center;
+        padding-left: 3vw;
+        width: 80%;
+        margin-bottom: 2vw;
+    }
+    
+    .LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
+        width: 18vw;
+        height: 1.4vw;
+        margin-left: 30vw;
+    }
+        
+    
+    #news p { /*Titulo da área news*/
+        font-size: 8vw;
+         
+    }
+    /*FIM HEADER*/
+
+    /*Primeira sessão de info (missão)*/
+
+#primeiraSessãoDeInfo{ /* Primeira sessão de informaçãos*/
+    /* background-color: white;    */
+   height: 40vw;
+  
+}
+
+.TituloFundoVerde {
+ 
+  height: 7vw;
+
+  font-size: 4.4vw;
+ 
+
+}
+
+#primeiraSessãoDeInfo p {
+  line-height: 4vw;
+  word-spacing: 1vw;
+  font-weight: 500;
+  font-size: 2.4vw;
+}
+/*Fim primeira sessão de info*/
+
+
+/*Segundasessão de info (visão)*/
+
+#segundaSessãoDeInfo{ /* Primeira sessão de informaçãos*/
+    background-color: #F7FDF3;    
+   height: 104vw;
+   padding-top: 1vw;
+   margin-left: 10%;
+    width: 74%;
+    padding-right: 6vw;
+}
+
+#meio {
+    z-index: 9;
+    margin-left: 10%;
+    width: 20%;
+    margin-top: 6vw;
+}
+
+#segundaSessãoDeInfo p {
+    margin-top: 2vw;
+    text-align: justify;
+    color: #1D1D29;
+    line-height: 4vw;
+    word-spacing: 0.8vw;
+    font-weight: 500;
+    font-size: 2.4vw;
+    margin-left: 6vw;
+    margin-bottom: 2vw;
+ }
+
+ #listaDeItens {
+    /* background-color: chartreuse;*/
+     margin-top: 4vw;
+     margin-left: 3vw;
+ }
+ 
+ .ItemCheck { /* Item da lista */
+      /* background-color: tomato; */
+     display: inline-flex;
+     width: 100%;
+     text-align: left;
+     height: 3vw;
+     /* margin-bottom: 3vw; */
+     /* margin-top: 2vw; */
+ }
+ 
+ .IconCheck { /*ícone dentro do item da lista de itens*/
+    /* background-color: aqua; */
+     width: 5%;
+     font-size: 6vw;
+     color: #8EDE65;
+     height: 6vw;
+     
+ }
+ 
+ .TextCheck { /*Texto dentro do ícone da lista de itens*/
+    text-align: justify;
+    color: #1D1D29;
+    line-height: 3vw;
+    font-size: 2.4vw;
+    word-spacing: 1vw;
+    font-weight: 700;
+    /* margin-top: 1vw; */
+    margin-left: 5vw;
+ }
+
+/*Fim segunda sessão de info*/
+
+
+/*Terceira sessão de info (missão)*/
+
+#terceiraSessãoDeInfo{ /* Terceira sessão de informaçãos*/
+    /* background-color: yellow;     */
+   background-size: 50%;
+   background-repeat: no-repeat;
+   background-position: 50%;
+   width: 80%;    
+   margin-top: 6vw; 
+   height: 115vw;
+   padding-top: 1vw;
+   margin-left: 10%;
+}
+
+#terceiraSessãoDeInfo p {
+    width: 75%;
+    height: 100%;
+    margin-top: 2vw;
+    text-align: justify;
+    color: #F7FDF3;
+    line-height: 3vw;
+    word-spacing: 1vw;
+    font-weight: 500;
+    font-size: 2.6vw;
+    margin-left: 3vw;
+}
+
+.Box {
+    width: 100%;
+    height: 20vw;
+    margin-top: 4vw;
+    /* background-color: green; */
+    display: flex;
+}
+
+.IconBox{
+    /* background-color: brown; */
+    height: 100%;
+    width: 25%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+/*Footer para contatdo e copyright*/
+
+#footerInfo {
+   
+    font-size: 2.2vw;
+}
+}
