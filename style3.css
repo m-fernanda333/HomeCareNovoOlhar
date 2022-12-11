@@ -571,6 +571,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
         text-align: center;
         width: 80%;   
         padding-top: 4vw;
+        margin-bottom: 0;
     }
 
     .LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
@@ -581,11 +582,14 @@ span { /*texto abaixo do título news (apresetando equipe)*/
         
     #news p { /*Texto da área news*/
         font-size: 8vw;      
+        margin-bottom: 0;
     }
+
     span { /*texto abaixo do título news (apresetando equipe)*/
         font-size: 3vw;
         font-weight: 700;
         color: #F7FDF3;
+        margin-bottom: 0;
     }
 
     #textNews { /*Linha do texto abaixo do t. news*/
@@ -597,6 +601,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
         line-height: 4vw;
         word-spacing: 0.8vw;
         padding-top: 2vw;
+        margin-bottom: 0;
     }
 
     .IconeRoll { /*Setas para baixo "roll"*/
@@ -608,7 +613,9 @@ span { /*texto abaixo do título news (apresetando equipe)*/
         margin-left: 47%;
         width: 5%;
         display: block;
+        margin-bottom: 0;
     }
+
     @keyframes anima { /*Animação para setas roll*/
         to {
             opacity: 0.1;
