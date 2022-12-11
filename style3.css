@@ -474,6 +474,14 @@ span { /*texto abaixo do título news (apresetando equipe)*/
 
 @media (max-width:723px){
 
+
+    #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
+        position: absolute;
+        width: 100%;
+        height: 325vw;
+         background-color: #F7FDF3; 
+         clip-path: polygon(21% 2.3%, 75% 2.3%, 100% 0.5%, 100% 100%, 0 100%, 0 0.5%);
+    }
     
     .navBar{  /*barra original ocultada*/
         display: none;
@@ -566,6 +574,10 @@ span { /*texto abaixo do título news (apresetando equipe)*/
         text-decoration: none;
     }
 
+    header footer {
+        padding-bottom: 3vw;
+    }
+
     #news { /*Área principal do site com informação e botão lateral*/
         /* background-color: yellow; */
         text-align: center;
@@ -601,11 +613,11 @@ span { /*texto abaixo do título news (apresetando equipe)*/
         line-height: 4vw;
         word-spacing: 0.8vw;
         padding-top: 2vw;
-        margin-bottom: 0;
+    
     }
 
     .IconeRoll { /*Setas para baixo "roll"*/
-        /* margin-top: 2vw; */
+        margin-top: 1vw;
         font-size: 7vw;
         color: #8EDE65;
         opacity: 1;
@@ -614,7 +626,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
         width: 5%;
         display: block;
         margin-bottom: 0;
-        /* display: none; */
+  
     }
 
     @keyframes anima { /*Animação para setas roll*/
@@ -623,4 +635,161 @@ span { /*texto abaixo do título news (apresetando equipe)*/
             transform: scale(0.85) translateY(20px);
         }
     }
+
+    
+/*<-- Primeira sessão de informações (gestores) */
+
+#primeiraSessãoDeInfo{ /* Primeira sessão de informaçãos dos gestores */
+    /* background-color: green;  */
+     background-size: 50%;
+     background-repeat: no-repeat;
+     background-position: 50%;
+     width: 100%;    
+     margin-top: 6vw; 
+     height: 150vw;
+     padding-top: 7vw;
+ }
+
+ .TitulosPath { /* Linha de título da sessão*/
+  
+    font-size: 5vw;
+ }
+
+.FotoGestor { /*DIV para guardar as fotos dos gestores*/
+    /* background-color: yellow; */
+    height: 50vw;
+    width: 20%;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 5vw;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat; 
+    clip-path: none;
+}
+
+.Gestor { /*div funo gestor*/
+    background-color: rgb(238, 238, 238); 
+    height: 50vw;
+    margin-left: 25%;
+    margin-top: 5vw;
+ }
+
+ #gestorMeio { /*div funo gestor do meio*/
+    background-color: rgb(238, 238, 238); 
+    height: 50vw;
+    /* text-indent: justify; */
+    margin-right: 25%;
+    margin-top: 5vw;
+}
+
+#gestorMeio .NomeGestor { /*alinhando nome do gestor do meio a direita*/
+    text-align: right;
+}
+
+#gestorMeio p { /*alinhando texto do gestor do meio a direita*/
+    text-align: right;
+}
+
+ .SobreGestor { /*contem todas as informações textuais ao lado da foto do gestor*/
+    /* background-color: brown; */
+    margin-left: 15%;
+    margin-right: 13%;
+    padding-top: 8.5%;
+ }
+
+ .SobreGestor p { /*texto sobre gestor*/
+    color: #1D1D29;
+    font-size: 2.4vw;
+    text-align: justify;
+ }
+
+ .NomeGestor { /*nome gestor*/
+    color:#1D1D29;
+    font-weight: 700;
+    font-size: 2.8vw;
+ }
+
+/*<-- Segunda sessão de informações (sobre a equipe) */
+
+#segundaSessãoDeInfo {
+    margin-top: 33vw;
+    /* background-color: aqua; */
+}
+
+#txtEquipe {
+    color: #1D1D29;
+    font-size: 2.4vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5vw;
+    text-align: justify;
+}
+
+#text .LinhaDeTitulo { /*Linha decorativa para titulos de texto*/
+    background-color: #8EDE65;
+    margin-bottom: 0.6vw;
+    margin-left: 10%;
+}
+
+#fotoCartao { /*imagem ilustrativa de cartao*/
+    margin-left: 9%;
+    margin-right: 10%;
+    background-image: url(img/mm.webp);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    height: 40vw;
+    margin-top: 4vw;
+}
+
+/*Footer para contatdo e copyright*/
+
+#footerInfo {
+    /*background-color: #8EDE65;*/
+    color: #2c3e50;
+    background-color: #F7FDF3;
+    font-weight: 600;
+    font-size: 2.2vw;
+    margin-top: 10vw;
+}
+
+#linhaFooter{ /*linha decorativa de separação entre footer e informações anteriores*/
+    background-color: grey;
+    width: 50%;
+    margin-left: 25%;
+    height: 0.06vw;
+}
+
+.LFooter { /*Linha principal do footer*/
+    /*background-color: blueviolet;*/
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3vw; 
+}
+
+#footerLeft { /*Div de informações alinhada a esquerda no footer*/
+    /*background-color: aqua;*/
+    width: 50%;
+    text-align: center;
+}
+
+#footerRight{ /*Div de informações alinhada a direita no footer*/
+    /*background-color: burlywood;*/
+    width: 50%;
+    text-align: center;
+}
+
+#copyright { /*Linha final do footer (informações do copyright)*/
+    padding-bottom: 3vw;;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+#navBarMobileOp{
+    display: none;
+}
+
+/*<--FimFooter*/
 }
