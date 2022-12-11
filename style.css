@@ -845,7 +845,8 @@ color: #8EDE65;
 /* RESPONSIVIDADE HOME ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 @media (max-width:723px){
-    
+
+      
     .BtnRadiusContent { /*tirando o radio button para versões mobile*/
         display: none;
     }
@@ -903,6 +904,7 @@ color: #8EDE65;
         font-size: 7vw;
     }
 
+
     #navBarMobileOp{
         background-color: #F7FDF3;
         width: 90%;
@@ -912,6 +914,7 @@ color: #8EDE65;
         position: absolute;
         z-index: 999999999999999;
         display: none;
+        transition: 1s 0s bottom, 1s 1s left cubic-bezier(0,1,1,1);
     }
 
     #navBarMobileOpInterno {

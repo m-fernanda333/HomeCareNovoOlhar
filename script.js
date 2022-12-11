@@ -210,7 +210,7 @@ if (window.matchMedia("(min-width:723px)").matches) { //Verificador tipo mediaca
   } else {
     /* a viewport menos que 723 pixels de largura */
     console.log('a viewport menos que 723 pixels de largura')
-    document.querySelector("body").style.backgroundImage = "url(img/newff.png)";
+    document.querySelector("body").style.backgroundImage = "url(img/newff2.png)";
   }
 
 
