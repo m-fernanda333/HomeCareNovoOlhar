@@ -962,7 +962,7 @@ color: #8EDE65;
     .LinhaDeTitulo { /*Linha decorativa (ultilizada em cima ou na lateral de títulos)*/
         width: 18vw;
         height: 1.4vw;
-        margin-left: 28vw;
+        margin-left: 30vw;
     }
         
     #news p { /*Texto da área news*/
