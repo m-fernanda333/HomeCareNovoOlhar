@@ -657,8 +657,8 @@ input {
     }
 
     .IconeRoll { /*Setas para baixo "roll"*/
-        
-        display: none;
+        font-size: 7vw;
+        /* display: none; */
     }
   
     
