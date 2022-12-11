@@ -605,7 +605,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
     }
 
     .IconeRoll { /*Setas para baixo "roll"*/
-        margin-top: 2vw;
+        /* margin-top: 2vw; */
         font-size: 7vw;
         color: #8EDE65;
         opacity: 1;
@@ -614,7 +614,7 @@ span { /*texto abaixo do título news (apresetando equipe)*/
         width: 5%;
         display: block;
         margin-bottom: 0;
-        display: none;
+        /* display: none; */
     }
 
     @keyframes anima { /*Animação para setas roll*/
