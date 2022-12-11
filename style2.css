@@ -519,6 +519,10 @@ input {
 
 @media (max-width: 723px) {
 
+    #pathCorpo { /*Modificação em um hexágono que atua como "body" e faz o fromato do meio do site completo*/
+         height: 190vw;
+    }
+
     body { /*Especificações para o corpo da página*/
         background-image: url(img/newff2.png);
     }
@@ -737,5 +741,61 @@ input {
    font-size: 2vw;
 }
 /**/
+
+
+/** <-- Segunda Sessão (endereço) */
+#segundaSessãoDeInfo {
+    /* background-color: yellow; */
+    height: 55vw;
+    margin-top: 4vw;
+}
+
+#segundaSessãoDeInfo span {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+    color: #1D1D29;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+.TitulosPath { /* Linha de título da sessão*/
+    /* background-color: aqua;   */
+    width: 80%;
+    font-size: 4vw;
+    font-weight:700;
+    display: inline-flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1.5vw;
+    color: #1D1D29;
+ }
+
+ #frameMap {
+    width: 70%;
+    height: 30vw;
+    margin-left: 15%;
+    margin-right:15%;
+    margin-top: 3vw;
+}
+
+/**/
+
+
+/*Footer para contatdo e copyright*/
+
+#footerInfo {
+    /*background-color: #8EDE65;*/
+    color: #2c3e50;
+    background-color: #F7FDF3;
+    font-weight: 600;
+    font-size: 2vw;
+    margin-top: 7vw;
+}
+
+
+
+/*<--FimFooter*/
    
 }
