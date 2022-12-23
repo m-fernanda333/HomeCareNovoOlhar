@@ -281,10 +281,11 @@ h1 { /*Especificações para títulos H1 */
 
 #segundaSessãoDeInfo{ /* Primeira sessão de informaçãos*/
     background-color: #F7FDF3;    
-   height: 31vw;
+   height: 40vw;
    padding-top: 1vw;
    margin-left: 10%;
     width: 80%;
+    margin-bottom: 2vw;
 }
 
 #meio {
@@ -600,7 +601,7 @@ h1 { /*Especificações para títulos H1 */
     z-index: 9;
     margin-left: 10%;
     width: 20%;
-    margin-top: 6vw;
+    margin-top: 8vw;
 }
 
 #segundaSessãoDeInfo p {
